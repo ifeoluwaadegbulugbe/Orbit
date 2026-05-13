@@ -16,6 +16,10 @@ export function Footer() {
         return "#platform-overview";
       case "Pricing":
         return "#pricing";
+      case "Privacy":
+        return "/privacy";
+      case "Terms":
+        return "/terms";
       default:
         return "#";
     }

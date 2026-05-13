@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { AnnouncementBar } from "./components/announcement-bar";
 import { Navbar } from "./components/navbar";
 import { Hero } from "./components/hero";
@@ -11,10 +12,13 @@ import { Pricing } from "./components/pricing";
 import { FAQ } from "./components/faq";
 import { CTA } from "./components/cta";
 import { Footer } from "./components/footer";
+import { Privacy } from "./components/privacy";
+import { Terms } from "./components/terms";
+import { ScrollToTop } from "./components/scroll-to-top";
 
-export default function App() {
+function HomePage() {
   return (
-    <div className="min-h-screen bg-white antialiased">
+    <>
       <AnnouncementBar />
       <Navbar />
       <Hero />
@@ -28,6 +32,21 @@ export default function App() {
       <FAQ />
       <CTA />
       <Footer />
-    </div>
+    </>
+  );
+}
+
+export default function App() {
+  return (
+    <Router>
+      <ScrollToTop />
+      <div className="min-h-screen bg-white antialiased">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
