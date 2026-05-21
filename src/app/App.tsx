@@ -13,6 +13,8 @@ import { FAQ } from "./components/faq";
 import { CTA } from "./components/cta";
 import { Footer } from "./components/footer";
 import { ScrollToTop } from "./components/scroll-to-top";
+import { Privacy } from "./components/privacy";
+import { Terms } from "./components/terms";
 
 function HomePage() {
   return (
@@ -41,6 +43,8 @@ export default function App() {
       <div className="min-h-screen bg-white antialiased">
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms />} />
         </Routes>
       </div>
     </Router>

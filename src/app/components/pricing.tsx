@@ -17,7 +17,7 @@ export function Pricing() {
       price: "$0",
       description: "Perfect for getting started",
       features: [
-        "Up to 50 clients",
+        "Up to 10 clients",
         "Client management",
         "Reminders & notifications",
         "Bookings & scheduling",

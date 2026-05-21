@@ -17,9 +17,7 @@ export function Navbar() {
             animate={{ opacity: 1 }}
             className="flex items-center gap-2"
           >
-            <div className="w-8 h-8 bg-pink-500 rounded-lg flex items-center justify-center">
-              <span className="text-white text-sm font-bold">O</span>
-            </div>
+            <img src="/logo.svg" alt="Orbit logo" className="w-8 h-8" />
             <span className="text-lg font-semibold text-gray-700">Orbit</span>
           </motion.div>
 
@@ -54,12 +52,12 @@ export function Navbar() {
             className="flex items-center gap-3"
           >
             <a
-              href="https://apps.apple.com/app/orbit"
+              href="https://getorbitapp.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-2 bg-pink-500 hover:bg-pink-600 text-white text-sm font-semibold rounded-lg transition-colors"
             >
-              Download app
+              Get started
             </a>
           </motion.div>
         </div>

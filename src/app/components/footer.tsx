@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { motion } from "motion/react";
 
 export function Footer() {
@@ -8,20 +9,19 @@ export function Footer() {
     legal: ["Privacy", "Terms", "Security"]
   };
 
+  // Links that use React Router <Link> (internal pages)
+  const internalRoutes: Record<string, string> = {
+    Privacy: "/privacy",
+    Terms: "/terms",
+  };
+
+  // Links that use plain <a> with hash or external href
   const getHref = (link: string) => {
-    switch(link) {
-      case "About":
-        return "#hero";
-      case "Features":
-        return "#platform-overview";
-      case "Pricing":
-        return "#pricing";
-      case "Privacy":
-      case "Terms":
-      case "Security":
-        return "https://getorbitapp.vercel.app/";
-      default:
-        return "#";
+    switch (link) {
+      case "About":    return "#hero";
+      case "Features": return "#platform-overview";
+      case "Pricing":  return "#pricing";
+      default:         return "#";
     }
   };
 
@@ -31,9 +31,7 @@ export function Footer() {
         <div className="grid md:grid-cols-5 gap-12 mb-12">
           <div className="md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-pink-500 rounded-lg flex items-center justify-center">
-                <span className="text-white text-sm font-bold">O</span>
-              </div>
+              <img src="/logo.svg" alt="Orbit logo" className="w-8 h-8" />
               <span className="text-lg font-semibold text-gray-700">Orbit</span>
             </div>
             <p className="text-sm text-gray-600 leading-relaxed">
@@ -47,14 +45,21 @@ export function Footer() {
               <ul className="space-y-3">
                 {links.map((link) => (
                   <li key={link}>
-                    <a
-                      href={getHref(link)}
-                      target={["Privacy", "Terms", "Security"].includes(link) ? "_blank" : undefined}
-                      rel={["Privacy", "Terms", "Security"].includes(link) ? "noopener noreferrer" : undefined}
-                      className="text-sm text-gray-600 hover:text-gray-800 transition-colors"
-                    >
-                      {link}
-                    </a>
+                    {internalRoutes[link] ? (
+                      <Link
+                        to={internalRoutes[link]}
+                        className="text-sm text-gray-600 hover:text-gray-800 transition-colors"
+                      >
+                        {link}
+                      </Link>
+                    ) : (
+                      <a
+                        href={getHref(link)}
+                        className="text-sm text-gray-600 hover:text-gray-800 transition-colors"
+                      >
+                        {link}
+                      </a>
+                    )}
                   </li>
                 ))}
               </ul>

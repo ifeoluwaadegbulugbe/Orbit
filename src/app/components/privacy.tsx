@@ -25,7 +25,7 @@ export function Privacy() {
         >
           <h1 className="text-[32px] md:text-5xl font-bold text-gray-800 mb-2">Privacy Policy</h1>
           <p className="text-sm md:text-base text-gray-600 mb-8 md:mb-12">
-            Last updated: May 13, 2026 &nbsp;|&nbsp; Applies to: https://orbit-vert-three.vercel.app/
+            Last updated: May 13, 2026 &nbsp;|&nbsp; Applies to: https://getorbitapp.vercel.app/
           </p>
 
           <div className="space-y-8 md:space-y-12 text-gray-700 leading-relaxed">
@@ -34,7 +34,7 @@ export function Privacy() {
                 Introduction
               </h2>
               <p className="mb-4">
-                This Privacy Policy describes how Orbit ("we," "us," or "our") collects, uses, and shares information about you when you use our website at https://orbit-vert-three.vercel.app/ (the "Service").
+                This Privacy Policy describes how Orbit ("we," "us," or "our") collects, uses, and shares information about you when you use our website at https://getorbitapp.vercel.app/ (the "Service").
               </p>
               <p>
                 By using our Service, you agree to the collection and use of information in accordance with this policy. This policy applies to all visitors, users, and others who access or use the Service.
@@ -99,7 +99,7 @@ export function Privacy() {
                 Data Retention
               </h2>
               <p className="mb-4">
-                We will retain your personal information for as long as necessary. Data must not be kept longer than necessary for the specified purpose. Retention periods must be documented and enforced.
+                We will retain your personal information for As long as necessary. Data must not be kept longer than necessary for the specified purpose. Retention periods must be documented and enforced.
               </p>
               <p>When we no longer need to retain your information, we will securely delete or anonymize it.</p>
             </section>
@@ -177,7 +177,7 @@ export function Privacy() {
               <p className="mb-4">If you have any questions about this Privacy Policy, please contact us:</p>
               <ul className="list-disc pl-6 space-y-2">
                 <li>By email: <a href="mailto:ifeoluwaadegbulugbe@gmail.com" className="text-blue-600 hover:underline">ifeoluwaadegbulugbe@gmail.com</a></li>
-                <li>By visiting our website: <a href="https://orbit-vert-three.vercel.app/" className="text-blue-600 hover:underline">https://orbit-vert-three.vercel.app/</a></li>
+                <li>By visiting our website: <a href="https://getorbitapp.vercel.app/" className="text-blue-600 hover:underline">https://getorbitapp.vercel.app/</a></li>
               </ul>
             </section>
 

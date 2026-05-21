@@ -25,7 +25,7 @@ export function Terms() {
         >
           <h1 className="text-[32px] md:text-5xl font-bold text-gray-800 mb-2">Terms of Service</h1>
           <p className="text-sm md:text-base text-gray-600 mb-8 md:mb-12">
-            Last updated: May 13, 2026 &nbsp;|&nbsp; Applies to: https://orbit-vert-three.vercel.app/
+            Last updated: May 13, 2026 &nbsp;|&nbsp; Applies to: https://getorbitapp.vercel.app/
           </p>
 
           <div className="space-y-8 md:space-y-12 text-gray-700 leading-relaxed">
@@ -34,7 +34,7 @@ export function Terms() {
                 Acceptance of Terms
               </h2>
               <p>
-                By accessing or using https://orbit-vert-three.vercel.app/ (the "Service") operated by Orbit ("we," "us," or "our"), you agree to be bound by these Terms of Service ("Terms"). If you disagree with any part of these terms, you may not access the Service.
+                By accessing or using https://getorbitapp.vercel.app/ (the "Service") operated by Orbit ("we," "us," or "our"), you agree to be bound by these Terms of Service ("Terms"). If you disagree with any part of these terms, you may not access the Service.
               </p>
             </section>
 
@@ -160,7 +160,7 @@ export function Terms() {
                 Contact Us
               </h2>
               <p>
-                If you have questions about these Terms, please contact us at <a href="mailto:ifeoluwaadegbulugbe@gmail.com" className="text-blue-600 hover:underline">ifeoluwaadegbulugbe@gmail.com</a> or visit <a href="https://orbit-vert-three.vercel.app/" className="text-blue-600 hover:underline">https://orbit-vert-three.vercel.app/</a>.
+                If you have questions about these Terms, please contact us at <a href="mailto:ifeoluwaadegbulugbe@gmail.com" className="text-blue-600 hover:underline">ifeoluwaadegbulugbe@gmail.com</a> or visit <a href="https://getorbitapp.vercel.app/" className="text-blue-600 hover:underline">https://getorbitapp.vercel.app/</a>.
               </p>
             </section>
 
