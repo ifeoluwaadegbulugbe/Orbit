@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 
 export function Footer() {
   const navigation = {
-    product: ["Features", "Pricing", "Security", "Roadmap"],
+    product: ["Features", "Pricing", "Roadmap"],
     company: ["About", "Blog", "Careers", "Contact"],
     resources: ["Documentation", "Help Center", "Community", "API"],
     legal: ["Privacy", "Terms", "Security"]
@@ -17,9 +17,9 @@ export function Footer() {
       case "Pricing":
         return "#pricing";
       case "Privacy":
-        return "/privacy";
       case "Terms":
-        return "/terms";
+      case "Security":
+        return "https://getorbitapp.vercel.app/";
       default:
         return "#";
     }
@@ -49,6 +49,8 @@ export function Footer() {
                   <li key={link}>
                     <a
                       href={getHref(link)}
+                      target={["Privacy", "Terms", "Security"].includes(link) ? "_blank" : undefined}
+                      rel={["Privacy", "Terms", "Security"].includes(link) ? "noopener noreferrer" : undefined}
                       className="text-sm text-gray-600 hover:text-gray-800 transition-colors"
                     >
                       {link}

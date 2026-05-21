@@ -20,7 +20,7 @@ export function Pricing() {
     },
     {
       name: "Pro",
-      price: "$29",
+      price: "$17",
       period: "/month",
       description: "For growing businesses",
       features: [
@@ -36,7 +36,7 @@ export function Pricing() {
         "Priority support",
         "Early access to new features"
       ],
-      cta: "Start free trial",
+      cta: "Get started",
       highlighted: true
     }
   ];
@@ -102,7 +102,10 @@ export function Pricing() {
                 )}
               </div>
 
-              <button
+              <a
+                href="https://getorbitapp.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className={`w-full py-4 rounded-xl font-medium mb-8 transition-all inline-flex items-center justify-center gap-2 group ${
                   plan.highlighted
                     ? "bg-pink-500 hover:bg-pink-600 text-white shadow-lg shadow-pink-500/25"
@@ -111,7 +114,7 @@ export function Pricing() {
               >
                 {plan.cta}
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
-              </button>
+              </a>
 
               <div className="space-y-4">
                 <div className="text-sm font-semibold text-gray-800 mb-4">What's included:</div>

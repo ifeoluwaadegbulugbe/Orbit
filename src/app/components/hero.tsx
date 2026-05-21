@@ -46,12 +46,12 @@ export function Hero() {
             className="flex flex-wrap items-center justify-center gap-4"
           >
             <a
-              href="https://apps.apple.com/app/orbit"
+              href="https://getorbitapp.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="group px-8 py-4 bg-pink-500 hover:bg-pink-600 text-white rounded-xl font-semibold transition-all shadow-lg shadow-pink-500/25 hover:shadow-xl hover:shadow-pink-500/30 inline-flex items-center gap-2"
             >
-              Download app
+              Get started
               <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
             </a>
           </motion.div>

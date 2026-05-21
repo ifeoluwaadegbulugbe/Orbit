@@ -12,8 +12,6 @@ import { Pricing } from "./components/pricing";
 import { FAQ } from "./components/faq";
 import { CTA } from "./components/cta";
 import { Footer } from "./components/footer";
-import { Privacy } from "./components/privacy";
-import { Terms } from "./components/terms";
 import { ScrollToTop } from "./components/scroll-to-top";
 
 function HomePage() {
@@ -43,8 +41,6 @@ export default function App() {
       <div className="min-h-screen bg-white antialiased">
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/privacy" element={<Privacy />} />
-          <Route path="/terms" element={<Terms />} />
         </Routes>
       </div>
     </Router>
