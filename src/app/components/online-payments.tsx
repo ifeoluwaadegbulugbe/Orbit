@@ -36,7 +36,7 @@ export function OnlinePayments() {
                   </div>
                   <div className="flex justify-between text-sm">
                     <span className="text-gray-600">Payment Method</span>
-                    <span className="font-medium text-gray-800">Stripe</span>
+                    <span className="font-medium text-gray-800">Flutterwave</span>
                   </div>
                   <div className="flex justify-between text-sm">
                     <span className="text-gray-600">Status</span>
@@ -91,7 +91,7 @@ export function OnlinePayments() {
             <div className="pt-4">
               <p className="text-xs text-gray-500 mb-3">Supported providers</p>
               <div className="flex gap-3">
-                {["Stripe", "Paystack", "Flutterwave"].map((provider) => (
+                {["Flutterwave", "Lemon Squeezy"].map((provider) => (
                   <div
                     key={provider}
                     className="px-4 py-2 bg-white border border-gray-200 rounded-lg text-sm font-medium text-gray-700"

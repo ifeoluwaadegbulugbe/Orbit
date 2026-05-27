@@ -53,7 +53,7 @@ export function TabbedFeatures() {
       label: "Payments",
       icon: CreditCard,
       title: "Get paid anywhere in the world",
-      description: "Accept payments globally through Stripe, Paystack, and Flutterwave with automatic reconciliation.",
+      description: "Accept payments globally through Flutterwave and Lemon Squeezy with automatic reconciliation.",
       features: [
         "Multiple payment gateways",
         "150+ currencies supported",

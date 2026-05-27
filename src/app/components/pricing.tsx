@@ -37,7 +37,7 @@ export function Pricing() {
         "Unlimited clients",
         "Everything in Free, plus:",
         "AI assistant & follow-ups",
-        "Online payments (Stripe, Paystack, Flutterwave)",
+        "Online payments (Flutterwave, Lemon Squeezy)",
         "Advanced analytics & insights",
         "Automation workflows",
         "WhatsApp integration",

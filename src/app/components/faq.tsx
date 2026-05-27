@@ -12,7 +12,7 @@ export function FAQ() {
     },
     {
       question: "Which payment providers are supported?",
-      answer: "Orbit integrates with Stripe, Flutterwave, and Paystack, giving you flexibility to choose the provider that works best for you."
+      answer: "Orbit integrates with Flutterwave and Lemon Squeezy, giving you flexibility to choose the provider that works best for you."
     },
     {
       question: "Is there a free plan?",
