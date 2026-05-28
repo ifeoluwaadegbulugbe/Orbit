@@ -20,7 +20,7 @@ export function FAQ() {
     },
     {
       question: "Can I use Orbit on mobile?",
-      answer: "Absolutely. Orbit has native iOS and Android apps with full access to all features."
+      answer: "Native iOS and Android apps are coming soon! In the meantime, Orbit is fully responsive and works great in any mobile browser."
     }
   ];
 
