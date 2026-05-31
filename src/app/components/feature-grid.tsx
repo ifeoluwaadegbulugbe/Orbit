@@ -39,7 +39,7 @@ export function FeatureGrid() {
     {
       icon: CreditCard,
       title: "Global Payments",
-      description: "Accept payments worldwide through Flutterwave and Lemon Squeezy integration."
+      description: "Accept payments worldwide through Flutterwave and Stripe integration."
     },
     {
       icon: TrendingUp,

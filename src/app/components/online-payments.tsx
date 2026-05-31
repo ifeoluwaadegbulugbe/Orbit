@@ -91,7 +91,7 @@ export function OnlinePayments() {
             <div className="pt-4">
               <p className="text-xs text-gray-500 mb-3">Supported providers</p>
               <div className="flex gap-3">
-                {["Flutterwave", "Lemon Squeezy"].map((provider) => (
+                {["Flutterwave", "Stripe"].map((provider) => (
                   <div
                     key={provider}
                     className="px-4 py-2 bg-white border border-gray-200 rounded-lg text-sm font-medium text-gray-700"
