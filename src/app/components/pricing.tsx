@@ -30,7 +30,7 @@ export function Pricing() {
     },
     {
       name: "Pro",
-      price: "$17",
+      price: "$12",
       period: "/month",
       description: "For growing businesses",
       features: [
