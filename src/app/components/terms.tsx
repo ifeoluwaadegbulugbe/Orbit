@@ -160,7 +160,7 @@ export function Terms() {
                 Contact Us
               </h2>
               <p>
-                If you have questions about these Terms, please contact us at <a href="mailto:ifeoluwaadegbulugbe@gmail.com" className="text-blue-600 hover:underline">ifeoluwaadegbulugbe@gmail.com</a> or visit <a href="https://getorbitapp.vercel.app/" className="text-blue-600 hover:underline">https://getorbitapp.vercel.app/</a>.
+                If you have questions about these Terms, please contact us at <a href="mailto:getorbitcrm@gmail.com" className="text-blue-600 hover:underline">getorbitcrm@gmail.com</a> or visit <a href="https://getorbitapp.vercel.app/" className="text-blue-600 hover:underline">https://getorbitapp.vercel.app/</a>.
               </p>
             </section>
 
