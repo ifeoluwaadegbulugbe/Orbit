@@ -8,7 +8,7 @@ export function Pricing() {
     {
       name: "Free",
       price: "$0",
-      description: "This is a test",
+      description: "Perfect for getting started",
       features: [
         "Up to 10 clients",
         "Client management",
