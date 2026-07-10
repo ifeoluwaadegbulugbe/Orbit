@@ -1,9 +1,11 @@
+"use client";
+
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Check, ArrowRight, X, Loader2 } from "lucide-react";
 
-const PAYSTACK_PUBLIC_KEY = import.meta.env.VITE_PAYSTACK_PUBLIC_KEY as string;
-const PAYSTACK_PLAN_CODE = import.meta.env.VITE_PAYSTACK_PLAN_CODE as string;
+const PAYSTACK_PUBLIC_KEY = process.env.NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY as string;
+const PAYSTACK_PLAN_CODE = process.env.NEXT_PUBLIC_PAYSTACK_PLAN_CODE as string;
 
 export function Pricing() {
   const [showModal, setShowModal] = useState(false);
@@ -30,7 +32,7 @@ export function Pricing() {
     },
     {
       name: "Pro",
-      price: "$12",
+      price: "$17",
       period: "/month",
       description: "For growing businesses",
       features: [
