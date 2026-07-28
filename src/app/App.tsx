@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Seo } from "./components/Seo";
 import { AnnouncementBar } from "./components/announcement-bar";
 import { Navbar } from "./components/navbar";
 import { Hero } from "./components/hero";
@@ -19,6 +20,11 @@ import { Terms } from "./components/terms";
 function HomePage() {
   return (
     <>
+      <Seo
+        title="Orbit — Business Management Software for Service Businesses"
+        description="Orbit is the AI-powered business operating system for service businesses. Manage clients, bookings, invoicing, and payments — all in one workspace."
+        canonical="https://getorbitcrm.com/"
+      />
       <AnnouncementBar />
       <Navbar />
       <Hero />
