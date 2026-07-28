@@ -118,7 +118,7 @@ export function Privacy() {
                 <li><strong>Right to object:</strong> You can object to our processing of your data based on legitimate interests.</li>
               </ul>
               <p className="mb-4">
-                To exercise any of these rights, please contact us at <a href="mailto:ifeoluwaadegbulugbe@gmail.com" className="text-blue-600 hover:underline">ifeoluwaadegbulugbe@gmail.com</a>. We will respond within 30 days.
+                To exercise any of these rights, please contact us at <a href="mailto:getorbitcrm@gmail.com" className="text-blue-600 hover:underline">getorbitcrm@gmail.com</a>. We will respond within 30 days.
               </p>
               <p>
                 <strong>Lawful basis for processing:</strong> We process your personal data on the basis of consent, contract performance, legitimate interests, and legal obligations as applicable.
@@ -133,7 +133,7 @@ export function Privacy() {
                 Our Service is not directed to children under the age of 13. We do not knowingly collect personal information from children under 13. If we become aware that we have collected personal information from a child under 13, we will take steps to delete that information promptly.
               </p>
               <p>
-                If you are a parent or guardian and believe your child has provided us with personal information, please contact us at <a href="mailto:ifeoluwaadegbulugbe@gmail.com" className="text-blue-600 hover:underline">ifeoluwaadegbulugbe@gmail.com</a>.
+                If you are a parent or guardian and believe your child has provided us with personal information, please contact us at <a href="mailto:getorbitcrm@gmail.com" className="text-blue-600 hover:underline">getorbitcrm@gmail.com</a>.
               </p>
             </section>
 
@@ -176,7 +176,7 @@ export function Privacy() {
               </h2>
               <p className="mb-4">If you have any questions about this Privacy Policy, please contact us:</p>
               <ul className="list-disc pl-6 space-y-2">
-                <li>By email: <a href="mailto:ifeoluwaadegbulugbe@gmail.com" className="text-blue-600 hover:underline">ifeoluwaadegbulugbe@gmail.com</a></li>
+                <li>By email: <a href="mailto:getorbitcrm@gmail.com" className="text-blue-600 hover:underline">getorbitcrm@gmail.com</a></li>
                 <li>By visiting our website: <a href="https://getorbitapp.vercel.app/" className="text-blue-600 hover:underline">https://getorbitapp.vercel.app/</a></li>
               </ul>
             </section>

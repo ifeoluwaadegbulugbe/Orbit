@@ -21,6 +21,7 @@ export function Footer() {
       case "About":    return "#hero";
       case "Features": return "#platform-overview";
       case "Pricing":  return "#pricing";
+      case "Contact":  return "mailto:getorbitcrm@gmail.com";
       default:         return "#";
     }
   };
@@ -73,14 +74,29 @@ export function Footer() {
           </p>
 
           <div className="flex items-center gap-6">
-            <a href="#" className="text-sm text-gray-600 hover:text-gray-800 transition-colors">
-              Twitter
+            <a
+              href="https://x.com/orbitcrm?s=21"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-gray-600 hover:text-gray-800 transition-colors"
+            >
+              X
             </a>
-            <a href="#" className="text-sm text-gray-600 hover:text-gray-800 transition-colors">
+            <a
+              href="https://www.linkedin.com/company/useorbitcrm/about/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-gray-600 hover:text-gray-800 transition-colors"
+            >
               LinkedIn
             </a>
-            <a href="#" className="text-sm text-gray-600 hover:text-gray-800 transition-colors">
-              GitHub
+            <a
+              href="https://www.tiktok.com/@useorbitapp"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-gray-600 hover:text-gray-800 transition-colors"
+            >
+              TikTok
             </a>
           </div>
         </div>
