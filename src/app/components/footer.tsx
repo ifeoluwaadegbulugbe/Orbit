@@ -13,6 +13,7 @@ export function Footer() {
   const internalRoutes: Record<string, string> = {
     Privacy: "/privacy",
     Terms: "/terms",
+    Pricing: "/pricing",
   };
 
   // Links that use plain <a> with hash or external href
@@ -20,7 +21,6 @@ export function Footer() {
     switch (link) {
       case "About":    return "#hero";
       case "Features": return "#platform-overview";
-      case "Pricing":  return "#pricing";
       case "Contact":  return "mailto:getorbitcrm@gmail.com";
       default:         return "#";
     }

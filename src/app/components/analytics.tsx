@@ -3,7 +3,7 @@ import { TrendingUp } from "lucide-react";
 
 export function Analytics() {
   return (
-    <section className="py-24 px-6 bg-white">
+    <section id="analytics" className="py-24 px-6 bg-white">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

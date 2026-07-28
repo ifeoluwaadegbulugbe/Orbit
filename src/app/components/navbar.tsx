@@ -1,4 +1,5 @@
 import { motion, useScroll, useTransform } from "motion/react";
+import { Link } from "react-router-dom";
 
 export function Navbar() {
   const { scrollY } = useScroll();
@@ -38,12 +39,12 @@ export function Navbar() {
             >
               Features
             </a>
-            <a
-              href="#pricing"
+            <Link
+              to="/pricing"
               className="text-sm text-gray-600 hover:text-gray-800 transition-colors"
             >
               Pricing
-            </a>
+            </Link>
           </motion.div>
 
           <motion.div

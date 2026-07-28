@@ -16,6 +16,7 @@ import { Footer } from "./components/footer";
 import { ScrollToTop } from "./components/scroll-to-top";
 import { Privacy } from "./components/privacy";
 import { Terms } from "./components/terms";
+import { PricingPage } from "./components/pricing-page";
 
 function HomePage() {
   return (
@@ -49,6 +50,7 @@ export default function App() {
       <div className="min-h-screen bg-white antialiased">
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/pricing" element={<PricingPage />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
         </Routes>

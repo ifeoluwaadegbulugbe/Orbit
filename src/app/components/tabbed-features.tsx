@@ -6,6 +6,8 @@ export function TabbedFeatures() {
     {
       id: "crm",
       label: "CRM",
+      keyword: "Client management & CRM",
+      hasSection: false,
       icon: Users,
       title: "Client relationships that matter",
       description: "Keep every client detail, conversation history, and project milestone in one beautiful, organized workspace.",
@@ -21,6 +23,8 @@ export function TabbedFeatures() {
     {
       id: "bookings",
       label: "Bookings",
+      keyword: "Appointment scheduling & booking",
+      hasSection: false,
       icon: Calendar,
       title: "Scheduling made effortless",
       description: "Let clients book time with you automatically. Sync with your calendar and send smart reminders.",
@@ -36,6 +40,8 @@ export function TabbedFeatures() {
     {
       id: "invoices",
       label: "Invoices",
+      keyword: "Invoicing software",
+      hasSection: false,
       icon: FileText,
       title: "Professional invoicing in seconds",
       description: "Create beautiful, branded invoices that get paid faster. Track everything from draft to payment.",
@@ -51,6 +57,8 @@ export function TabbedFeatures() {
     {
       id: "payments",
       label: "Payments",
+      keyword: "Accept online payments",
+      hasSection: true,
       icon: CreditCard,
       title: "Get paid anywhere in the world",
       description: "Accept payments globally through Flutterwave and Stripe with automatic reconciliation.",
@@ -64,8 +72,10 @@ export function TabbedFeatures() {
       bgGradient: "from-green-50 to-green-100/50"
     },
     {
-      id: "ai",
+      id: "ai-assistant",
       label: "AI Assistant",
+      keyword: "AI business assistant",
+      hasSection: true,
       icon: Sparkles,
       title: "AI that works for you",
       description: "Smart automation that learns your business patterns and suggests the next best action.",
@@ -81,6 +91,8 @@ export function TabbedFeatures() {
     {
       id: "analytics",
       label: "Analytics",
+      keyword: "Business analytics & reporting",
+      hasSection: true,
       icon: TrendingUp,
       title: "Insights that drive growth",
       description: "Real-time dashboards showing revenue, client trends, and business health at a glance.",
@@ -141,9 +153,14 @@ export function TabbedFeatures() {
                 </div>
 
                 {/* Title */}
-                <h3 className="text-2xl font-bold text-gray-800 mb-3 leading-tight">
+                <h3 className="text-2xl font-bold text-gray-800 mb-1 leading-tight">
                   {feature.title}
                 </h3>
+
+                {/* Keyword subtitle */}
+                <p className="text-sm text-gray-500 mb-3">
+                  {feature.keyword}
+                </p>
 
                 {/* Description */}
                 <p className="text-gray-600 mb-6 leading-relaxed">
@@ -165,13 +182,21 @@ export function TabbedFeatures() {
                 </ul>
 
                 {/* CTA Link */}
-                <a
-                  href="#ai-assistant"
-                  className="group/btn inline-flex items-center gap-2 text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors"
-                >
-                  Learn more
-                  <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
-                </a>
+                {feature.hasSection ? (
+                  <a
+                    href={`#${feature.id}`}
+                    className="group/btn inline-flex items-center gap-2 text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors"
+                  >
+                    Learn more
+                    <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                  </a>
+                ) : (
+                  // TODO: link to /features/[topic] once that page ships.
+                  <span className="inline-flex items-center gap-2 text-sm font-medium text-gray-400 cursor-default">
+                    Learn more
+                    <ArrowRight className="w-4 h-4" />
+                  </span>
+                )}
               </motion.div>
             );
           })}
