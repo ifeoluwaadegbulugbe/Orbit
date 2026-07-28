@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import { Link } from "react-router-dom";
 import { CreditCard, Check } from "lucide-react";
 
 export function OnlinePayments() {
@@ -71,11 +72,12 @@ export function OnlinePayments() {
             </h2>
 
             <p className="text-lg text-gray-600 leading-relaxed">
-              Accept payments globally with seamless integration to leading payment providers. Support for 150+ currencies worldwide.
+              Every payment lands in your Orbit Wallet — accept cards, bank transfers, and mobile money through leading payment providers, then withdraw to your bank whenever you're ready.
             </p>
 
             <div className="space-y-3">
               {[
+                "Built-in Orbit Wallet",
                 "Multiple payment providers",
                 "Automatic tracking and receipts",
                 "Secure encrypted transactions",
@@ -100,6 +102,12 @@ export function OnlinePayments() {
                   </div>
                 ))}
               </div>
+            </div>
+
+            <div className="pt-2">
+              <Link to="/features/payments" className="text-sm font-medium text-gray-700 hover:text-gray-900 underline">
+                Learn more about Orbit Wallet
+              </Link>
             </div>
           </motion.div>
         </div>

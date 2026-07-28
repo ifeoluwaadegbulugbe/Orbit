@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 
 export function Footer() {
   const navigation = {
-    product: ["Features", "Pricing", "Roadmap"],
+    product: ["Features", "Bookings", "Payments", "Pricing", "Roadmap"],
     company: ["About", "Blog", "Careers", "Contact"],
     resources: ["Documentation", "Help Center", "Community", "API"],
     legal: ["Privacy", "Terms", "Security"]
@@ -14,6 +14,8 @@ export function Footer() {
     Privacy: "/privacy",
     Terms: "/terms",
     Pricing: "/pricing",
+    Bookings: "/features/booking",
+    Payments: "/features/payments",
   };
 
   // Links that use plain <a> with hash or external href

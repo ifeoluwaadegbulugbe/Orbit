@@ -16,10 +16,11 @@ export function Navbar() {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            className="flex items-center gap-2"
           >
-            <img src="/logo.svg" alt="Orbit logo" className="w-8 h-8" />
-            <span className="text-lg font-semibold text-gray-700">Orbit</span>
+            <Link to="/" className="flex items-center gap-2">
+              <img src="/logo.svg" alt="Orbit logo" className="w-8 h-8" />
+              <span className="text-lg font-semibold text-gray-700">Orbit</span>
+            </Link>
           </motion.div>
 
           <motion.div

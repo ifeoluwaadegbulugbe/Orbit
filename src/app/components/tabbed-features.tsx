@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import { Link } from "react-router-dom";
 import { Users, Calendar, FileText, CreditCard, Sparkles, TrendingUp, ArrowRight } from "lucide-react";
 
 export function TabbedFeatures() {
@@ -7,7 +8,7 @@ export function TabbedFeatures() {
       id: "crm",
       label: "CRM",
       keyword: "Client management & CRM",
-      hasSection: false,
+      href: null,
       icon: Users,
       title: "Client relationships that matter",
       description: "Keep every client detail, conversation history, and project milestone in one beautiful, organized workspace.",
@@ -24,7 +25,7 @@ export function TabbedFeatures() {
       id: "bookings",
       label: "Bookings",
       keyword: "Appointment scheduling & booking",
-      hasSection: false,
+      href: "/features/booking",
       icon: Calendar,
       title: "Scheduling made effortless",
       description: "Let clients book time with you automatically. Sync with your calendar and send smart reminders.",
@@ -41,7 +42,7 @@ export function TabbedFeatures() {
       id: "invoices",
       label: "Invoices",
       keyword: "Invoicing software",
-      hasSection: false,
+      href: null,
       icon: FileText,
       title: "Professional invoicing in seconds",
       description: "Create beautiful, branded invoices that get paid faster. Track everything from draft to payment.",
@@ -58,7 +59,7 @@ export function TabbedFeatures() {
       id: "payments",
       label: "Payments",
       keyword: "Accept online payments",
-      hasSection: true,
+      href: "/features/payments",
       icon: CreditCard,
       title: "Get paid anywhere in the world",
       description: "Accept payments globally through Flutterwave and Stripe with automatic reconciliation.",
@@ -75,7 +76,7 @@ export function TabbedFeatures() {
       id: "ai-assistant",
       label: "AI Assistant",
       keyword: "AI business assistant",
-      hasSection: true,
+      href: "#ai-assistant",
       icon: Sparkles,
       title: "AI that works for you",
       description: "Smart automation that learns your business patterns and suggests the next best action.",
@@ -92,7 +93,7 @@ export function TabbedFeatures() {
       id: "analytics",
       label: "Analytics",
       keyword: "Business analytics & reporting",
-      hasSection: true,
+      href: "#analytics",
       icon: TrendingUp,
       title: "Insights that drive growth",
       description: "Real-time dashboards showing revenue, client trends, and business health at a glance.",
@@ -182,14 +183,24 @@ export function TabbedFeatures() {
                 </ul>
 
                 {/* CTA Link */}
-                {feature.hasSection ? (
-                  <a
-                    href={`#${feature.id}`}
-                    className="group/btn inline-flex items-center gap-2 text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors"
-                  >
-                    Learn more
-                    <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
-                  </a>
+                {feature.href ? (
+                  feature.href.startsWith("/") ? (
+                    <Link
+                      to={feature.href}
+                      className="group/btn inline-flex items-center gap-2 text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors"
+                    >
+                      Learn more
+                      <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                    </Link>
+                  ) : (
+                    <a
+                      href={feature.href}
+                      className="group/btn inline-flex items-center gap-2 text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors"
+                    >
+                      Learn more
+                      <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                    </a>
+                  )
                 ) : (
                   // TODO: link to /features/[topic] once that page ships.
                   <span className="inline-flex items-center gap-2 text-sm font-medium text-gray-400 cursor-default">

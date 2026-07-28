@@ -9,7 +9,9 @@ import { AIAssistant } from "./components/ai-assistant";
 import { OnlinePayments } from "./components/online-payments";
 import { Analytics } from "./components/analytics";
 import { Automation } from "./components/automation";
+import { IndustryStrip } from "./components/industry-strip";
 import { Pricing } from "./components/pricing";
+import { FounderStory } from "./components/founder-story";
 import { FAQ } from "./components/faq";
 import { CTA } from "./components/cta";
 import { Footer } from "./components/footer";
@@ -17,6 +19,8 @@ import { ScrollToTop } from "./components/scroll-to-top";
 import { Privacy } from "./components/privacy";
 import { Terms } from "./components/terms";
 import { PricingPage } from "./components/pricing-page";
+import { BookingPage } from "./components/booking-page";
+import { PaymentsPage } from "./components/payments-page";
 
 function HomePage() {
   return (
@@ -35,7 +39,9 @@ function HomePage() {
       <OnlinePayments />
       <Analytics />
       <Automation />
+      <IndustryStrip />
       <Pricing />
+      <FounderStory />
       <FAQ />
       <CTA />
       <Footer />
@@ -51,6 +57,8 @@ export default function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/pricing" element={<PricingPage />} />
+          <Route path="/features/booking" element={<BookingPage />} />
+          <Route path="/features/payments" element={<PaymentsPage />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
         </Routes>

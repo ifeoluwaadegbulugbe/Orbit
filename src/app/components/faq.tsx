@@ -16,7 +16,7 @@ export function FAQ() {
     },
     {
       question: "Is there a free plan?",
-      answer: "Yes! Our free plan includes client management, bookings, invoices, and reminders for up to 50 clients. Upgrade to Pro anytime."
+      answer: "Yes! Our free plan includes client management, bookings, invoices, and reminders for up to 10 clients. Upgrade to Pro anytime."
     },
     {
       question: "Can I use Orbit on mobile?",

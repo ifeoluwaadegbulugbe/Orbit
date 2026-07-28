@@ -30,7 +30,7 @@ export function Pricing() {
         "Unlimited clients",
         "Everything in Free, plus:",
         "AI assistant & follow-ups",
-        "Online payments (Flutterwave, Stripe)",
+        "Online payments via Orbit Wallet (Flutterwave, Stripe)",
         "Advanced analytics & insights",
         "Automation workflows",
         "WhatsApp integration",
