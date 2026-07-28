@@ -35,7 +35,7 @@ export function Hero() {
             </h1>
 
             <p className="text-base md:text-xl lg:text-2xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
-              Orbit is the AI-powered business management platform for service businesses — manage clients, bookings, invoicing, and payments in one place.
+              Orbit is the AI-powered business management platform for service businesses, helping you manage clients, bookings, invoicing, and payments in one place.
             </p>
           </motion.div>
 
