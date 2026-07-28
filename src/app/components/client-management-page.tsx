@@ -1,4 +1,4 @@
-// DRAFT — hero + pain-point framing only, per Day 2 evening scope.
+// DRAFT: hero + pain-point framing only, per Day 2 evening scope.
 // Not yet wired into App.tsx routes: publishing this live before the feature
 // breakdown, FAQ, and schema are added would ship a thin page, which hurts
 // SEO more than not having the page at all. Finish the rest, then add:
@@ -14,7 +14,7 @@ export function ClientManagementPage() {
     <>
       <Seo
         title="Client Management Software for Service Businesses | Orbit"
-        description="Orbit's client management software keeps contacts, conversations, and project history in one place — no more spreadsheets or scattered WhatsApp threads."
+        description="Orbit's client management software keeps contacts, conversations, and project history in one place, not scattered across spreadsheets and WhatsApp threads."
         canonical="https://getorbitcrm.com/features/client-management"
       />
       <Navbar />
@@ -46,7 +46,7 @@ export function ClientManagementPage() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed"
             >
-              Every client detail, conversation, and project milestone in one organized workspace — instead of scattered across spreadsheets, notebooks, and WhatsApp threads.
+              Every client detail, conversation, and project milestone in one organized workspace, instead of scattered across spreadsheets, notebooks, and WhatsApp threads.
             </motion.p>
 
             <motion.div
@@ -60,7 +60,7 @@ export function ClientManagementPage() {
                 rel="noopener noreferrer"
                 className="group inline-flex items-center gap-2 rounded-xl bg-pink-500 px-8 py-4 font-semibold text-white shadow-lg shadow-pink-500/25 transition-all hover:bg-pink-600"
               >
-                Organize your clients — free
+                Organize your clients for free
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
               </a>
             </motion.div>
@@ -79,7 +79,7 @@ export function ClientManagementPage() {
               As your client list grows past a handful of people, this patchwork stops working. Details get lost, follow-ups get missed, and every new client adds more places to check before you can answer a simple question about their account.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Orbit's client management brings all of it — contact details, activity history, notes, and files — into a single record per client, so nothing depends on you remembering where you put it.
+              Orbit's client management brings contact details, activity history, notes, and files into a single record per client, so nothing depends on you remembering where you put it.
             </p>
           </div>
         </section>

@@ -10,7 +10,7 @@ import { Footer } from "./footer";
 const pricingFaqs = [
   {
     question: "Is there a contract or long-term commitment?",
-    answer: "No. Orbit Pro is billed monthly with no long-term contract — upgrade, downgrade, or cancel anytime."
+    answer: "No. Orbit Pro is billed monthly with no long-term contract. Upgrade, downgrade, or cancel anytime."
   },
   {
     question: "Can I cancel my Pro subscription anytime?",
@@ -18,7 +18,7 @@ const pricingFaqs = [
   },
   {
     question: "Can I pay for my Pro subscription with local payment methods?",
-    answer: "Yes. In addition to major cards, you can pay for your Pro subscription with Paystack, making it easy to subscribe from Nigeria and across Africa."
+    answer: "Yes. In addition to major cards, you can pay for your Pro subscription with Paystack, making it easy to subscribe from anywhere in Africa."
   }
 ];
 
@@ -99,7 +99,7 @@ export function PricingPage() {
   return (
     <>
       <Seo
-        title="Orbit Pricing — Simple, Transparent Plans for Service Businesses"
+        title="Orbit Pricing: Simple, Transparent Plans for Service Businesses"
         description="See Orbit's pricing. Start free with up to 10 clients, or upgrade to Pro for $12/month with unlimited clients, AI assistant, online payments, and more."
         canonical="https://getorbitcrm.com/pricing"
         schema={pricingFaqSchema}

@@ -11,7 +11,7 @@ const bookingFeatures = [
   {
     icon: Calendar,
     title: "Custom booking pages",
-    description: "Share one link and let clients pick a time that works — no back-and-forth. Your availability updates in real time, with automatic timezone detection so nobody books the wrong slot."
+    description: "Share one link and let clients pick a time that works, no back-and-forth needed. Your availability updates in real time, with automatic timezone detection so nobody books the wrong slot."
   },
   {
     icon: Globe,
@@ -21,7 +21,7 @@ const bookingFeatures = [
   {
     icon: Bell,
     title: "Automated reminders",
-    description: "Reminders go out over email and WhatsApp automatically before every appointment, so clients show up — without you having to chase them down the day before."
+    description: "Reminders go out over email and WhatsApp automatically before every appointment, so clients show up, without you having to chase them down the day before."
   },
   {
     icon: CreditCard,
@@ -33,7 +33,7 @@ const bookingFeatures = [
 const bookingFaqs = [
   {
     question: "Do clients need an account to book an appointment?",
-    answer: "No. Share your Orbit booking link and clients pick a time directly — no signup or app download required on their end."
+    answer: "No. Share your Orbit booking link and clients pick a time directly. No signup or app download is required on their end."
   },
   {
     question: "Will Orbit double-book me if I already have something on my calendar?",
@@ -126,7 +126,7 @@ export function BookingPage() {
     <>
       <Seo
         title="Appointment Scheduling Software | Orbit"
-        description="Orbit's appointment scheduling software gives service businesses a booking page, calendar sync, deposits, and automated reminders — so you stop double-booking and reduce no-shows."
+        description="Orbit's appointment scheduling software gives service businesses a booking page, calendar sync, deposits, and automated reminders, so you stop double-booking and reduce no-shows."
         canonical="https://getorbitcrm.com/features/booking"
         schema={bookingFaqSchema}
       />
@@ -159,7 +159,7 @@ export function BookingPage() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed"
             >
-              A simple online booking system that syncs with your calendar, collects deposits up front, and reminds clients automatically — so you spend less time managing schedules and more time doing the work.
+              A simple online booking system that syncs with your calendar, collects deposits up front, and reminds clients automatically, so you spend less time managing schedules and more time doing the work.
             </motion.p>
 
             <motion.div
@@ -173,7 +173,7 @@ export function BookingPage() {
                 rel="noopener noreferrer"
                 className="group inline-flex items-center gap-2 rounded-xl bg-pink-500 px-8 py-4 font-semibold text-white shadow-lg shadow-pink-500/25 transition-all hover:bg-pink-600"
               >
-                Start booking clients online — free
+                Start booking clients online for free
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
               </a>
             </motion.div>
@@ -186,10 +186,10 @@ export function BookingPage() {
               Booking shouldn't happen over 15 WhatsApp messages
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed">
-              "Are you free Tuesday?" "What time works?" "Actually can we push it to Wednesday?" For most service businesses, scheduling still happens as a slow back-and-forth over chat — and every extra message is a chance for a client to lose interest, book somewhere else, or end up double-booked against something already on your calendar.
+              "Are you free Tuesday?" "What time works?" "Actually can we push it to Wednesday?" For most service businesses, scheduling still happens as a slow back-and-forth over chat, and every extra message is a chance for a client to lose interest, book somewhere else, or end up double-booked against something already on your calendar.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Then there's the appointment that gets no-showed entirely, costing you the slot and the revenue with nothing to show for it. Without deposits or reminders, there's no real deterrent — and no easy way to recover that lost time.
+              Then there's the appointment that gets no-showed entirely, costing you the slot and the revenue with nothing to show for it. Without deposits or reminders, there's no real deterrent, and no easy way to recover that lost time.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
               Orbit replaces the back-and-forth with a single booking page that stays in sync with your real calendar, collects a deposit up front when you need one, and reminds clients automatically so appointments actually happen.
@@ -251,7 +251,7 @@ export function BookingPage() {
               rel="noopener noreferrer"
               className="group inline-flex items-center gap-2 rounded-xl bg-pink-500 px-8 py-4 font-semibold text-white shadow-lg shadow-pink-500/25 transition-all hover:bg-pink-600"
             >
-              Start booking clients online — free
+              Start booking clients online for free
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
             </a>
             <div className="pt-2">

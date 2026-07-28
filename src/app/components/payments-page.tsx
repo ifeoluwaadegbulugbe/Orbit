@@ -10,17 +10,17 @@ const paymentFeatures = [
   {
     icon: Wallet,
     title: "Orbit Wallet",
-    description: "Every payment your clients make — by card, bank transfer, or mobile money — lands directly in your Orbit Wallet. See your current balance, pending balance, and full transaction history in one dashboard."
+    description: "Every payment your clients make, by card, bank transfer, or mobile money, lands directly in your Orbit Wallet. See your current balance, pending balance, and full transaction history in one dashboard."
   },
   {
     icon: Repeat,
     title: "Automatic reconciliation",
-    description: "The moment a payment succeeds, Orbit marks the invoice paid, updates your revenue analytics, and records the transaction against the right client and project — no manual matching of bank alerts to invoices."
+    description: "The moment a payment succeeds, Orbit marks the invoice paid, updates your revenue analytics, and records the transaction against the right client and project. No manual matching of bank alerts to invoices is needed."
   },
   {
     icon: Receipt,
     title: "Deposits, partial payments & refunds",
-    description: "Request a deposit before starting work, let clients pay an invoice in installments, or issue a refund when you need to — all from the same wallet, with a receipt generated automatically every time."
+    description: "Request a deposit before starting work, let clients pay an invoice in installments, or issue a refund when you need to, all from the same wallet, with a receipt generated automatically every time."
   },
   {
     icon: ShieldCheck,
@@ -124,8 +124,8 @@ export function PaymentsPage() {
   return (
     <>
       <Seo
-        title="Accept Payments Online in Nigeria | Orbit Wallet"
-        description="Accept payments online in Nigeria and beyond with Orbit Wallet — invoice clients, collect deposits, get paid by card, bank transfer, or mobile money, and withdraw to your bank anytime."
+        title="Accept Payments Online in Africa | Orbit Wallet"
+        description="Accept payments online in Africa with Orbit Wallet: invoice clients, collect deposits, get paid by card, bank transfer, or mobile money, and withdraw to your bank anytime."
         canonical="https://getorbitcrm.com/features/payments"
         schema={paymentsFaqSchema}
       />
@@ -149,7 +149,7 @@ export function PaymentsPage() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-4xl md:text-6xl font-bold text-gray-800 tracking-tight leading-tight"
             >
-              Accept payments online in Nigeria — without chasing bank transfers
+              Accept payments online in Africa without chasing bank transfers
             </motion.h1>
 
             <motion.p
@@ -158,7 +158,7 @@ export function PaymentsPage() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed"
             >
-              Orbit Wallet lets clients pay you by card, bank transfer, or mobile money, deposits straight into your wallet, and lets you withdraw to your bank whenever you're ready — all without setting up a separate merchant account.
+              Orbit Wallet lets clients pay you by card, bank transfer, or mobile money, deposits straight into your wallet, and lets you withdraw to your bank whenever you're ready, all without setting up a separate merchant account.
             </motion.p>
 
             <motion.div
@@ -185,13 +185,13 @@ export function PaymentsPage() {
               Getting paid shouldn't mean a folder of screenshots
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed">
-              You send a bank account number over WhatsApp, wait for a transfer, and ask for a screenshot as proof. Then you have to remember which client paid, for what, and whether the invoice is actually settled — usually by scrolling back through chat history.
+              You send a bank account number over WhatsApp, wait for a transfer, and ask for a screenshot as proof. Then you have to remember which client paid, for what, and whether the invoice is actually settled, usually by scrolling back through chat history.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Most payment tools don't make this easier for a solo business owner. They expect you to set up a merchant account, get through an approval process, and manage a separate dashboard — before you've collected a single payment.
+              Most payment tools don't make this easier for a solo business owner. They expect you to set up a merchant account, get through an approval process, and manage a separate dashboard before you've collected a single payment.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Orbit removes that step entirely. Every invoice you send includes a secure payment page. When a client pays, the money goes straight into your Orbit Wallet, the invoice is marked paid automatically, and your revenue numbers update on their own — no spreadsheet, no screenshots, no separate Stripe, Flutterwave, or Paystack account to set up yourself.
+              Orbit removes that step entirely. Every invoice you send includes a secure payment page. When a client pays, the money goes straight into your Orbit Wallet, the invoice is marked paid automatically, and your revenue numbers update on their own. No spreadsheet, no screenshots, no separate Stripe, Flutterwave, or Paystack account to set up yourself.
             </p>
           </div>
         </section>
@@ -208,7 +208,7 @@ export function PaymentsPage() {
                 One wallet for everything you get paid
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Orbit Wallet is built into invoices, bookings, and services — not a separate app to manage.
+                Orbit Wallet is built into invoices, bookings, and services, not a separate app to manage.
               </p>
             </motion.div>
 
@@ -242,10 +242,10 @@ export function PaymentsPage() {
               From invoice to your bank account
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Send an invoice or request a booking deposit. Your client pays with a card, bank transfer, or mobile money — whatever's available to them. The payment lands in your Orbit Wallet immediately, and Orbit records everything: the client, the project, the invoice, the date, and the method.
+              Send an invoice or request a booking deposit. Your client pays with a card, bank transfer, or mobile money, whatever's available to them. The payment lands in your Orbit Wallet immediately, and Orbit records everything: the client, the project, the invoice, the date, and the method.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
-              From there, the balance is yours to withdraw to your linked bank account whenever you choose. Nothing sits in limbo waiting for you to reconcile it manually, and your client profiles show a full payment timeline — invoices, deposits, and completed payments — without you having to track any of it by hand.
+              From there, the balance is yours to withdraw to your linked bank account whenever you choose. Nothing sits in limbo waiting for you to reconcile it manually, and your client profiles show a full payment timeline: invoices, deposits, and completed payments, without you having to track any of it by hand.
             </p>
           </div>
         </section>

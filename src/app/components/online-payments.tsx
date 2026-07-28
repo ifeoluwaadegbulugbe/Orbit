@@ -72,7 +72,7 @@ export function OnlinePayments() {
             </h2>
 
             <p className="text-lg text-gray-600 leading-relaxed">
-              Every payment lands in your Orbit Wallet — accept cards, bank transfers, and mobile money through leading payment providers, then withdraw to your bank whenever you're ready.
+              Every payment lands in your Orbit Wallet. Accept cards, bank transfers, and mobile money through leading payment providers, then withdraw to your bank whenever you're ready.
             </p>
 
             <div className="space-y-3">

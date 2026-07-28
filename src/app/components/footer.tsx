@@ -9,20 +9,20 @@ export function Footer() {
     legal: ["Privacy", "Terms", "Security"]
   };
 
-  // Links that use React Router <Link> (internal pages)
+  // Links that use React Router <Link> (internal pages, including in-page anchors on "/")
   const internalRoutes: Record<string, string> = {
     Privacy: "/privacy",
     Terms: "/terms",
     Pricing: "/pricing",
     Bookings: "/features/booking",
     Payments: "/features/payments",
+    About: "/#hero",
+    Features: "/#platform-overview",
   };
 
   // Links that use plain <a> with hash or external href
   const getHref = (link: string) => {
     switch (link) {
-      case "About":    return "#hero";
-      case "Features": return "#platform-overview";
       case "Contact":  return "mailto:getorbitcrm@gmail.com";
       default:         return "#";
     }

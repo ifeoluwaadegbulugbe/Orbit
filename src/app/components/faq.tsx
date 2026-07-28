@@ -12,7 +12,7 @@ export function FAQ() {
     },
     {
       question: "Which payment providers are supported?",
-      answer: "Orbit integrates with Flutterwave and Stripe, giving you flexibility to choose the provider that works best for you."
+      answer: "Orbit Wallet manages payments for you through trusted providers like Flutterwave and Stripe, so you don't need to set up or choose a payment provider yourself."
     },
     {
       question: "Is there a free plan?",

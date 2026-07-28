@@ -90,7 +90,7 @@ export function Privacy() {
                 We use cookies and similar tracking technologies to track activity on our Service and to hold certain information. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent.
               </p>
               <p>
-                We use cookies for the following purposes: analytics and performance, functional preferences, and marketing (where applicable). Third-party services we use — such as Stripe, Google Analytics — may also set their own cookies.
+                We use cookies for the following purposes: analytics and performance, functional preferences, and marketing (where applicable). Third-party services we use, such as Stripe and Google Analytics, may also set their own cookies.
               </p>
             </section>
 
