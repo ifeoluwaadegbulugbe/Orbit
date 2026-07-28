@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Seo } from "@/components/Seo";
+import { Seo } from "./components/Seo";
 import { AnnouncementBar } from "./components/announcement-bar";
 import { Navbar } from "./components/navbar";
 import { Hero } from "./components/hero";
