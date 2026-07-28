@@ -10,7 +10,7 @@ export function AnnouncementBar() {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-center">
         <p className="text-sm text-gray-600">
-          Orbit Pro launches soon — Join the waitlist →
+          Orbit Pro is here — unlimited clients, AI assistant, and more →
         </p>
       </div>
     </motion.div>

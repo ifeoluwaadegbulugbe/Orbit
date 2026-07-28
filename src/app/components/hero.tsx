@@ -19,7 +19,7 @@ export function Hero() {
             className="inline-flex items-center gap-2 px-4 py-2 bg-white border border-gray-200 rounded-full shadow-sm"
           >
             <span className="w-2 h-2 bg-pink-500 rounded-full animate-pulse" />
-            <span className="text-sm text-gray-600">Now in early access</span>
+            <span className="text-sm text-gray-600">Built for service businesses</span>
           </motion.div>
 
           <motion.div
@@ -29,13 +29,13 @@ export function Hero() {
             className="space-y-6"
           >
             <h1 className="text-[40px] md:text-6xl lg:text-7xl xl:text-8xl font-bold text-gray-800 leading-[1.2] md:leading-[1.1] tracking-tight">
-              Your entire business
+              Run your entire service business
               <br />
               <span className="text-gray-400">in one workspace</span>
             </h1>
 
             <p className="text-base md:text-xl lg:text-2xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
-              Manage clients, bookings, invoices, and payments with AI-powered automation.
+              Orbit is the AI-powered business management platform for service businesses — manage clients, bookings, invoicing, and payments in one place.
             </p>
           </motion.div>
 
@@ -45,7 +45,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="flex flex-wrap items-center justify-center gap-4"
           >
-            <a
+            
               href="https://getorbitapp.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
