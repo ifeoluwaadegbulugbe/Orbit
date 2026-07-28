@@ -28,7 +28,7 @@ function HomePage() {
       <Seo
         title="Orbit: Business Management Software for Service Businesses"
         description="Orbit is the AI-powered business operating system for service businesses. Manage clients, bookings, invoicing, and payments, all in one workspace."
-        canonical="https://getorbitcrm.com/"
+        canonical="https://www.getorbitcrm.com/"
       />
       <AnnouncementBar />
       <Navbar />

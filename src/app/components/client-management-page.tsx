@@ -15,7 +15,7 @@ export function ClientManagementPage() {
       <Seo
         title="Client Management Software for Service Businesses | Orbit"
         description="Orbit's client management software keeps contacts, conversations, and project history in one place, not scattered across spreadsheets and WhatsApp threads."
-        canonical="https://getorbitcrm.com/features/client-management"
+        canonical="https://www.getorbitcrm.com/features/client-management"
       />
       <Navbar />
       <div className="min-h-screen bg-white pt-20">

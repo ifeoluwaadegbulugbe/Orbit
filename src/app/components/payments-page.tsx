@@ -126,7 +126,7 @@ export function PaymentsPage() {
       <Seo
         title="Accept Payments Online in Africa | Orbit Wallet"
         description="Accept payments online in Africa with Orbit Wallet: invoice clients, collect deposits, get paid by card, bank transfer, or mobile money, and withdraw to your bank anytime."
-        canonical="https://getorbitcrm.com/features/payments"
+        canonical="https://www.getorbitcrm.com/features/payments"
         schema={paymentsFaqSchema}
       />
       <Navbar />

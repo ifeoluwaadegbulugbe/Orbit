@@ -127,7 +127,7 @@ export function BookingPage() {
       <Seo
         title="Appointment Scheduling Software | Orbit"
         description="Orbit's appointment scheduling software gives service businesses a booking page, calendar sync, deposits, and automated reminders, so you stop double-booking and reduce no-shows."
-        canonical="https://getorbitcrm.com/features/booking"
+        canonical="https://www.getorbitcrm.com/features/booking"
         schema={bookingFaqSchema}
       />
       <Navbar />
