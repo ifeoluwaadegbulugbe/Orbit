@@ -11,7 +11,6 @@ import { Analytics } from "./components/analytics";
 import { Automation } from "./components/automation";
 import { IndustryStrip } from "./components/industry-strip";
 import { Pricing } from "./components/pricing";
-import { FounderStory } from "./components/founder-story";
 import { FAQ } from "./components/faq";
 import { CTA } from "./components/cta";
 import { Footer } from "./components/footer";
@@ -41,7 +40,6 @@ function HomePage() {
       <Automation />
       <IndustryStrip />
       <Pricing />
-      <FounderStory />
       <FAQ />
       <CTA />
       <Footer />
