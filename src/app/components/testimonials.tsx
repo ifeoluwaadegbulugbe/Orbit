@@ -68,10 +68,10 @@ export function Testimonials() {
 
           <h2 className="text-5xl lg:text-6xl font-bold text-gray-800 tracking-tight leading-tight">
             Loved by
-            <span className="text-gray-400"> thousands</span>
+            <span className="text-gray-400"> service businesses</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Join over 10,000 freelancers and business owners who trust Orbit every day.
+            Freelancers and business owners use Orbit to manage clients, bookings, and payments every day.
           </p>
         </motion.div>
 

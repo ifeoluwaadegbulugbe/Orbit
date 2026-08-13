@@ -30,7 +30,7 @@ export function CTA() {
               </h2>
 
               <p className="text-base md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-                Join over 10,000 freelancers and business owners who've streamlined their operations with Orbit.
+                Streamline your client management, bookings, invoicing, and payments, all from one place.
               </p>
 
               <div className="flex items-center justify-center pt-2 md:pt-4">
