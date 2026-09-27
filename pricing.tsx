@@ -27,7 +27,7 @@ export function Pricing() {
         "Email support"
       ],
       cta: "Get started free",
-      href: "https://getorbitapp.vercel.app/",
+      href: "https://app.getorbitcrm.com/",
       highlighted: false
     },
     {
@@ -83,7 +83,7 @@ export function Pricing() {
         console.log("Payment successful:", response.reference);
         setLoading(false);
         setShowModal(false);
-        window.location.href = "https://getorbitapp.vercel.app/";
+        window.location.href = "https://app.getorbitcrm.com/";
       },
       onClose() {
         setLoading(false);

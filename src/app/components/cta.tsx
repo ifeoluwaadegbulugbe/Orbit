@@ -35,7 +35,7 @@ export function CTA() {
 
               <div className="flex items-center justify-center pt-2 md:pt-4">
                 <a
-                  href="https://getorbitapp.vercel.app/"
+                  href="https://app.getorbitcrm.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group px-6 py-3 md:px-8 md:py-4 bg-pink-500 hover:bg-pink-600 text-white text-base rounded-xl font-semibold transition-all shadow-xl shadow-pink-500/25 inline-flex items-center gap-2"

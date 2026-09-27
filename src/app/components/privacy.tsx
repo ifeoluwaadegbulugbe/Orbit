@@ -25,7 +25,7 @@ export function Privacy() {
         >
           <h1 className="text-[32px] md:text-5xl font-bold text-gray-800 mb-2">Privacy Policy</h1>
           <p className="text-sm md:text-base text-gray-600 mb-8 md:mb-12">
-            Last updated: May 13, 2026 &nbsp;|&nbsp; Applies to: https://getorbitapp.vercel.app/
+            Last updated: May 13, 2026 &nbsp;|&nbsp; Applies to: https://app.getorbitcrm.com/
           </p>
 
           <div className="space-y-8 md:space-y-12 text-gray-700 leading-relaxed">
@@ -34,7 +34,7 @@ export function Privacy() {
                 Introduction
               </h2>
               <p className="mb-4">
-                This Privacy Policy describes how Orbit ("we," "us," or "our") collects, uses, and shares information about you when you use our website at https://getorbitapp.vercel.app/ (the "Service").
+                This Privacy Policy describes how Orbit ("we," "us," or "our") collects, uses, and shares information about you when you use our website at https://app.getorbitcrm.com/ (the "Service").
               </p>
               <p>
                 By using our Service, you agree to the collection and use of information in accordance with this policy. This policy applies to all visitors, users, and others who access or use the Service.
@@ -177,7 +177,7 @@ export function Privacy() {
               <p className="mb-4">If you have any questions about this Privacy Policy, please contact us:</p>
               <ul className="list-disc pl-6 space-y-2">
                 <li>By email: <a href="mailto:getorbitcrm@gmail.com" className="text-blue-600 hover:underline">getorbitcrm@gmail.com</a></li>
-                <li>By visiting our website: <a href="https://getorbitapp.vercel.app/" className="text-blue-600 hover:underline">https://getorbitapp.vercel.app/</a></li>
+                <li>By visiting our website: <a href="https://app.getorbitcrm.com/" className="text-blue-600 hover:underline">https://app.getorbitcrm.com/</a></li>
               </ul>
             </section>
 

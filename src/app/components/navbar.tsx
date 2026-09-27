@@ -93,7 +93,7 @@ export function Navbar() {
             className="flex items-center gap-3"
           >
             <a
-              href="https://getorbitapp.vercel.app/"
+              href="https://app.getorbitcrm.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-2 bg-pink-500 hover:bg-pink-600 text-white text-sm font-semibold rounded-lg transition-colors"

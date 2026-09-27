@@ -18,7 +18,7 @@ export function Pricing() {
         "Email support"
       ],
       cta: "Get started free",
-      href: "https://getorbitapp.vercel.app/",
+      href: "https://app.getorbitcrm.com/",
       highlighted: false
     },
     {
@@ -40,7 +40,7 @@ export function Pricing() {
         "Early access to new features"
       ],
       cta: "Start free trial",
-      href: "https://getorbitapp.vercel.app/",
+      href: "https://app.getorbitcrm.com/",
       highlighted: true
     }
   ];

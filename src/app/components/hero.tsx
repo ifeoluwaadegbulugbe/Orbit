@@ -55,7 +55,7 @@ export function Hero() {
             className="flex flex-wrap items-center justify-center gap-4"
           >
             <a
-              href="https://getorbitapp.vercel.app/"
+              href="https://app.getorbitcrm.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center gap-2 rounded-xl bg-pink-500 px-8 py-4 font-semibold text-white shadow-lg shadow-pink-500/25 transition-all hover:bg-pink-600 hover:shadow-xl hover:shadow-pink-500/30"

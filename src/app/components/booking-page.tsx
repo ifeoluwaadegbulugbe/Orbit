@@ -168,7 +168,7 @@ export function BookingPage() {
               transition={{ duration: 0.6, delay: 0.3 }}
             >
               <a
-                href="https://getorbitapp.vercel.app/"
+                href="https://app.getorbitcrm.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center gap-2 rounded-xl bg-pink-500 px-8 py-4 font-semibold text-white shadow-lg shadow-pink-500/25 transition-all hover:bg-pink-600"
@@ -246,7 +246,7 @@ export function BookingPage() {
               Set up your booking page in minutes and let Orbit handle the reminders.
             </p>
             <a
-              href="https://getorbitapp.vercel.app/"
+              href="https://app.getorbitcrm.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center gap-2 rounded-xl bg-pink-500 px-8 py-4 font-semibold text-white shadow-lg shadow-pink-500/25 transition-all hover:bg-pink-600"
