@@ -14,7 +14,7 @@ export function Pricing() {
         "Client management",
         "Reminders & notifications",
         "Bookings & scheduling",
-        "Basic invoice creation",
+        "Manual invoicing (no Orbit Wallet)",
         "Email support"
       ],
       cta: "Get started free",
@@ -28,9 +28,9 @@ export function Pricing() {
       description: "For growing businesses",
       features: [
         "Unlimited clients",
+        "Orbit Wallet, get paid automatically",
         "Everything in Free, plus:",
         "AI assistant & follow-ups",
-        "Online payments via Orbit Wallet (Flutterwave, Stripe)",
         "Advanced analytics & insights",
         "Automation workflows",
         "WhatsApp integration",

@@ -25,7 +25,7 @@ const paymentFeatures = [
   {
     icon: ShieldCheck,
     title: "Built-in security",
-    description: "Transactions are encrypted and processed through licensed payment partners including Flutterwave and Stripe. Your clients' card details are never exposed to Orbit directly, and every transaction is logged."
+    description: "Transactions are encrypted and processed through licensed payment partners behind the scenes. Your clients' card details are never exposed to Orbit directly, and every transaction is logged."
   }
 ];
 
@@ -35,8 +35,8 @@ const paymentsFaqs = [
     answer: "Clients can pay by card, bank transfer, or mobile money, depending on what's available in their country. The funds land directly in your Orbit Wallet."
   },
   {
-    question: "Do I need to set up my own Stripe, Flutterwave, or Paystack account?",
-    answer: "No. Orbit Wallet handles the payment processing setup behind the scenes using licensed payment partners like Flutterwave and Stripe, so you can start accepting payments without creating a separate merchant account yourself."
+    question: "Do I need to set up my own payment provider account?",
+    answer: "No. Orbit Wallet handles the payment processing setup behind the scenes using licensed payment partners, so you can start accepting payments without creating a separate merchant account yourself."
   },
   {
     question: "How do I get my money out of Orbit Wallet?",
@@ -191,7 +191,7 @@ export function PaymentsPage() {
               Most payment tools don't make this easier for a solo business owner. They expect you to set up a merchant account, get through an approval process, and manage a separate dashboard before you've collected a single payment.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Orbit removes that step entirely. Every invoice you send includes a secure payment page. When a client pays, the money goes straight into your Orbit Wallet, the invoice is marked paid automatically, and your revenue numbers update on their own. No spreadsheet, no screenshots, no separate Stripe, Flutterwave, or Paystack account to set up yourself.
+              Orbit removes that step entirely. Every invoice you send includes a secure payment page. When a client pays, the money goes straight into your Orbit Wallet, the invoice is marked paid automatically, and your revenue numbers update on their own. No spreadsheet, no screenshots, no separate merchant account to set up yourself.
             </p>
           </div>
         </section>

@@ -18,7 +18,7 @@ const pricingFaqs = [
   },
   {
     question: "Can I pay for my Pro subscription with local payment methods?",
-    answer: "Yes. In addition to major cards, you can pay for your Pro subscription with Paystack, making it easy to subscribe from anywhere in Africa."
+    answer: "Yes. In addition to major cards, you can pay for your Pro subscription with local payment methods, making it easy to subscribe from anywhere in Africa."
   }
 ];
 
@@ -100,7 +100,7 @@ export function PricingPage() {
     <>
       <Seo
         title="Orbit Pricing: Simple, Transparent Plans for Service Businesses"
-        description="See Orbit's pricing. Start free with up to 10 clients, or upgrade to Pro for $12/month with unlimited clients, AI assistant, online payments, and more."
+        description="See Orbit's pricing. Start free with up to 10 clients, or upgrade to Pro for $12/month for unlimited clients and Orbit Wallet, so you get paid automatically."
         canonical="https://www.getorbitcrm.com/pricing"
         schema={pricingFaqSchema}
       />

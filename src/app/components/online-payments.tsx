@@ -37,7 +37,7 @@ export function OnlinePayments() {
                   </div>
                   <div className="flex justify-between text-sm">
                     <span className="text-gray-600">Payment Method</span>
-                    <span className="font-medium text-gray-800">Flutterwave</span>
+                    <span className="font-medium text-gray-800">Orbit Wallet</span>
                   </div>
                   <div className="flex justify-between text-sm">
                     <span className="text-gray-600">Status</span>
@@ -72,7 +72,7 @@ export function OnlinePayments() {
             </h2>
 
             <p className="text-lg text-gray-600 leading-relaxed">
-              Every payment lands in your Orbit Wallet. Accept cards, bank transfers, and mobile money through leading payment providers, then withdraw to your bank whenever you're ready.
+              Every payment lands in your Orbit Wallet. Accept cards, bank transfers, and mobile money, then withdraw to your bank whenever you're ready.
             </p>
 
             <div className="space-y-3">
@@ -91,14 +91,14 @@ export function OnlinePayments() {
             </div>
 
             <div className="pt-4">
-              <p className="text-xs text-gray-500 mb-3">Supported providers</p>
+              <p className="text-xs text-gray-500 mb-3">No merchant account setup required</p>
               <div className="flex gap-3">
-                {["Flutterwave", "Stripe"].map((provider) => (
+                {["Cards", "Bank transfer", "Mobile money"].map((method) => (
                   <div
-                    key={provider}
+                    key={method}
                     className="px-4 py-2 bg-white border border-gray-200 rounded-lg text-sm font-medium text-gray-700"
                   >
-                    {provider}
+                    {method}
                   </div>
                 ))}
               </div>

@@ -62,7 +62,7 @@ export function TabbedFeatures() {
       href: "/features/payments",
       icon: CreditCard,
       title: "Get paid anywhere in the world",
-      description: "Accept payments globally through Flutterwave and Stripe with automatic reconciliation.",
+      description: "Accept payments globally through Orbit Wallet, with automatic reconciliation.",
       features: [
         "Multiple payment gateways",
         "150+ currencies supported",

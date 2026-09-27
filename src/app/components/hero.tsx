@@ -35,15 +35,16 @@ export function Hero() {
             className="space-y-6"
           >
             <h1 className="text-[40px] font-bold leading-[1.2] tracking-tight text-gray-800 md:text-6xl md:leading-[1.1] lg:text-7xl xl:text-8xl">
-              Run your entire service business
+              Run your business.
               <br />
-              <span className="text-gray-400">in one workspace</span>
+              <span className="text-gray-400">Not the admin.</span>
             </h1>
 
             <p className="mx-auto max-w-3xl text-base leading-relaxed text-gray-600 md:text-xl lg:text-2xl">
-              Orbit is the AI-powered business management platform for service
-              businesses, helping you manage clients, bookings, invoicing, and
-              payments in one place.
+              Get booked. Get paid. Keep your clients coming back. Orbit gives
+              service businesses one simple place to manage clients, bookings,
+              payments, and follow-ups, while automation handles the admin
+              work in between.
             </p>
           </motion.div>
 

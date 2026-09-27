@@ -74,7 +74,7 @@ export function ProductPreview() {
             <div className="space-y-6">
               <div className="inline-flex items-center gap-2 px-3 py-1 bg-white border border-gray-200 rounded-full">
                 <Sparkles className="w-3 h-3 text-pink-500" />
-                <span className="text-xs font-medium text-gray-700">Powered by AI</span>
+                <span className="text-xs font-medium text-gray-700">Smart insights</span>
               </div>
 
               <h3 className="text-4xl font-bold text-gray-800">
@@ -82,7 +82,7 @@ export function ProductPreview() {
               </h3>
 
               <p className="text-lg text-gray-600 leading-relaxed">
-                Orbit's AI analyzes your business patterns and provides actionable recommendations to increase revenue and improve client relationships.
+                Orbit quietly tracks your business patterns and surfaces actionable recommendations to increase revenue and improve client relationships.
               </p>
 
               <div className="flex items-center gap-3 pt-4">

@@ -11,8 +11,8 @@ export function FAQ() {
       answer: "Yes! Orbit is available globally and supports 150+ currencies. You can accept payments from clients anywhere in the world."
     },
     {
-      question: "Which payment providers are supported?",
-      answer: "Orbit Wallet manages payments for you through trusted providers like Flutterwave and Stripe, so you don't need to set up or choose a payment provider yourself."
+      question: "How do I get paid?",
+      answer: "Every payment your clients make, by card, bank transfer, or mobile money, lands in your Orbit Wallet automatically. You never have to set up or choose a payment provider yourself."
     },
     {
       question: "Is there a free plan?",

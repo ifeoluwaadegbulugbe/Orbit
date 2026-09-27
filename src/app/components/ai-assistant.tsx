@@ -14,7 +14,7 @@ export function AIAssistant() {
           >
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-gray-100 border border-gray-200 rounded-full">
               <Sparkles className="w-3 h-3 text-pink-500" />
-              <span className="text-xs font-medium text-gray-700">AI-Powered</span>
+              <span className="text-xs font-medium text-gray-700">Smart follow-ups</span>
             </div>
 
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 tracking-tight leading-tight">
@@ -22,7 +22,7 @@ export function AIAssistant() {
             </h2>
 
             <p className="text-lg text-gray-600 leading-relaxed">
-              Orbit's AI analyzes your client relationships and suggests the perfect message at the perfect time. Get intelligent reminders and automated follow-ups that feel personal.
+              Orbit keeps track of your client relationships and suggests the perfect message at the perfect time, automated reminders and follow-ups that feel personal, not robotic.
             </p>
 
             <div className="space-y-3 pt-4">
