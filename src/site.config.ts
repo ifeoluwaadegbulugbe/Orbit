@@ -17,10 +17,6 @@ export const siteConfig = {
   description:
     "Orbit gives African service businesses one simple place to manage clients, bookings, payments, and follow-ups, while automation handles the admin work in between.",
   email: "getorbitcrm@gmail.com",
-  whatsapp: {
-    number: "2340000000000", // TODO-verify: confirm real WhatsApp Business number
-    baseUrl: "https://wa.me/2340000000000",
-  },
   social: {
     x: "https://x.com/orbitcrm",
     linkedin: "https://www.linkedin.com/company/useorbitcrm/",
@@ -34,11 +30,6 @@ export const siteConfig = {
 } as const;
 
 export type SiteConfig = typeof siteConfig;
-
-/** Builds a WhatsApp click-to-chat link with a page-specific prefilled message. */
-export function whatsappLink(message: string): string {
-  return `${siteConfig.whatsapp.baseUrl}?text=${encodeURIComponent(message)}`;
-}
 
 /** Builds a deep link into the app, carrying UTM params through to signup. */
 export function appLink(path = "/", utm?: Record<string, string>): string {

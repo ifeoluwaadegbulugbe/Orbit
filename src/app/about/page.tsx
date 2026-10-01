@@ -13,7 +13,7 @@ export const metadata: Metadata = buildMetadata({
 });
 
 const principles = [
-  "Flat pricing, never a commission on what you earn.",
+  "A flat subscription that doesn't change based on how much you book or earn.",
   "You approve every booking. Orbit never confirms one for you.",
   "Built for how African service businesses actually get booked: Instagram, WhatsApp, and word of mouth.",
   "The admin should be invisible. The business should be yours.",
@@ -53,9 +53,16 @@ export default function AboutPage() {
           <SectionHeader title="How Orbit works" />
           <div className="mt-12 grid gap-5 sm:grid-cols-2">
             {fourJobs.map((job) => (
-              <div key={job.href} className="rounded-2xl border border-border bg-white p-6">
-                <h3 className="font-semibold text-ink mb-2">{job.title}</h3>
-                <p className="text-sm text-ink-muted leading-relaxed">{job.description}</p>
+              <div key={job.href} className="rounded-2xl border border-border bg-white p-6 shadow-[var(--shadow-sm)]">
+                <div
+                  className={`mb-4 flex h-10 w-10 items-center justify-center rounded-xl ${
+                    job.tint === "primary" ? "bg-primary-50 text-primary-600" : "bg-accent-50 text-accent-700"
+                  }`}
+                >
+                  <job.icon className="h-5 w-5" aria-hidden="true" />
+                </div>
+                <h3 className="mb-2 font-semibold text-ink">{job.title}</h3>
+                <p className="text-sm leading-relaxed text-ink-muted">{job.description}</p>
               </div>
             ))}
           </div>

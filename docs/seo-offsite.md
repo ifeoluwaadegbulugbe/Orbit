@@ -10,10 +10,10 @@ These are high-intent (people searching them are already evaluating tools) and t
 - **Capterra** — Appointment scheduling and salon software categories.
 - **GetApp** — Same parent company as Capterra, separate listing.
 - **SaaSHub** — Free listing, good for early-stage tools.
-- **AlternativeTo** — List Orbit as an alternative to Fresha and Booksy specifically; this directory is built around exactly that comparison framing.
+- **AlternativeTo** — List Orbit as an alternative to WhatsApp/spreadsheet-based booking workflows. (Fresha/Booksy-specific positioning was dropped, see `content/TODO-verify.md`: the "flat, never a commission" claim it rested on turned out to be inaccurate.)
 
 **Pitch template (adapt per directory's submission form):**
-> Orbit is a flat-subscription booking, invoicing, and client management platform built for African service businesses, nail technicians, hairstylists, photographers, makeup artists, and barbers. Unlike marketplace competitors, Orbit never takes a commission on bookings, and every booking requires the owner's approval before it's confirmed.
+> Orbit is a booking, invoicing, and client management platform built for African service businesses, nail technicians, hairstylists, photographers, makeup artists, and barbers. Pro is a flat $12/month subscription regardless of volume, and every booking requires the owner's approval before it's confirmed.
 
 ## Priority 2: Launch platforms
 
@@ -24,7 +24,7 @@ These are high-intent (people searching them are already evaluating tools) and t
 
 Target publications covering African startups and fintech/SaaS specifically. Before pitching, confirm current submission guidelines and preferred contact method on each outlet's own site, since these change.
 
-**Pitch angle:** lead with the flat-pricing-versus-commission positioning (a concrete, debate-worthy claim) rather than a generic "we built a CRM" pitch, which is a crowded, less newsworthy framing.
+**Pitch angle:** lead with the owner-approval booking flow (a concrete, demoable differentiator) rather than a generic "we built a CRM" pitch, which is a crowded, less newsworthy framing.
 
 ## Priority 4: Community and creator partnerships
 

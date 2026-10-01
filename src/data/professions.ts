@@ -20,7 +20,7 @@ export const professions: ProfessionContent[] = [
       "Take a deposit so last-minute cancellations don't cost you a full slot",
       "Keep notes on nail shape, colors, and allergies for every regular",
     ],
-    metaTitle: "Booking Software for Nail Technicians | Orbit",
+    metaTitle: "Booking Software for Nail Technicians",
     metaDescription:
       "Orbit is booking and invoicing software built for nail technicians: a booking link, deposits, reminders, and client history in one place.",
   },
@@ -35,7 +35,7 @@ export const professions: ProfessionContent[] = [
       "Send automatic reminders so clients actually show up",
       "Track formulas and preferences per client, not in a notebook",
     ],
-    metaTitle: "Scheduling Software for Hairstylists | Orbit",
+    metaTitle: "Scheduling Software for Hairstylists",
     metaDescription:
       "Orbit gives hairstylists a booking page, deposits, reminders, and client history, so your chair stays full without the back-and-forth.",
   },
@@ -50,7 +50,7 @@ export const professions: ProfessionContent[] = [
       "Send a professional invoice the moment a shoot wraps",
       "See a client's full project history before a repeat booking call",
     ],
-    metaTitle: "Client Management & Invoicing for Photographers | Orbit",
+    metaTitle: "Client Management & Invoicing for Photographers",
     metaDescription:
       "Orbit helps photographers manage bookings, deposits, invoices, and client history in one place, from first inquiry to final payment.",
   },
@@ -65,7 +65,7 @@ export const professions: ProfessionContent[] = [
       "Require a deposit on high-value bookings like weddings",
       "Keep a record of past looks and product notes per client",
     ],
-    metaTitle: "Booking Software for Makeup Artists | Orbit",
+    metaTitle: "Booking Software for Makeup Artists",
     metaDescription:
       "Orbit gives makeup artists a booking link, deposits, reminders, and client notes, built for trials, events, and bridal work.",
   },
@@ -80,7 +80,7 @@ export const professions: ProfessionContent[] = [
       "Cut down no-shows with automatic appointment reminders",
       "See each client's cut history and preferences at a glance",
     ],
-    metaTitle: "Booking App for Barbers | Orbit",
+    metaTitle: "Booking App for Barbers",
     metaDescription:
       "Orbit is a booking app for barbers and barbershops: a booking link, automated reminders, and client history, built for a busy chair.",
   },

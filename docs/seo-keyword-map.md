@@ -42,11 +42,9 @@ Each pillar is supported by 3+ blog posts (see cluster map below) that link up t
 
 | URL | Primary keyword | Secondary keywords | Intent |
 |---|---|---|---|
-| `/compare/fresha` | Fresha alternative | Fresha vs Orbit, Fresha commission fees | Commercial, comparison (bottom funnel) |
-| `/compare/booksy` | Booksy alternative | Booksy vs Orbit, Booksy pricing | Commercial, comparison |
 | `/compare/whatsapp-and-spreadsheets` | booking software vs WhatsApp and spreadsheets | why WhatsApp booking doesn't scale, spreadsheet to CRM | Commercial, problem-aware |
 
-All competitor claims here must be sourced and dated at publish time (see `content/TODO-verify.md`); nothing about Fresha's or Booksy's actual pricing is asserted from memory.
+`/compare/fresha` and `/compare/booksy` were removed: both were built around a "flat subscription, never a commission" differentiation that turned out to be inaccurate (Orbit Wallet charges a 2.5% processing fee per transaction), and direct instruction was to drop the Fresha/Booksy comparisons entirely rather than rework them. If a competitor comparison is wanted again later, it needs to be built around claims that are actually true.
 
 ## Resources (lead-magnet pages)
 
@@ -65,11 +63,10 @@ All competitor claims here must be sourced and dated at publish time (see `conte
 | How to stop double bookings as a solo service professional | how to stop double bookings | `/product/booking` |
 | How to write an invoice for a service business in Nigeria (with template) | how to write an invoice for a service business in Nigeria | `/product/payments`, `/resources/invoice-generator` |
 | How to take deposits so clients stop no-showing | how to take deposits for bookings | `/product/payments`, `/product/booking` |
-| Fresha vs Booksy vs Orbit: which pricing model suits an African solo business | Fresha vs Booksy vs Orbit | `/compare/fresha`, `/compare/booksy`, `/pricing` |
 | The WhatsApp booking trap: why chat-based scheduling breaks as you grow | WhatsApp booking problems | `/product/booking`, `/compare/whatsapp-and-spreadsheets` |
 | A simple client follow-up system for beauty and creative professionals | client follow-up system | `/product/automations`, `/product/clients` |
 
-Each pillar page above needs a minimum of 3 supporting posts before launch is "done" per the brief's topic-cluster requirement; the 6 launch posts cover 2 posts each for booking/payments and 1 each for clients/automations, so clients and automations are under-served initially. Flagging this now: either write 1-2 more launch posts for `/product/clients` and `/product/insights`, or accept those two pillars launch without full cluster support and backfill in month 2.
+Each pillar page above needs a minimum of 3 supporting posts before launch is "done" per the brief's topic-cluster requirement; the 5 remaining launch posts (one was removed, see TODO-verify.md on the Fresha/Booksy comparison post) cover 2 posts each for booking/payments and 1 each for clients/automations, and now 0 for `/pricing` directly. Flagging this now: either write more launch posts for `/product/clients`, `/product/insights`, and pricing-angle content, or accept those pillars launch without full cluster support and backfill in month 2.
 
 ## Programmatic pages (profession × city)
 

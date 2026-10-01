@@ -18,6 +18,11 @@ export const metadata: Metadata = {
     template: "%s | Orbit",
   },
   description: siteConfig.description,
+  icons: {
+    icon: "/logo.svg",
+    shortcut: "/logo.svg",
+    apple: "/apple-icon.svg",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

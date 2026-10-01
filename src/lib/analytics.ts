@@ -5,7 +5,6 @@ type OrbitEvent =
   | { name: "signup_start"; location: string }
   | { name: "lead_magnet_submit"; tool: string }
   | { name: "newsletter_subscribe"; location: string }
-  | { name: "whatsapp_click"; location: string }
   | { name: "pricing_view" }
   | { name: "blog_read_75"; slug: string };
 

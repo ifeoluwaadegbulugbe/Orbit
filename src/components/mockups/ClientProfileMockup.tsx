@@ -1,11 +1,11 @@
-import { BrowserFrame } from "./DeviceFrame";
+import { MockupPanel } from "./MockupPanel";
 
 export function ClientProfileMockup() {
   return (
-    <BrowserFrame url="app.getorbitcrm.com/clients/ada-t">
+    <MockupPanel eyebrow="Client profile" glow="accent" maxWidth="max-w-md">
       <div className="space-y-5">
         <div className="flex items-center gap-3">
-          <div className="h-12 w-12 rounded-full bg-primary-100 flex items-center justify-center font-semibold text-primary-700">
+          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary-100 font-semibold text-primary-700">
             AT
           </div>
           <div>
@@ -13,25 +13,23 @@ export function ClientProfileMockup() {
             <p className="text-xs text-ink-muted">Client since March 2026</p>
           </div>
         </div>
-        <div className="grid grid-cols-3 gap-3 text-center border-t border-b border-border py-4">
-          <div>
-            <p className="text-lg font-semibold text-ink">12</p>
-            <p className="text-xs text-ink-muted">Visits</p>
-          </div>
-          <div>
-            <p className="text-lg font-semibold text-ink">₦187k</p>
-            <p className="text-xs text-ink-muted">Lifetime spend</p>
-          </div>
-          <div>
-            <p className="text-lg font-semibold text-ink">4 wks</p>
-            <p className="text-xs text-ink-muted">Avg. rebook</p>
-          </div>
+        <div className="grid grid-cols-3 gap-3 border-y border-border py-4 text-center">
+          {[
+            ["12", "Visits"],
+            ["₦187k", "Lifetime spend"],
+            ["4 wks", "Avg. rebook"],
+          ].map(([value, label]) => (
+            <div key={label}>
+              <p className="text-lg font-semibold text-ink">{value}</p>
+              <p className="text-xs text-ink-muted">{label}</p>
+            </div>
+          ))}
         </div>
         <div className="text-sm">
-          <p className="text-ink-muted mb-1">Last visit note</p>
+          <p className="mb-1 text-ink-muted">Last visit note</p>
           <p className="text-ink">Prefers almond-shaped nails, slightly shorter than last time.</p>
         </div>
       </div>
-    </BrowserFrame>
+    </MockupPanel>
   );
 }

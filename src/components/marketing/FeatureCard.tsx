@@ -1,32 +1,39 @@
 import Link from "next/link";
 import { ArrowRight, type LucideIcon } from "lucide-react";
 
+const tints = {
+  primary: "bg-primary-50 text-primary-600",
+  accent: "bg-accent-50 text-accent-700",
+};
+
 export function FeatureCard({
   icon: Icon,
   title,
   description,
   href,
   size = "md",
+  tint = "primary",
 }: {
   icon: LucideIcon;
   title: string;
   description: string;
   href: string;
   size?: "md" | "lg";
+  tint?: keyof typeof tints;
 }) {
   return (
     <Link
       href={href}
-      className={`group flex flex-col justify-between rounded-2xl border border-border bg-white p-6 md:p-8 transition-all hover:border-primary-300 hover:shadow-[var(--shadow-md)] ${
+      className={`group flex flex-col justify-between rounded-2xl border border-border bg-white p-6 shadow-[var(--shadow-sm)] transition-all duration-200 hover:-translate-y-0.5 hover:border-primary-200 hover:shadow-[var(--shadow-md)] md:p-8 ${
         size === "lg" ? "md:col-span-2" : ""
       }`}
     >
       <div>
-        <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-xl bg-primary-50">
-          <Icon className="h-5 w-5 text-primary-600" aria-hidden="true" />
+        <div className={`mb-5 flex h-11 w-11 items-center justify-center rounded-xl ${tints[tint]}`}>
+          <Icon className="h-5 w-5" aria-hidden="true" />
         </div>
-        <h3 className="text-lg font-semibold text-ink mb-2">{title}</h3>
-        <p className="text-sm text-ink-muted leading-relaxed">{description}</p>
+        <h3 className="mb-2 text-lg font-semibold text-ink">{title}</h3>
+        <p className="text-sm leading-relaxed text-ink-muted">{description}</p>
       </div>
       <div className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-primary-600">
         Learn more

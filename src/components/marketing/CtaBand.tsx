@@ -1,19 +1,17 @@
 "use client";
 
 import { Button } from "@/components/ui/Button";
-import { appLink, whatsappLink } from "@/site.config";
+import { appLink } from "@/site.config";
 import { trackEvent } from "@/lib/analytics";
 
 export function CtaBand({
   title = "Run your business. Not the admin.",
   description = "Start free in minutes. No card required.",
   location,
-  whatsappMessage = "Hi! I'd like to know more about Orbit.",
 }: {
   title?: string;
   description?: string;
   location: string;
-  whatsappMessage?: string;
 }) {
   return (
     <section className="px-6 py-16 md:py-24">
@@ -28,13 +26,8 @@ export function CtaBand({
           >
             Start free
           </Button>
-          <Button
-            href={whatsappLink(whatsappMessage)}
-            variant="secondary"
-            size="lg"
-            onClick={() => trackEvent({ name: "whatsapp_click", location })}
-          >
-            Chat on WhatsApp
+          <Button href="/pricing" variant="secondary" size="lg">
+            See pricing
           </Button>
         </div>
       </div>

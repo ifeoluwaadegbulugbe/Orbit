@@ -25,5 +25,5 @@ export const resourceLinks: NavLink[] = [
   { label: "Blog", href: "/blog", description: "Guides and tips for running a service business" },
   { label: "Free tools & templates", href: "/resources", description: "Invoice generator, pricing calculator, and more" },
   { label: "Help center", href: "/help", description: "Answers to common questions" },
-  { label: "Compare", href: "/compare/whatsapp-and-spreadsheets", description: "Orbit vs. Fresha, Booksy, and spreadsheets" },
+  { label: "Compare", href: "/compare/whatsapp-and-spreadsheets", description: "Orbit vs. WhatsApp and spreadsheets" },
 ];

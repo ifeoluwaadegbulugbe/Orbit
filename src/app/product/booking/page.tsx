@@ -44,7 +44,6 @@ const data: ProductPageData = {
       answer: "Yes. Each service can have its own duration, so a 90-minute service doesn't get squeezed into a 45-minute slot.",
     },
   ],
-  ctaWhatsappMessage: "Hi! I'd like to know more about Orbit's booking link.",
 };
 
 export default function BookingProductPage() {

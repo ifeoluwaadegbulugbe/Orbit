@@ -1,8 +1,8 @@
 export const pricingFaqs = [
   {
-    question: "Why flat pricing instead of a commission on my bookings?",
+    question: "Does Orbit take a cut of what I charge my clients?",
     answer:
-      "Marketplace apps take a percentage of every booking you make, so the more successful you get, the more they take. Orbit charges one flat monthly fee. Whatever you charge your clients is yours.",
+      "The $12/month Pro subscription is flat, it doesn't change based on how much you book or earn. Orbit Wallet, the optional feature for getting paid directly through Orbit, carries a standard 2.5% processing fee per transaction, similar to any card processor.",
   },
   {
     question: "What's the difference between Free and Pro?",

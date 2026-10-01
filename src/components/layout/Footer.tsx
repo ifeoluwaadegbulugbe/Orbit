@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { siteConfig, whatsappLink } from "@/site.config";
+import { siteConfig } from "@/site.config";
 import { EmailCapture } from "@/components/marketing/EmailCapture";
 
 const columns: { heading: string; links: { label: string; href: string }[] }[] = [
@@ -79,9 +79,6 @@ export function Footer() {
             </a>
             <a href={siteConfig.social.tiktok} target="_blank" rel="noopener noreferrer" className="text-sm text-ink-muted hover:text-ink">
               TikTok
-            </a>
-            <a href={whatsappLink("Hi! I have a question about Orbit.")} target="_blank" rel="noopener noreferrer" className="text-sm text-ink-muted hover:text-ink">
-              WhatsApp
             </a>
           </div>
         </div>

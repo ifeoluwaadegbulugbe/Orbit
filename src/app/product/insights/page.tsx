@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { buildMetadata } from "@/lib/metadata";
 import { ProductPageTemplate, type ProductPageData } from "@/components/templates/ProductPageTemplate";
-import { BrowserFrame } from "@/components/mockups/DeviceFrame";
+import { MockupPanel } from "@/components/mockups/MockupPanel";
 
 export const metadata: Metadata = buildMetadata({
   title: "Business Analytics for Solo Service Providers",
@@ -18,22 +18,31 @@ const data: ProductPageData = {
   intro:
     "Revenue, repeat-client rate, and your top services, calculated from the bookings and payments you're already recording in Orbit.",
   mockup: (
-    <BrowserFrame url="app.getorbitcrm.com/insights">
-      <div className="space-y-4 text-sm">
-        <div className="flex justify-between">
-          <span className="text-ink-muted">Repeat-client rate</span>
-          <span className="font-semibold text-ink">68%</span>
+    <MockupPanel eyebrow="This month" glow="accent" maxWidth="max-w-md">
+      <div className="space-y-5">
+        <div className="flex items-end gap-1.5 h-16">
+          {[32, 48, 40, 60, 52, 70, 64, 85, 76, 90].map((height, i) => (
+            <div
+              key={i}
+              className="flex-1 rounded-sm bg-primary-200 last:bg-primary-500"
+              style={{ height: `${height}%` }}
+            />
+          ))}
         </div>
-        <div className="flex justify-between">
-          <span className="text-ink-muted">Top service this month</span>
-          <span className="font-semibold text-ink">Gel manicure</span>
-        </div>
-        <div className="flex justify-between">
-          <span className="text-ink-muted">Outstanding balance</span>
-          <span className="font-semibold text-ink">₦14,000</span>
+        <div className="space-y-2.5 border-t border-border pt-4 text-sm">
+          {[
+            ["Repeat-client rate", "68%"],
+            ["Top service this month", "Gel manicure"],
+            ["Outstanding balance", "₦14,000"],
+          ].map(([label, value]) => (
+            <div key={label} className="flex justify-between">
+              <span className="text-ink-muted">{label}</span>
+              <span className="font-semibold text-ink">{value}</span>
+            </div>
+          ))}
         </div>
       </div>
-    </BrowserFrame>
+    </MockupPanel>
   ),
   problemTitle: "\"How much did I actually make this month\" shouldn't take an hour",
   problemBody: [
@@ -56,7 +65,6 @@ const data: ProductPageData = {
       answer: "Basic insights (revenue this month, client count) are on the free plan. Advanced insights are part of Pro.",
     },
   ],
-  ctaWhatsappMessage: "Hi! I'd like to know more about Orbit's insights.",
 };
 
 export default function InsightsProductPage() {

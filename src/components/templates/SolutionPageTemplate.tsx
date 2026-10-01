@@ -9,8 +9,9 @@ import type { ProfessionContent } from "@/data/professions";
 
 const sharedFaqs = [
   {
-    question: "Does Orbit take a commission on my bookings?",
-    answer: "No. Orbit is a flat monthly subscription. What you charge your clients is yours.",
+    question: "What does Orbit cost?",
+    answer:
+      "Pro is a flat $12/month regardless of how many clients or bookings you have. Orbit Wallet, the optional built-in way to get paid, carries a standard 2.5% processing fee per transaction, the same as any card processor.",
   },
   {
     question: "Is there a free plan?",
@@ -62,10 +63,7 @@ export function SolutionPageTemplate({ profession }: { profession: ProfessionCon
       </section>
 
       <FAQSection items={sharedFaqs} id={`faq-${profession.slug}`} />
-      <CtaBand
-        location={`solutions_${profession.slug}`}
-        whatsappMessage={`Hi! I'm a ${profession.label.toLowerCase().slice(0, -1)} and I'd like to know more about Orbit.`}
-      />
+      <CtaBand location={`solutions_${profession.slug}`} />
     </>
   );
 }

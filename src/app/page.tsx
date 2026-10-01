@@ -14,7 +14,7 @@ import { homeFaqs } from "@/data/faq-home";
 export const metadata: Metadata = buildMetadata({
   title: "Orbit: Get Booked, Get Paid, Keep Your Clients",
   description:
-    "Orbit is booking, invoicing, and client management software for African service businesses. Flat pricing, no commission on bookings, and you approve every booking yourself.",
+    "Orbit is booking, invoicing, and client management software for African service businesses. One flat subscription, and you approve every booking yourself.",
   path: "/",
 });
 

@@ -39,7 +39,6 @@ const data: ProductPageData = {
       answer: "Up to 10 clients on the free plan. Pro removes the limit entirely.",
     },
   ],
-  ctaWhatsappMessage: "Hi! I'd like to know more about Orbit's client management.",
 };
 
 export default function ClientsProductPage() {

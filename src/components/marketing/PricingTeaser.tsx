@@ -7,7 +7,7 @@ export function PricingTeaser() {
   return (
     <section className="px-6 py-20 md:py-28 bg-white border-y border-border">
       <div className="mx-auto max-w-6xl">
-        <SectionHeader eyebrow="Pricing" title="Simple, flat pricing. Never a commission." />
+        <SectionHeader eyebrow="Pricing" title="Simple, flat subscription pricing" />
         <div className="mt-14">
           <PricingCards />
         </div>

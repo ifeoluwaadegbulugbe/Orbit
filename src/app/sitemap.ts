@@ -17,8 +17,6 @@ const staticRoutes = [
   { path: "/for/photographers", priority: 0.7, changeFrequency: "monthly" as const },
   { path: "/for/makeup-artists", priority: 0.7, changeFrequency: "monthly" as const },
   { path: "/for/barbers", priority: 0.7, changeFrequency: "monthly" as const },
-  { path: "/compare/fresha", priority: 0.7, changeFrequency: "monthly" as const },
-  { path: "/compare/booksy", priority: 0.7, changeFrequency: "monthly" as const },
   { path: "/compare/whatsapp-and-spreadsheets", priority: 0.7, changeFrequency: "monthly" as const },
   { path: "/blog", priority: 0.7, changeFrequency: "daily" as const },
   { path: "/resources", priority: 0.6, changeFrequency: "monthly" as const },

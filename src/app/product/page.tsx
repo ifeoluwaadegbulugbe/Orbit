@@ -36,7 +36,14 @@ export default function ProductOverviewPage() {
           <SectionHeader title="Explore each job" />
           <div className="mt-12 grid gap-5 sm:grid-cols-2">
             {fourJobs.map((job) => (
-              <FeatureCard key={job.href} icon={job.icon} title={job.title} description={job.description} href={job.href} />
+              <FeatureCard
+                key={job.href}
+                icon={job.icon}
+                title={job.title}
+                description={job.description}
+                href={job.href}
+                tint={job.tint}
+              />
             ))}
           </div>
         </div>

@@ -1,4 +1,4 @@
-import { BrowserFrame } from "./DeviceFrame";
+import { MockupPanel } from "./MockupPanel";
 
 const slots = [
   { time: "9:00 AM", client: "Funmi A.", service: "Lash fill", status: "confirmed" },
@@ -9,7 +9,7 @@ const slots = [
 
 export function ScheduleMockup() {
   return (
-    <BrowserFrame url="app.getorbitcrm.com/schedule">
+    <MockupPanel eyebrow="Today's schedule" glow="primary" maxWidth="max-w-md">
       <div className="space-y-2">
         {slots.map((slot) => (
           <div
@@ -18,7 +18,7 @@ export function ScheduleMockup() {
               slot.status === "open" ? "border-dashed border-border text-ink-muted" : "border-border"
             }`}
           >
-            <span className="font-medium text-ink w-20">{slot.time}</span>
+            <span className="w-20 font-medium text-ink">{slot.time}</span>
             <span className="flex-1 text-ink-muted">
               {slot.client}
               {slot.service && ` · ${slot.service}`}
@@ -31,6 +31,6 @@ export function ScheduleMockup() {
           </div>
         ))}
       </div>
-    </BrowserFrame>
+    </MockupPanel>
   );
 }

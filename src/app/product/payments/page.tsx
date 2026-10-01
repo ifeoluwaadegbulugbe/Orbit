@@ -43,7 +43,6 @@ const data: ProductPageData = {
       answer: "No. Orbit Wallet is part of the Pro plan. The free plan supports manual invoicing, where you mark invoices paid yourself.",
     },
   ],
-  ctaWhatsappMessage: "Hi! I'd like to know more about Orbit Wallet.",
 };
 
 export default function PaymentsProductPage() {

@@ -8,8 +8,9 @@ export interface PricingPlan {
   highlighted: boolean;
 }
 
-// TODO-verify: confirm this feature split and Orbit Wallet's live status
-// against the actual product before launch. See content/TODO-verify.md.
+// TODO-verify: confirm Orbit Wallet's live status against the actual
+// product before launch. See content/TODO-verify.md. Feature split and
+// the 2.5% per-transaction processing fee confirmed by the business owner.
 export const pricingPlans: PricingPlan[] = [
   {
     name: "Free",
@@ -33,7 +34,7 @@ export const pricingPlans: PricingPlan[] = [
     description: "For growing businesses",
     features: [
       "Unlimited clients",
-      "Orbit Wallet, get paid automatically",
+      "Orbit Wallet (2.5% per transaction), get paid automatically",
       "Automations & follow-ups",
       "Advanced insights",
       "Custom templates",

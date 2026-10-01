@@ -40,7 +40,6 @@ const data: ProductPageData = {
       answer: "Basic manual reminders are available on the free plan. Automated sequences are part of Pro.",
     },
   ],
-  ctaWhatsappMessage: "Hi! I'd like to know more about Orbit's automations.",
 };
 
 export default function AutomationsProductPage() {

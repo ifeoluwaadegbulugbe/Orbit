@@ -5,7 +5,7 @@ import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { FAQAccordion } from "@/components/marketing/FAQAccordion";
 import { helpGroups } from "@/data/help";
 import { faqJsonLd, jsonLdGraph } from "@/lib/jsonld";
-import { siteConfig, whatsappLink } from "@/site.config";
+import { siteConfig } from "@/site.config";
 
 export const metadata: Metadata = buildMetadata({
   title: "Orbit Help Center",
@@ -27,11 +27,7 @@ export default function HelpPage() {
         <div className="mx-auto max-w-2xl space-y-5">
           <h1 className="text-4xl font-semibold tracking-tight text-ink">Help center</h1>
           <p className="text-lg text-ink-muted">
-            Can't find what you need?{" "}
-            <a href={whatsappLink("Hi! I need help with Orbit.")} className="text-primary-600 underline">
-              Chat with us on WhatsApp
-            </a>{" "}
-            or email{" "}
+            Can't find what you need? Email{" "}
             <a href={`mailto:${siteConfig.email}`} className="text-primary-600 underline">
               {siteConfig.email}
             </a>

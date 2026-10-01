@@ -19,7 +19,6 @@ export interface ProductPageData {
   problemBody: string[];
   features: { title: string; description: string }[];
   faqs: FaqItem[];
-  ctaWhatsappMessage: string;
 }
 
 export function ProductPageTemplate({ data }: { data: ProductPageData }) {
@@ -76,7 +75,7 @@ export function ProductPageTemplate({ data }: { data: ProductPageData }) {
       </section>
 
       <FAQSection items={data.faqs} id={`faq-${data.breadcrumbLabel.toLowerCase().replace(/\s+/g, "-")}`} />
-      <CtaBand location={`product_${data.breadcrumbLabel.toLowerCase()}`} whatsappMessage={data.ctaWhatsappMessage} />
+      <CtaBand location={`product_${data.breadcrumbLabel.toLowerCase()}`} />
     </>
   );
 }
