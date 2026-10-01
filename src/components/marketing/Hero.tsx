@@ -2,7 +2,7 @@
 
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
-import { BookingApprovalMockup } from "@/components/mockups/BookingApprovalMockup";
+import { HeroVisual } from "@/components/mockups/HeroVisual";
 import { appLink } from "@/site.config";
 import { trackEvent } from "@/lib/analytics";
 
@@ -33,7 +33,7 @@ export function Hero() {
           <p className="text-sm text-ink-muted">Free to start. No credit card required.</p>
         </div>
         <div>
-          <BookingApprovalMockup />
+          <HeroVisual />
         </div>
       </div>
     </section>

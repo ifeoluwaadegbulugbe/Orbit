@@ -41,7 +41,11 @@ export function SolutionPageTemplate({ profession }: { profession: ProfessionCon
             </div>
           </div>
           <div>
-            <BookingLinkMockup businessName={`Glow by ${profession.label.split(" ")[0]}`} />
+            <BookingLinkMockup
+              businessName={profession.mockupBusinessName}
+              role={profession.mockupRole}
+              services={profession.mockupServices}
+            />
           </div>
         </div>
       </section>

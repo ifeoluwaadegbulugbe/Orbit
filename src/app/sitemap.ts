@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { siteConfig } from "@/site.config";
 import { getAllPosts, CATEGORIES } from "@/lib/content";
+import { professions } from "@/data/professions";
 
 const staticRoutes = [
   { path: "/", priority: 1.0, changeFrequency: "weekly" as const },
@@ -12,11 +13,6 @@ const staticRoutes = [
   { path: "/product/automations", priority: 0.7, changeFrequency: "monthly" as const },
   { path: "/product/insights", priority: 0.7, changeFrequency: "monthly" as const },
   { path: "/for", priority: 0.6, changeFrequency: "monthly" as const },
-  { path: "/for/nail-technicians", priority: 0.7, changeFrequency: "monthly" as const },
-  { path: "/for/hairstylists", priority: 0.7, changeFrequency: "monthly" as const },
-  { path: "/for/photographers", priority: 0.7, changeFrequency: "monthly" as const },
-  { path: "/for/makeup-artists", priority: 0.7, changeFrequency: "monthly" as const },
-  { path: "/for/barbers", priority: 0.7, changeFrequency: "monthly" as const },
   { path: "/compare/whatsapp-and-spreadsheets", priority: 0.7, changeFrequency: "monthly" as const },
   { path: "/blog", priority: 0.7, changeFrequency: "daily" as const },
   { path: "/resources", priority: 0.6, changeFrequency: "monthly" as const },
@@ -48,6 +44,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date().toISOString(),
       changeFrequency: route.changeFrequency,
       priority: route.priority,
+    })),
+    ...professions.map((p) => ({
+      url: `${siteConfig.url}/for/${p.slug}`,
+      lastModified: new Date().toISOString(),
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
     })),
     ...posts.map((post) => ({
       url: `${siteConfig.url}/blog/${post.slug}`,

@@ -6,6 +6,7 @@ import { OwnerControlSection } from "@/components/marketing/OwnerControlSection"
 import { AutomationFlowSection } from "@/components/marketing/AutomationFlowSection";
 import { ProfessionTabs } from "@/components/marketing/ProfessionTabs";
 import { PricingTeaser } from "@/components/marketing/PricingTeaser";
+import { TrustGrid } from "@/components/marketing/TrustGrid";
 import { FAQSection } from "@/components/marketing/FAQSection";
 import { CtaBand } from "@/components/marketing/CtaBand";
 import { buildMetadata } from "@/lib/metadata";
@@ -29,6 +30,7 @@ export default function HomePage() {
       <AutomationFlowSection />
       <ProfessionTabs />
       <PricingTeaser />
+      <TrustGrid />
       {/* No testimonials section: no real customer quotes exist yet. See content/TODO-verify.md. */}
       <FAQSection items={homeFaqs} id="faq" />
       <CtaBand location="home_final" />

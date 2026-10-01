@@ -50,7 +50,11 @@ export function ProfessionTabs() {
             </Link>
           </div>
           <div>
-            <BookingLinkMockup />
+            <BookingLinkMockup
+              businessName={current.mockupBusinessName}
+              role={current.mockupRole}
+              services={current.mockupServices}
+            />
           </div>
         </div>
       </div>

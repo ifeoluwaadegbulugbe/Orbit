@@ -37,6 +37,10 @@ Each pillar is supported by 3+ blog posts (see cluster map below) that link up t
 | `/for/photographers` | client management software for photographers | photography booking and invoicing, photographer deposit software | Commercial |
 | `/for/makeup-artists` | booking software for makeup artists | MUA client management, makeup artist deposit app | Commercial |
 | `/for/barbers` | booking app for barbers | barbershop scheduling software, barber client reminders | Commercial |
+| `/for/lash-and-brow-technicians` | booking software for lash technicians | lash tech appointment app, brow bar scheduling | Commercial, profession-specific |
+| `/for/personal-trainers` | client management for personal trainers | PT session package tracking, fitness booking app | Commercial |
+| `/for/tutors-and-coaches` | booking software for tutors | coaching session scheduling, tutor invoicing | Commercial |
+| `/for/event-planners` | client management software for event planners | event planning invoicing, event deposit software | Commercial |
 
 ## Compare pages
 

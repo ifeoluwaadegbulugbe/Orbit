@@ -1,3 +1,5 @@
+import { professions } from "./professions";
+
 export interface NavLink {
   label: string;
   href: string;
@@ -14,11 +16,8 @@ export const productLinks: NavLink[] = [
 ];
 
 export const solutionLinks: NavLink[] = [
-  { label: "Nail technicians", href: "/for/nail-technicians" },
-  { label: "Hairstylists", href: "/for/hairstylists" },
-  { label: "Photographers", href: "/for/photographers" },
-  { label: "Makeup artists", href: "/for/makeup-artists" },
-  { label: "Barbers", href: "/for/barbers" },
+  ...professions.slice(0, 6).map((p) => ({ label: p.label, href: `/for/${p.slug}` })),
+  { label: "See all professions", href: "/for" },
 ];
 
 export const resourceLinks: NavLink[] = [

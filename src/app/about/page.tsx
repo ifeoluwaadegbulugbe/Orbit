@@ -41,9 +41,10 @@ export default function AboutPage() {
         <div className="mx-auto max-w-3xl space-y-5">
           <h2 className="text-2xl font-semibold text-ink">Who Orbit is for</h2>
           <p className="text-ink-muted leading-relaxed">
-            Nail technicians, hairstylists, photographers, makeup artists, barbers, and similar solo or small-team service
-            providers who get real, recurring clients and get paid directly by them, but currently coordinate it all by hand
-            across WhatsApp, Instagram, and a notebook or spreadsheet.
+Nail technicians, hairstylists, photographers, makeup artists, barbers, lash and brow technicians, personal trainers,
+            tutors and coaches, event planners, and similar solo or small-team service providers who get real, recurring
+            clients and get paid directly by them, but currently coordinate it all by hand across WhatsApp, Instagram, and a
+            notebook or spreadsheet.
           </p>
         </div>
       </section>
