@@ -37,7 +37,11 @@ Every item below is a claim, number, or identity detail I could not confirm from
 
 - [ ] **Not built.** Profession × city pages (e.g. "booking software for nail technicians in Lagos") were not generated in `site/`, since local payment/pricing/booking-norm accuracy for Ghana and Kenya specifically hasn't been verified, and the brief's own rule is to noindex or skip generation rather than publish unverified local claims. If this is wanted, confirm verified local content per city first, then add a `/for/[profession]/[city]` route.
 
-## New items found while building `site/`
+## New items found during the production cutover
+
+- [ ] **Next.js pinned to 15.5.27, not the latest 16.x.** The initial build used 15.1.6, which `npm install` flagged with 33 security advisories including several critical RCE/DoS issues; upgraded to 15.5.27 (latest 15.x patch) before this went live, which clears all but 3 moderate/high advisories nested in Next's own bundled dependencies. A 16.x upgrade is a breaking change and wasn't attempted right before a production push, it should be scheduled and tested separately.
+
+## New items found while building the site
 
 - [ ] **WhatsApp Business number is a placeholder.** `site.config.ts` has `whatsapp.number: "2340000000000"`, which is not a real number. Every WhatsApp CTA across the site (hero, nav, footer, contact, pricing, blog share buttons) reads from this one value, so it's a single-line fix once the real number is confirmed.
 - [ ] **Lead capture stores to Supabase but sends no confirmation email.** The brief mentions an "optional" Resend confirmation; `/api/leads` currently only inserts into the `leads` table. If a confirmation email is wanted, a Resend account needs to exist and `/api/leads` needs the send call added.

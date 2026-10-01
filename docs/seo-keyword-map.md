@@ -79,7 +79,7 @@ Each pillar page above needs a minimum of 3 supporting posts before launch is "d
 |---|---|---|
 | booking software for [profession] in [city] | booking software for nail technicians in Lagos | Only if locally-accurate payment/pricing/booking-norm content can be written; otherwise noindex or don't generate (see `content/TODO-verify.md` on Ghana/Kenya verification) |
 
-These were deliberately skipped in the `site/` build since local accuracy for Accra and Nairobi specifically hasn't been verified, per the brief's own rule against publishing unverified local claims.
+These were deliberately skipped in the rebuild since local accuracy for Accra and Nairobi specifically hasn't been verified, per the brief's own rule against publishing unverified local claims.
 
 ## Legal / utility (no keyword targeting, unique titles only)
 

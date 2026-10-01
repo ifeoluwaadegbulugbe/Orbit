@@ -1,11 +1,11 @@
 # SEO Launch Checklist
 
-Run through this before pointing the live domain at the new site (`site/`).
+Run through this before (or right after) the new Next.js build goes live at the domain.
 
 ## Before cutover
 
-- [ ] Resolve every open item in `content/TODO-verify.md`, at minimum: Orbit Wallet's live status, the exact Free/Pro feature split, and the social handles in `site/src/site.config.ts`.
-- [ ] `npm run build` succeeds with zero errors in `site/`.
+- [ ] Resolve every open item in `content/TODO-verify.md`, at minimum: Orbit Wallet's live status, the exact Free/Pro feature split, and the social handles in `src/site.config.ts`.
+- [ ] `npm run build` succeeds with zero errors.
 - [ ] `npm run check:links` passes with zero broken, empty, or `#` links.
 - [ ] `npx next build` output reviewed: confirm every page in the site map is listed as `○` (static) or `●` (SSG), not an unexpected `ƒ` (dynamic) that should have been static.
 - [ ] View source (not DevTools' rendered DOM) on `/`, `/pricing`, and one blog post. Confirm the H1, body copy, and links are present in the raw HTML.
