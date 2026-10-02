@@ -8,7 +8,7 @@ import { trackEvent } from "@/lib/analytics";
 
 const chips = [
   { icon: Check, text: "Booking confirmed", pos: "left-[4%] top-[18%] -rotate-3", tone: "bg-primary-50 text-primary-700" },
-  { icon: Wallet, text: "₦2,500 received", pos: "right-[5%] top-[30%] rotate-2", tone: "bg-[#e8f5ee] text-success" },
+  { icon: Wallet, text: "₦2,500 received", pos: "right-[5%] top-[30%] rotate-2", tone: "bg-success-soft text-success" },
   { icon: Bell, text: "Reminder sent", pos: "left-[9%] bottom-[14%] rotate-2", tone: "bg-accent-50 text-accent-700" },
 ];
 
@@ -22,12 +22,12 @@ export function CtaBand({
   location: string;
 }) {
   return (
-    <section className="relative overflow-hidden border-t border-border bg-white px-6 py-24 md:py-32">
+    <section className="relative overflow-hidden border-t border-border bg-surface px-6 py-24 md:py-32">
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 hidden lg:block">
         {chips.map((c) => (
           <div
             key={c.text}
-            className={`absolute ${c.pos} flex items-center gap-2 rounded-xl bg-white px-3.5 py-2.5 text-sm font-medium text-ink`}
+            className={`absolute ${c.pos} flex items-center gap-2 rounded-xl bg-surface px-3.5 py-2.5 text-sm font-medium text-ink`}
             style={{ boxShadow: "var(--shadow-card)" }}
           >
             <span className={`flex h-6 w-6 items-center justify-center rounded-md ${c.tone}`}>
@@ -45,7 +45,7 @@ export function CtaBand({
               <>
                 Run your business.
                 <br />
-                <span className="text-primary-600">Not the admin.</span>
+                <span className="text-brand">Not the admin.</span>
               </>
             )}
           </h2>

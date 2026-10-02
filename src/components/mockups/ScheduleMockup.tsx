@@ -40,7 +40,7 @@ export function ScheduleMockup() {
               <button
                 type="button"
                 onClick={() => approve(slot.time)}
-                className="rounded-full bg-accent-100 px-2.5 py-1 text-xs font-medium text-accent-700 transition-colors hover:bg-primary-600 hover:text-white"
+                className="rounded-full bg-accent-100 px-2.5 py-1 text-xs font-medium text-accent-700 transition-colors hover:bg-action hover:text-white"
               >
                 Approve
               </button>

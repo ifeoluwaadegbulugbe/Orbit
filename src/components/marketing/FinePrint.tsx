@@ -24,11 +24,11 @@ export function FinePrint() {
           }
         />
         <Reveal className="mt-12">
-          <dl className="divide-y divide-border overflow-hidden rounded-2xl border border-border bg-white">
+          <dl className="divide-y divide-border overflow-hidden rounded-2xl border border-border bg-surface">
             {rows.map((r) => (
               <div
                 key={r.label}
-                className="grid gap-1 px-5 py-4 transition-colors duration-200 hover:bg-[#faf6f3] sm:grid-cols-[10rem_1fr_1.2fr] sm:items-baseline sm:gap-6 sm:px-6"
+                className="grid gap-1 px-5 py-4 transition-colors duration-200 hover:bg-sunken sm:grid-cols-[10rem_1fr_1.2fr] sm:items-baseline sm:gap-6 sm:px-6"
               >
                 <dt className="text-sm text-ink-muted">{r.label}</dt>
                 <dd className="font-semibold text-ink">{r.value}</dd>

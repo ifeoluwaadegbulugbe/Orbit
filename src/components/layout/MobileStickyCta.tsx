@@ -6,7 +6,7 @@ import { trackEvent } from "@/lib/analytics";
 
 export function MobileStickyCta() {
   return (
-    <div className="lg:hidden fixed bottom-0 left-0 right-0 z-40 border-t border-border bg-white/95 backdrop-blur-md p-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))]">
+    <div className="lg:hidden fixed bottom-0 left-0 right-0 z-40 border-t border-border bg-surface/95 backdrop-blur-md p-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))]">
       <Button
         href={appLink("/signup")}
         className="w-full"

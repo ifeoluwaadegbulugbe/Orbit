@@ -30,14 +30,14 @@ export function PricingCalculatorTool() {
                 value={field.value}
                 onChange={(e) => field.setValue(e.target.value)}
                 inputMode="decimal"
-                className="w-full min-h-11 rounded-xl border border-border px-4 text-sm"
+                className="w-full min-h-11 rounded-xl border border-ink/20 px-4 text-sm"
               />
               {field.suffix && <span className="text-ink-muted text-sm">{field.suffix}</span>}
             </div>
           </div>
         ))}
       </div>
-      <div className="rounded-2xl border border-border bg-white p-8 space-y-4">
+      <div className="rounded-2xl border border-ink/20 bg-surface p-8 space-y-4">
         <div className="flex justify-between text-sm">
           <span className="text-ink-muted">Total cost</span>
           <span className="font-medium text-ink">{cost.toLocaleString()}</span>

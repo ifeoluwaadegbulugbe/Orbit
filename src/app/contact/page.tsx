@@ -27,15 +27,15 @@ export default function ContactPage() {
             <p className="text-lg text-ink-muted">We usually reply within a business day.</p>
           </div>
 
-          <div className="mx-auto max-w-xs rounded-2xl border border-border bg-white p-6 text-center space-y-3">
-            <Mail className="h-6 w-6 mx-auto text-primary-600" aria-hidden="true" />
+          <div className="mx-auto max-w-xs rounded-2xl border border-border bg-surface p-6 text-center space-y-3">
+            <Mail className="h-6 w-6 mx-auto text-brand" aria-hidden="true" />
             <p className="font-medium text-ink">Email</p>
             <Button href={`mailto:${siteConfig.email}`} variant="secondary" className="w-full">
               {siteConfig.email}
             </Button>
           </div>
 
-          <div className="rounded-2xl border border-border bg-white p-8">
+          <div className="rounded-2xl border border-border bg-surface p-8">
             <h2 className="font-semibold text-ink mb-5">Or send us a message</h2>
             <ContactForm />
           </div>

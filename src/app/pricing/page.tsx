@@ -45,7 +45,7 @@ export default function PricingPage() {
       <section className="px-6 pb-20">
         <PricingCards />
       </section>
-      <section className="px-6 py-20 bg-white border-y border-border">
+      <section className="px-6 py-20 bg-surface border-y border-border">
         <div className="mx-auto max-w-4xl">
           <SectionHeader title="Compare plans" />
           <div className="mt-10">

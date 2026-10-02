@@ -34,7 +34,7 @@ export function NewsletterPrompt() {
   if (!visible) return null;
 
   return (
-    <div className="fixed bottom-4 left-4 right-4 md:left-auto md:right-6 md:bottom-6 md:w-96 z-50 rounded-2xl border border-border bg-white p-5 shadow-[var(--shadow-lg)]">
+    <div className="fixed bottom-4 left-4 right-4 md:left-auto md:right-6 md:bottom-6 md:w-96 z-50 rounded-2xl border border-border bg-surface p-5 shadow-[var(--shadow-lg)]">
       <button type="button" onClick={dismiss} aria-label="Dismiss" className="absolute top-3 right-3 text-ink-muted hover:text-ink">
         <X className="h-4 w-4" />
       </button>

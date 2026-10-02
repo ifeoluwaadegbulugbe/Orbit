@@ -27,7 +27,7 @@ export default function HomePage() {
     <>
       <Hero />
 
-      <section className="mt-20 border-y border-border bg-white px-6 py-20 md:mt-28 md:py-28">
+      <section className="mt-20 border-y border-border bg-surface px-6 py-20 md:mt-28 md:py-28">
         <div className="mx-auto max-w-5xl text-center">
           <SectionHeader
             eyebrow="The problem"
@@ -62,10 +62,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="border-y border-border bg-white px-6 py-20 md:py-28">
+      <section className="border-y border-border bg-surface px-6 py-20 md:py-28">
         <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-[1fr_1.1fr] lg:gap-16">
           <Reveal>
-            <p className="text-xs font-semibold uppercase tracking-wider text-primary-600">Automations</p>
+            <p className="text-xs font-semibold uppercase tracking-wider text-brand">Automations</p>
             <h2 className="mt-4 font-display text-4xl font-semibold leading-[1.08] tracking-[-0.015em] md:text-5xl">
               The admin that runs itself. <span className="text-ink-muted">Set it once.</span>
             </h2>

@@ -19,12 +19,12 @@ export function extractHeadings(markdown: string): Heading[] {
 export function TableOfContents({ headings }: { headings: Heading[] }) {
   if (headings.length === 0) return null;
   return (
-    <nav aria-label="Table of contents" className="sticky top-24 hidden lg:block rounded-2xl border border-border bg-white p-5">
+    <nav aria-label="Table of contents" className="sticky top-24 hidden lg:block rounded-2xl border border-border bg-surface p-5">
       <p className="text-xs font-semibold uppercase tracking-wider text-ink-muted mb-3">On this page</p>
       <ul className="space-y-2">
         {headings.map((h) => (
           <li key={h.id}>
-            <a href={`#${h.id}`} className="text-sm text-ink-muted hover:text-primary-600">
+            <a href={`#${h.id}`} className="text-sm text-ink-muted hover:text-brand">
               {h.text}
             </a>
           </li>

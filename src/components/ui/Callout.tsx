@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 import { Info, AlertTriangle, CheckCircle2 } from "lucide-react";
 
 const styles = {
-  info: { icon: Info, bg: "bg-primary-50", border: "border-primary-200", icon_color: "text-primary-600" },
+  info: { icon: Info, bg: "bg-primary-50", border: "border-primary-200", icon_color: "text-brand" },
   warning: { icon: AlertTriangle, bg: "bg-accent-50", border: "border-accent-300", icon_color: "text-accent-700" },
   success: { icon: CheckCircle2, bg: "bg-primary-50", border: "border-primary-200", icon_color: "text-success" },
 } as const;

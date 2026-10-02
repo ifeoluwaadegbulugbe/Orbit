@@ -55,12 +55,12 @@ export function AutomationTimeline() {
             <li
               key={n.title}
               className={`relative flex items-start gap-4 rounded-xl border p-4 transition-all duration-500 ${
-                current ? "border-primary-200 bg-primary-50" : "border-border bg-white"
+                current ? "border-primary-200 bg-primary-50" : "border-border bg-surface"
               } ${!done && !current ? "opacity-60" : "opacity-100"}`}
             >
               <span
                 className={`relative z-10 flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full transition-colors duration-500 ${
-                  done ? "bg-success text-white" : current ? "bg-primary-600 text-white" : "bg-[#f1ece8] text-ink-muted"
+                  done ? "bg-success text-white" : current ? "bg-action text-white" : "bg-sunken text-ink-muted"
                 }`}
               >
                 {done ? <Check className="h-4 w-4" aria-hidden="true" /> : <n.icon className="h-4 w-4" aria-hidden="true" />}

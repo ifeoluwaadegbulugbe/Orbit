@@ -37,7 +37,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="px-6 py-16 bg-white border-y border-border">
+      <section className="px-6 py-16 bg-surface border-y border-border">
         <div className="mx-auto max-w-3xl space-y-5">
           <h2 className="text-2xl font-semibold text-ink">Who Orbit is for</h2>
           <p className="text-ink-muted leading-relaxed">
@@ -54,10 +54,10 @@ Nail technicians, hairstylists, photographers, makeup artists, barbers, lash and
           <SectionHeader title="How Orbit works" />
           <div className="mt-12 grid gap-5 sm:grid-cols-2">
             {fourJobs.map((job) => (
-              <div key={job.href} className="rounded-2xl border border-border bg-white p-6 shadow-[var(--shadow-sm)]">
+              <div key={job.href} className="rounded-2xl border border-border bg-surface p-6 shadow-[var(--shadow-sm)]">
                 <div
                   className={`mb-4 flex h-10 w-10 items-center justify-center rounded-xl ${
-                    job.tint === "primary" ? "bg-primary-50 text-primary-600" : "bg-accent-50 text-accent-700"
+                    job.tint === "primary" ? "bg-primary-50 text-brand" : "bg-accent-50 text-accent-700"
                   }`}
                 >
                   <job.icon className="h-5 w-5" aria-hidden="true" />
@@ -70,13 +70,13 @@ Nail technicians, hairstylists, photographers, makeup artists, barbers, lash and
         </div>
       </section>
 
-      <section className="px-6 py-20 bg-white border-y border-border">
+      <section className="px-6 py-20 bg-surface border-y border-border">
         <div className="mx-auto max-w-3xl">
           <h2 className="text-2xl font-semibold text-ink mb-8 text-center">Principles</h2>
           <ul className="space-y-4">
             {principles.map((principle) => (
               <li key={principle} className="flex items-start gap-3">
-                <Check className="h-5 w-5 flex-shrink-0 mt-0.5 text-primary-500" aria-hidden="true" />
+                <Check className="h-5 w-5 flex-shrink-0 mt-0.5 text-brand" aria-hidden="true" />
                 <span className="text-ink">{principle}</span>
               </li>
             ))}

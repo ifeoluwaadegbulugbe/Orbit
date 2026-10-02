@@ -18,7 +18,7 @@ export function HeroVisual() {
   return (
     <div className="relative mx-auto max-w-sm pb-8 pl-2 pr-6 pt-6 md:pl-4 md:pr-10">
       <div className="relative rounded-[28px] bg-primary-500 p-6 md:p-8" style={{ minHeight: 440 }}>
-        <div className="rounded-2xl bg-white p-5" style={{ boxShadow: "var(--shadow-float)" }}>
+        <div className="rounded-2xl bg-surface p-5" style={{ boxShadow: "var(--shadow-float)" }}>
           <div className="flex items-center gap-3">
             <div className="flex h-11 w-11 items-center justify-center rounded-full bg-primary-100 text-sm font-semibold text-primary-700">
               AT
@@ -39,7 +39,7 @@ export function HeroVisual() {
               <button
                 type="button"
                 onClick={() => setDecision("approved")}
-                className="flex flex-1 items-center justify-center gap-1.5 rounded-xl bg-primary-600 py-2.5 text-xs font-semibold text-white transition-colors hover:bg-primary-700"
+                className="flex flex-1 items-center justify-center gap-1.5 rounded-xl bg-action py-2.5 text-xs font-semibold text-white transition-colors hover:bg-action-hover"
               >
                 <Check className="h-3.5 w-3.5" aria-hidden="true" />
                 Approve
@@ -70,7 +70,7 @@ export function HeroVisual() {
           )}
         </div>
 
-        <div className="mt-4 rounded-2xl bg-white p-5" style={{ boxShadow: "var(--shadow-float)" }}>
+        <div className="mt-4 rounded-2xl bg-surface p-5" style={{ boxShadow: "var(--shadow-float)" }}>
           <div className="flex items-baseline justify-between">
             <p className="text-xs text-ink-muted">This week</p>
             <p className="text-sm font-semibold text-ink">₦148,500</p>
@@ -88,11 +88,11 @@ export function HeroVisual() {
       </div>
 
       <div
-        className="absolute -top-2 right-0 z-20 flex items-center gap-2.5 rounded-2xl bg-white px-4 py-3"
+        className="absolute -top-2 right-0 z-20 flex items-center gap-2.5 rounded-2xl bg-surface px-4 py-3"
         style={{ boxShadow: "var(--shadow-float)" }}
       >
         <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary-50">
-          <Check className="h-4 w-4 text-primary-600" aria-hidden="true" />
+          <Check className="h-4 w-4 text-brand" aria-hidden="true" />
         </div>
         <div>
           <p className="text-[11px] text-ink-muted">Booking confirmed</p>
@@ -101,7 +101,7 @@ export function HeroVisual() {
       </div>
 
       <div
-        className="absolute bottom-2 left-0 z-20 flex items-center gap-2.5 rounded-2xl bg-white px-4 py-3"
+        className="absolute bottom-2 left-0 z-20 flex items-center gap-2.5 rounded-2xl bg-surface px-4 py-3"
         style={{ boxShadow: "var(--shadow-float)" }}
       >
         <div className="flex h-8 w-8 items-center justify-center rounded-full bg-accent-50">

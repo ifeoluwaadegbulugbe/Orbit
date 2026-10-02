@@ -9,13 +9,13 @@ export function Hero() {
   return (
     <section className="relative px-6 pt-14 md:pt-24">
       <div className="mx-auto max-w-3xl text-center">
-        <p className="hero-enter mb-6 inline-flex items-center rounded-full border border-border bg-white px-3.5 py-1.5 text-xs font-medium uppercase tracking-wider text-ink-muted">
+        <p className="hero-enter mb-6 inline-flex items-center rounded-full border border-border bg-surface px-3.5 py-1.5 text-xs font-medium uppercase tracking-wider text-ink-muted">
           The business OS for service businesses
         </p>
         <h1 className="hero-enter hero-enter-2 font-display text-[2.75rem] font-semibold leading-[1.02] tracking-[-0.02em] text-ink sm:text-6xl md:text-7xl">
           Run your business.
           <br />
-          <span className="text-primary-600">Not the admin.</span>
+          <span className="text-brand">Not the admin.</span>
         </h1>
         <p className="hero-enter hero-enter-3 mx-auto mt-6 max-w-xl text-lg leading-relaxed text-ink-muted md:text-xl">
           Orbit is booking, invoicing and client management software for service businesses in Africa. Take online

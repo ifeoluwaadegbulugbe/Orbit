@@ -23,7 +23,7 @@ function MegaMenu({ label, links }: { label: string; links: NavLink[] }) {
         <ChevronDown className={`h-3.5 w-3.5 transition-transform ${open ? "rotate-180" : ""}`} aria-hidden="true" />
       </button>
       {open && (
-        <div className="feed-in absolute top-full left-1/2 -translate-x-1/2 mt-1 w-72 rounded-xl bg-white p-2" style={{ boxShadow: "var(--shadow-card)" }}>
+        <div className="feed-in absolute top-full left-1/2 -translate-x-1/2 mt-1 w-72 rounded-xl bg-surface p-2" style={{ boxShadow: "var(--shadow-card)" }}>
           {links.map((link) => (
             <Link
               key={link.href}
@@ -97,7 +97,7 @@ export function Header() {
       </div>
 
       {mobileOpen && (
-        <div className="lg:hidden border-t border-border bg-white px-6 py-4 space-y-4">
+        <div className="lg:hidden border-t border-border bg-surface px-6 py-4 space-y-4">
           {[...productLinks, ...solutionLinks, { label: "Pricing", href: "/pricing" }, ...resourceLinks].map(
             (link) => (
               <Link

@@ -20,7 +20,7 @@ export function MockupPanel({
     <div className={cn("mx-auto", maxWidth)}>
       <div
         className={cn(
-          "rounded-3xl border border-border bg-white p-6 transition-transform duration-300 hover:-translate-y-1",
+          "rounded-3xl border border-border bg-surface p-6 transition-transform duration-300 hover:-translate-y-1",
           className
         )}
         style={{ boxShadow: "var(--shadow-float)" }}

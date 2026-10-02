@@ -17,7 +17,7 @@ export function FAQAccordion({ items }: { items: FaqItem[] }) {
         const isOpen = openIndex === i;
         const panelId = `faq-panel-${i}`;
         return (
-          <div key={item.question} className="rounded-xl border border-border bg-white overflow-hidden">
+          <div key={item.question} className="rounded-xl border border-border bg-surface overflow-hidden">
             <button
               type="button"
               aria-expanded={isOpen}

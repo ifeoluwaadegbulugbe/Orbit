@@ -25,7 +25,7 @@ function useDemoStep(last: number, ms: number) {
   return { ref, step, setStep, hover: { onMouseEnter: () => setPaused(true), onMouseLeave: () => setPaused(false) } };
 }
 
-const card = "rounded-xl border border-border bg-white p-4";
+const card = "rounded-xl border border-border bg-surface p-4";
 const label = "text-[11px] font-semibold uppercase tracking-wider text-ink-muted/80";
 
 /* ------------------------------------------------------------------ */
@@ -61,7 +61,7 @@ export function BookingDemo() {
               <span
                 key={t}
                 className={`rounded-md border px-2 py-1 text-xs transition-colors duration-300 ${
-                  i === 1 && step >= 1 ? "border-primary-600 bg-primary-600 text-white" : "border-border text-ink-muted"
+                  i === 1 && step >= 1 ? "border-action bg-action text-white" : "border-border text-ink-muted"
                 }`}
               >
                 {t}
@@ -70,7 +70,7 @@ export function BookingDemo() {
           </div>
           <div
             className={`mt-3 rounded-lg px-3 py-2 text-center text-xs font-semibold transition-colors duration-300 ${
-              step >= 3 ? "bg-[#e8f5ee] text-success" : step === 2 ? "bg-accent-50 text-accent-700" : "bg-[#f1ece8] text-ink-muted"
+              step >= 3 ? "bg-success-soft text-success" : step === 2 ? "bg-accent-50 text-accent-700" : "bg-sunken text-ink-muted"
             }`}
           >
             {step >= 3 ? "Confirmed for Thu 2:00 PM" : step === 2 ? "Request sent. Waiting for approval" : "Request booking"}
@@ -89,11 +89,11 @@ export function BookingDemo() {
                   <button
                     type="button"
                     onClick={() => setStep(3)}
-                    className="press flex items-center gap-1 rounded-md bg-primary-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-primary-700"
+                    className="press flex items-center gap-1 rounded-md bg-action px-3 py-1.5 text-xs font-semibold text-white hover:bg-action-hover"
                   >
                     <Check className="h-3 w-3" aria-hidden="true" /> Approve
                   </button>
-                  <span className="rounded-md border border-border bg-white px-3 py-1.5 text-xs font-medium text-ink-muted">
+                  <span className="rounded-md border border-border bg-surface px-3 py-1.5 text-xs font-medium text-ink-muted">
                     Decline
                   </span>
                 </div>
@@ -130,7 +130,7 @@ export function PaymentDemo() {
             <p className={label}>Invoice INV-0142</p>
             <span
               className={`rounded-full px-2.5 py-1 text-xs font-semibold transition-colors duration-300 ${
-                paid ? "bg-[#e8f5ee] text-success" : processing ? "bg-accent-50 text-accent-700" : "bg-[#f1ece8] text-ink-muted"
+                paid ? "bg-success-soft text-success" : processing ? "bg-accent-50 text-accent-700" : "bg-sunken text-ink-muted"
               }`}
             >
               {paid ? "Paid" : processing ? "Processing" : "Unpaid"}
@@ -153,7 +153,7 @@ export function PaymentDemo() {
           <button
             type="button"
             onClick={() => setStep(paid ? 0 : 2)}
-            className="press mt-4 flex w-full items-center justify-center gap-2 rounded-lg bg-primary-600 px-3 py-2 text-sm font-semibold text-white transition-colors hover:bg-primary-700"
+            className="press mt-4 flex w-full items-center justify-center gap-2 rounded-lg bg-action px-3 py-2 text-sm font-semibold text-white transition-colors hover:bg-action-hover"
           >
             {processing && <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" />}
             {paid ? "Replay payment" : "Pay ₦35,000"}
@@ -211,7 +211,7 @@ export function ClientsDemo() {
                 aria-selected={selected === i}
                 onClick={() => setSelected(i)}
                 className={`flex w-full items-center gap-2.5 rounded-lg px-2.5 py-2 text-left transition-colors duration-200 ${
-                  selected === i ? "bg-[#f6f2ee]" : "hover:bg-[#faf6f3]"
+                  selected === i ? "bg-sunken" : "hover:bg-sunken"
                 }`}
               >
                 <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary-100 text-xs font-semibold text-primary-700">
@@ -235,7 +235,7 @@ export function ClientsDemo() {
             <p className="text-xs text-ink-muted">{c.visits} visits</p>
           </div>
           <p className="mt-2 text-sm text-ink-muted">{c.note}</p>
-          <div className="mt-4 rounded-lg bg-[#f6f2ee] p-3 text-xs leading-relaxed text-ink-muted">
+          <div className="mt-4 rounded-lg bg-sunken p-3 text-xs leading-relaxed text-ink-muted">
             <span className="font-semibold text-ink">Suggested follow-up</span>
             <br />
             Hi {c.name.split(" ")[0]}! It&apos;s been a little while since your last visit. Want me to hold a slot this week?
@@ -244,7 +244,7 @@ export function ClientsDemo() {
             type="button"
             disabled={isSent}
             onClick={() => setSent((s) => ({ ...s, [c.name]: true }))}
-            className="press mt-3 flex items-center gap-2 rounded-lg bg-primary-600 px-3 py-2 text-xs font-semibold text-white transition-colors hover:bg-primary-700 disabled:bg-[#e8f5ee] disabled:text-success"
+            className="press mt-3 flex items-center gap-2 rounded-lg bg-action px-3 py-2 text-xs font-semibold text-white transition-colors hover:bg-action-hover disabled:bg-success-soft disabled:text-success"
           >
             {isSent ? <Check className="h-3.5 w-3.5" aria-hidden="true" /> : <Send className="h-3.5 w-3.5" aria-hidden="true" />}
             {isSent ? "Sent" : "Send follow-up"}
@@ -280,7 +280,7 @@ export function InsightsDemo() {
                 aria-selected={range === r}
                 onClick={() => setRange(r)}
                 className={`rounded-md px-3 py-1 text-xs font-medium capitalize transition-colors duration-200 ${
-                  range === r ? "bg-[#17120f] text-white" : "text-ink-muted hover:text-ink"
+                  range === r ? "bg-inverse text-on-inverse" : "text-ink-muted hover:text-ink"
                 }`}
               >
                 {r}
@@ -295,7 +295,7 @@ export function InsightsDemo() {
           {d.bars.map((h, i) => (
             <div
               key={i}
-              className={`flex-1 rounded-sm ${i === d.bars.length - 1 ? "bg-primary-600" : "bg-primary-100"}`}
+              className={`flex-1 rounded-sm ${i === d.bars.length - 1 ? "bg-action" : "bg-primary-100"}`}
               style={{ height: `${h}%`, transition: "height 600ms cubic-bezier(0.2,0,0,1)", transitionDelay: `${i * 30}ms` }}
             />
           ))}

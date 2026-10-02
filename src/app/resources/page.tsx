@@ -34,13 +34,13 @@ export default function ResourcesPage() {
       <section className="px-6 pb-24">
         <div className="mx-auto max-w-4xl grid gap-5 sm:grid-cols-2">
           {tools.map((tool) => (
-            <Link key={tool.href} href={tool.href} className="group flex flex-col rounded-2xl border border-border bg-white p-6 hover:border-primary-300">
+            <Link key={tool.href} href={tool.href} className="group flex flex-col rounded-2xl border border-border bg-surface p-6 hover:border-primary-300">
               <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-primary-50">
-                <tool.icon className="h-5 w-5 text-primary-600" aria-hidden="true" />
+                <tool.icon className="h-5 w-5 text-brand" aria-hidden="true" />
               </div>
               <h2 className="font-semibold text-ink mb-1">{tool.title}</h2>
               <p className="text-sm text-ink-muted mb-4">{tool.description}</p>
-              <span className="mt-auto inline-flex items-center gap-1.5 text-sm font-medium text-primary-600">
+              <span className="mt-auto inline-flex items-center gap-1.5 text-sm font-medium text-brand">
                 Open tool <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
               </span>
             </Link>

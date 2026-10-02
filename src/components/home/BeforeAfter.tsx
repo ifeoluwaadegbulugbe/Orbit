@@ -56,7 +56,7 @@ export function BeforeAfter() {
 
   return (
     <div ref={ref}>
-      <div className="mx-auto flex w-fit rounded-full border border-border bg-white p-1" role="tablist" aria-label="Before or with Orbit">
+      <div className="mx-auto flex w-fit rounded-full border border-border bg-surface p-1" role="tablist" aria-label="Before or with Orbit">
         {(["before", "after"] as const).map((m) => (
           <button
             key={m}
@@ -65,7 +65,7 @@ export function BeforeAfter() {
             aria-selected={mode === m}
             onClick={() => choose(m)}
             className={`press rounded-full px-5 py-2 text-sm font-medium transition-colors duration-200 ${
-              mode === m ? "bg-[#17120f] text-white" : "text-ink-muted hover:text-ink"
+              mode === m ? "bg-inverse text-on-inverse" : "text-ink-muted hover:text-ink"
             }`}
           >
             {m === "before" ? "Before Orbit" : "With Orbit"}
@@ -84,7 +84,7 @@ export function BeforeAfter() {
             {fragments.map((f, i) => (
               <div
                 key={f.app}
-                className={`${f.rot} rounded-xl border bg-white p-3.5 text-left transition-transform duration-300 hover:rotate-0 hover:scale-[1.03] ${
+                className={`${f.rot} rounded-xl border bg-surface p-3.5 text-left transition-transform duration-300 hover:rotate-0 hover:scale-[1.03] ${
                   f.warn ? "border-danger/40" : "border-border"
                 }`}
                 style={{ boxShadow: "var(--shadow-card)", transitionDelay: `${i * 20}ms` }}
@@ -105,7 +105,7 @@ export function BeforeAfter() {
             mode === "after" ? "opacity-100" : "pointer-events-none translate-y-3 opacity-0"
           }`}
         >
-          <div className="mx-auto max-w-xl rounded-2xl bg-white p-5 text-left" style={{ boxShadow: "var(--shadow-panel)" }}>
+          <div className="mx-auto max-w-xl rounded-2xl bg-surface p-5 text-left" style={{ boxShadow: "var(--shadow-panel)" }}>
             <div className="flex items-center gap-3">
               <div className="flex h-11 w-11 items-center justify-center rounded-full bg-primary-100 text-sm font-semibold text-primary-700">
                 AT
@@ -114,7 +114,7 @@ export function BeforeAfter() {
                 <p className="font-semibold text-ink">Ada T.</p>
                 <p className="text-xs text-ink-muted">Client since March · 12 visits</p>
               </div>
-              <span className="ml-auto rounded-full bg-[#e8f5ee] px-2.5 py-1 text-xs font-medium text-success">Confirmed</span>
+              <span className="ml-auto rounded-full bg-success-soft px-2.5 py-1 text-xs font-medium text-success">Confirmed</span>
             </div>
             <dl className="mt-4 grid grid-cols-2 gap-x-6 gap-y-3 border-t border-border pt-4 text-sm">
               <div>
@@ -141,7 +141,7 @@ export function BeforeAfter() {
               <li key={s.label}>
                 <span
                   className={`flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-xs font-medium transition-all duration-300 ${
-                    i <= lit ? "border-primary-200 bg-primary-50 text-primary-800" : "border-border bg-white text-ink-muted"
+                    i <= lit ? "border-primary-200 bg-primary-50 text-primary-800" : "border-border bg-surface text-ink-muted"
                   }`}
                 >
                   <s.icon className="h-3.5 w-3.5" aria-hidden="true" />

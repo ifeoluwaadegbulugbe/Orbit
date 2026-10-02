@@ -46,7 +46,7 @@ export function ProductPageTemplate({ data }: { data: ProductPageData }) {
         </div>
       </section>
 
-      <section className="px-6 py-16 md:py-20 bg-white border-y border-border">
+      <section className="px-6 py-16 md:py-20 bg-surface border-y border-border">
         <div className="mx-auto max-w-3xl space-y-5">
           <h2 className="text-2xl md:text-3xl font-semibold text-ink">{data.problemTitle}</h2>
           {data.problemBody.map((paragraph, i) => (
@@ -62,8 +62,8 @@ export function ProductPageTemplate({ data }: { data: ProductPageData }) {
           <SectionHeader title="What's included" />
           <div className="mt-12 grid gap-5 sm:grid-cols-2">
             {data.features.map((feature) => (
-              <div key={feature.title} className="flex gap-3 rounded-2xl border border-border bg-white p-6">
-                <Check className="h-5 w-5 flex-shrink-0 mt-0.5 text-primary-500" aria-hidden="true" />
+              <div key={feature.title} className="flex gap-3 rounded-2xl border border-border bg-surface p-6">
+                <Check className="h-5 w-5 flex-shrink-0 mt-0.5 text-brand" aria-hidden="true" />
                 <div>
                   <h3 className="font-semibold text-ink mb-1">{feature.title}</h3>
                   <p className="text-sm text-ink-muted leading-relaxed">{feature.description}</p>

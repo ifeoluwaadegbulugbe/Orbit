@@ -43,7 +43,7 @@ export function ContactForm() {
           required
           value={form.name}
           onChange={(e) => setForm({ ...form, name: e.target.value })}
-          className="w-full min-h-11 rounded-xl border border-border bg-white px-4 text-sm outline-none focus:border-primary-400"
+          className="w-full min-h-11 rounded-xl border border-ink/20 bg-surface px-4 text-sm outline-none focus:border-primary-400"
         />
       </div>
       <div>
@@ -56,7 +56,7 @@ export function ContactForm() {
           required
           value={form.email}
           onChange={(e) => setForm({ ...form, email: e.target.value })}
-          className="w-full min-h-11 rounded-xl border border-border bg-white px-4 text-sm outline-none focus:border-primary-400"
+          className="w-full min-h-11 rounded-xl border border-ink/20 bg-surface px-4 text-sm outline-none focus:border-primary-400"
         />
       </div>
       <div>
@@ -69,14 +69,14 @@ export function ContactForm() {
           rows={4}
           value={form.message}
           onChange={(e) => setForm({ ...form, message: e.target.value })}
-          className="w-full rounded-xl border border-border bg-white px-4 py-3 text-sm outline-none focus:border-primary-400"
+          className="w-full rounded-xl border border-ink/20 bg-surface px-4 py-3 text-sm outline-none focus:border-primary-400"
         />
       </div>
       <input type="text" name="company_website" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden="true" />
       <button
         type="submit"
         disabled={status === "loading"}
-        className="min-h-11 rounded-xl bg-primary-600 px-6 text-sm font-semibold text-white hover:bg-primary-700 disabled:opacity-60"
+        className="min-h-11 rounded-xl bg-action px-6 text-sm font-semibold text-white hover:bg-action-hover disabled:opacity-60"
       >
         {status === "loading" ? <Loader2 className="h-4 w-4 animate-spin" /> : "Send message"}
       </button>

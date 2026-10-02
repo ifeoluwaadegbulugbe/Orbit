@@ -22,7 +22,7 @@ export function Breadcrumbs({ items }: { items: Crumb[] }) {
                     {item.name}
                   </span>
                 ) : (
-                  <Link href={item.path} className="hover:text-primary-600">
+                  <Link href={item.path} className="hover:text-brand">
                     {item.name}
                   </Link>
                 )}

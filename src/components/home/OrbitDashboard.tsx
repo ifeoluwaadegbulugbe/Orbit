@@ -22,9 +22,9 @@ const events: EventItem[] = [
 
 const toneClass = {
   pink: "bg-primary-50 text-primary-700",
-  green: "bg-[#e8f5ee] text-success",
+  green: "bg-success-soft text-success",
   gold: "bg-accent-50 text-accent-700",
-  muted: "bg-[#f1ece8] text-ink-muted",
+  muted: "bg-sunken text-ink-muted",
 };
 
 const sidebar = [
@@ -73,13 +73,13 @@ export function OrbitDashboard() {
       onMouseLeave={() => setPaused(false)}
       onFocus={() => setPaused(true)}
       onBlur={() => setPaused(false)}
-      className="overflow-hidden rounded-2xl bg-white text-left"
+      className="overflow-hidden rounded-2xl bg-surface text-left"
       style={{ boxShadow: "var(--shadow-panel)" }}
       aria-label="Orbit dashboard demo"
     >
       <div className="flex items-center justify-between border-b border-border px-4 py-3">
         <div className="flex items-center gap-2 text-sm font-semibold text-ink">
-          <span className="flex h-5 w-5 items-center justify-center rounded-md bg-primary-600 text-[10px] font-bold text-white">O</span>
+          <span className="flex h-5 w-5 items-center justify-center rounded-md bg-action text-[10px] font-bold text-white">O</span>
           Glow by Ada
         </div>
         <div className="flex items-center gap-3 text-xs text-ink-muted">
@@ -109,7 +109,7 @@ export function OrbitDashboard() {
               <li key={item.label}>
                 <span
                   className={`flex items-center gap-2.5 rounded-lg px-2.5 py-2 text-sm ${
-                    item.active ? "bg-[#f6f2ee] font-medium text-ink" : "text-ink-muted"
+                    item.active ? "bg-sunken font-medium text-ink" : "text-ink-muted"
                   }`}
                 >
                   <item.icon className="h-4 w-4" aria-hidden="true" />
@@ -174,7 +174,7 @@ export function OrbitDashboard() {
             </div>
           </div>
 
-          <p className="mt-4 rounded-lg bg-[#f6f2ee] px-3 py-2 text-xs text-ink-muted lg:hidden" aria-live="polite">
+          <p className="mt-4 rounded-lg bg-sunken px-3 py-2 text-xs text-ink-muted lg:hidden" aria-live="polite">
             <span className="font-medium text-ink">{events[step]!.text}</span> · {events[step]!.sub}
           </p>
         </div>
@@ -187,7 +187,7 @@ function Stat({ label, value, highlight }: { label: string; value: React.ReactNo
   return (
     <div
       className={`rounded-xl border p-2.5 transition-colors duration-300 md:p-3 ${
-        highlight ? "border-primary-200 bg-primary-50" : "border-border bg-white"
+        highlight ? "border-primary-200 bg-primary-50" : "border-border bg-surface"
       }`}
     >
       <p className="truncate text-[11px] text-ink-muted md:text-xs">{label}</p>
@@ -228,7 +228,7 @@ function Slot({
         <button
           type="button"
           onClick={onApprove}
-          className="press rounded-md bg-primary-600 px-2.5 py-1 text-xs font-semibold text-white transition-colors hover:bg-primary-700"
+          className="press rounded-md bg-action px-2.5 py-1 text-xs font-semibold text-white transition-colors hover:bg-action-hover"
         >
           Approve
         </button>

@@ -27,7 +27,7 @@ export default function HelpPage() {
           <h1 className="text-4xl font-semibold tracking-tight text-ink">Help center</h1>
           <p className="text-lg text-ink-muted">
             Can't find what you need? Email{" "}
-            <a href={`mailto:${siteConfig.email}`} className="text-primary-600 underline">
+            <a href={`mailto:${siteConfig.email}`} className="text-brand underline">
               {siteConfig.email}
             </a>
             .

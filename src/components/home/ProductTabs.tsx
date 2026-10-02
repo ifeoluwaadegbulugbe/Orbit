@@ -55,7 +55,7 @@ export function ProductTabs() {
   }
 
   return (
-    <div className="mx-auto grid max-w-6xl overflow-hidden rounded-2xl border border-border bg-white md:grid-cols-[15rem_1fr]">
+    <div className="mx-auto grid max-w-6xl overflow-hidden rounded-2xl border border-border bg-surface md:grid-cols-[15rem_1fr]">
       <div
         role="tablist"
         aria-label="What Orbit does"
@@ -74,12 +74,12 @@ export function ProductTabs() {
             tabIndex={active === i ? 0 : -1}
             onClick={() => setActive(i)}
             className={`relative flex-shrink-0 rounded-lg px-3 py-2.5 text-left text-sm font-medium transition-colors duration-200 md:py-3 ${
-              active === i ? "bg-[#f6f2ee] text-ink" : "text-ink-muted hover:text-ink"
+              active === i ? "bg-sunken text-ink" : "text-ink-muted hover:text-ink"
             }`}
           >
             <span
               aria-hidden="true"
-              className={`absolute left-0 top-2 hidden h-[calc(100%-1rem)] w-0.5 rounded-full bg-primary-600 transition-opacity duration-200 md:block ${
+              className={`absolute left-0 top-2 hidden h-[calc(100%-1rem)] w-0.5 rounded-full bg-action transition-opacity duration-200 md:block ${
                 active === i ? "opacity-100" : "opacity-0"
               }`}
             />
@@ -93,7 +93,7 @@ export function ProductTabs() {
           <span className="font-semibold text-ink">{tab.lead}</span>{" "}
           <span className="text-ink-muted">{tab.rest}</span>
         </p>
-        <div className="mt-6 rounded-xl bg-[#f6f2ee] p-3 md:p-5">
+        <div className="mt-6 rounded-xl bg-sunken p-3 md:p-5">
           <tab.Demo />
         </div>
         <Link

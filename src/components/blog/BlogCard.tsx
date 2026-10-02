@@ -5,7 +5,7 @@ export function BlogCard({ post, featured = false }: { post: Post; featured?: bo
   return (
     <Link
       href={`/blog/${post.slug}`}
-      className={`group flex flex-col rounded-2xl border border-border bg-white p-6 hover:border-primary-300 hover:shadow-[var(--shadow-md)] transition-all ${
+      className={`group flex flex-col rounded-2xl border border-border bg-surface p-6 hover:border-primary-300 hover:shadow-[var(--shadow-md)] transition-all ${
         featured ? "md:col-span-2 md:p-10" : ""
       }`}
     >

@@ -35,7 +35,7 @@ export default function BlogIndexPage() {
             <Link
               key={category}
               href={`/blog/category/${category.toLowerCase().replace(/\s+/g, "-")}`}
-              className="rounded-full border border-border bg-white px-4 py-2 text-sm text-ink-muted hover:border-primary-300"
+              className="rounded-full border border-border bg-surface px-4 py-2 text-sm text-ink-muted hover:border-primary-300"
             >
               {category}
             </Link>
@@ -51,7 +51,7 @@ export default function BlogIndexPage() {
         </div>
       </section>
       <section className="px-6 pb-24">
-        <div className="mx-auto max-w-xl rounded-2xl border border-border bg-white p-8 text-center">
+        <div className="mx-auto max-w-xl rounded-2xl border border-border bg-surface p-8 text-center">
           <h2 className="font-semibold text-ink mb-2">Get one email a week</h2>
           <p className="text-sm text-ink-muted mb-5">Practical tips, no spam.</p>
           <EmailCapture source="blog_index" title="" />

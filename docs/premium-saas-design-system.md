@@ -92,3 +92,7 @@ Navbar (sticky, translucent, hairline on scroll) · Hero (headline + live dashbo
 ## 8. Accessibility
 
 Semantic landmarks, one h1, visible focus rings (2px primary-600, 2px offset), 4.5:1 text contrast (white on #d13563 is 5:1), `prefers-reduced-motion` disables loops and entrance transforms, demo controls are real buttons with labels, auto-playing demos have a pause-on-hover/focus behavior.
+
+## 9. Dark mode
+
+Follows the system setting (`prefers-color-scheme`), screen only so printed invoices stay light. Components never use raw `white` or hex. They use semantic tokens: `surface` (cards), `sunken` (wells), `inverse` / `on-inverse` (selected pills), `brand` (pink text), `action` / `action-hover` (pink buttons, always white text), `success-soft`. In dark, the tint steps (primary/accent 50 to 300) become deep tints and the text steps (700 to 900) become light tints, so `bg-primary-50 text-primary-700` stays readable without per-component overrides. Contrast was audited in both themes with a script over every text node (target 4.5:1, 3:1 for large text).

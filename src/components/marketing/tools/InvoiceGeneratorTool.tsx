@@ -28,19 +28,19 @@ export function InvoiceGeneratorTool() {
           <label className="block text-sm font-medium text-ink mb-1.5" htmlFor="biz">
             Business name
           </label>
-          <input id="biz" value={business} onChange={(e) => setBusiness(e.target.value)} className="w-full min-h-11 rounded-xl border border-border px-4 text-sm" />
+          <input id="biz" value={business} onChange={(e) => setBusiness(e.target.value)} className="w-full min-h-11 rounded-xl border border-ink/20 px-4 text-sm" />
         </div>
         <div>
           <label className="block text-sm font-medium text-ink mb-1.5" htmlFor="client">
             Client name
           </label>
-          <input id="client" value={client} onChange={(e) => setClient(e.target.value)} className="w-full min-h-11 rounded-xl border border-border px-4 text-sm" />
+          <input id="client" value={client} onChange={(e) => setClient(e.target.value)} className="w-full min-h-11 rounded-xl border border-ink/20 px-4 text-sm" />
         </div>
         <div>
           <label className="block text-sm font-medium text-ink mb-1.5" htmlFor="currency">
             Currency symbol
           </label>
-          <input id="currency" value={currency} onChange={(e) => setCurrency(e.target.value)} className="w-24 min-h-11 rounded-xl border border-border px-4 text-sm" />
+          <input id="currency" value={currency} onChange={(e) => setCurrency(e.target.value)} className="w-24 min-h-11 rounded-xl border border-ink/20 px-4 text-sm" />
         </div>
         <div className="space-y-3">
           <p className="text-sm font-medium text-ink">Line items</p>
@@ -50,21 +50,21 @@ export function InvoiceGeneratorTool() {
                 value={item.description}
                 onChange={(e) => updateItem(i, "description", e.target.value)}
                 placeholder="Description"
-                className="flex-1 min-h-11 rounded-xl border border-border px-4 text-sm"
+                className="flex-1 min-h-11 rounded-xl border border-ink/20 px-4 text-sm"
               />
               <input
                 value={item.amount}
                 onChange={(e) => updateItem(i, "amount", e.target.value)}
                 placeholder="Amount"
                 inputMode="decimal"
-                className="w-28 min-h-11 rounded-xl border border-border px-4 text-sm"
+                className="w-28 min-h-11 rounded-xl border border-ink/20 px-4 text-sm"
               />
             </div>
           ))}
           <button
             type="button"
             onClick={() => setItems((prev) => [...prev, { description: "", amount: "0" }])}
-            className="text-sm font-medium text-primary-600"
+            className="text-sm font-medium text-brand"
           >
             + Add line item
           </button>
@@ -72,7 +72,7 @@ export function InvoiceGeneratorTool() {
         <button
           type="button"
           onClick={() => window.print()}
-          className="inline-flex items-center gap-2 rounded-xl bg-primary-600 px-5 py-3 text-sm font-semibold text-white hover:bg-primary-700"
+          className="inline-flex items-center gap-2 rounded-xl bg-action px-5 py-3 text-sm font-semibold text-white hover:bg-action-hover"
         >
           <Printer className="h-4 w-4" aria-hidden="true" />
           Download as PDF
@@ -82,7 +82,7 @@ export function InvoiceGeneratorTool() {
         </div>
       </div>
 
-      <div className="rounded-2xl border border-border bg-white p-8 print:border-0 print:p-0" id="invoice-preview">
+      <div className="rounded-2xl border border-ink/20 bg-surface p-8 print:border-0 print:p-0" id="invoice-preview">
         <div className="flex justify-between items-start mb-8">
           <div>
             <p className="font-semibold text-ink text-lg">{business}</p>

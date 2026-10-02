@@ -35,7 +35,7 @@ export function ComparePageTemplate({ data }: { data: ComparePageData }) {
           <ComparisonTable columns={data.columns} rows={data.rows} />
         </div>
       </section>
-      <section className="px-6 py-16 bg-white border-y border-border">
+      <section className="px-6 py-16 bg-surface border-y border-border">
         <div className="mx-auto max-w-3xl prose-article">{data.body}</div>
       </section>
       <FAQSection items={data.faqs} id={`faq-${data.slug}`} />

@@ -13,7 +13,7 @@ export function ComparisonTable({
   rows: ComparisonRow[];
 }) {
   return (
-    <div className="overflow-x-auto rounded-2xl border border-border bg-white">
+    <div className="overflow-x-auto rounded-2xl border border-border bg-surface">
       <table className="w-full text-sm">
         <thead>
           <tr className="border-b border-border">
@@ -35,7 +35,7 @@ export function ComparisonTable({
                 <td key={i} className="p-4 text-ink-muted">
                   {typeof value === "boolean" ? (
                     value ? (
-                      <Check className="h-4 w-4 text-primary-500" aria-label="Yes" />
+                      <Check className="h-4 w-4 text-brand" aria-label="Yes" />
                     ) : (
                       <Minus className="h-4 w-4 text-ink-muted/50" aria-label="No" />
                     )

@@ -35,7 +35,7 @@ export default function SolutionsIndexPage() {
               <Link
                 key={p.slug}
                 href={`/for/${p.slug}`}
-                className="group flex items-center justify-between rounded-2xl border border-border bg-white p-6 hover:border-primary-300"
+                className="group flex items-center justify-between rounded-2xl border border-border bg-surface p-6 hover:border-primary-300"
               >
                 <span className="font-medium text-ink">{p.label}</span>
                 <ArrowRight className="h-4 w-4 text-ink-muted transition-transform group-hover:translate-x-1" aria-hidden="true" />

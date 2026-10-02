@@ -50,7 +50,7 @@ export function SolutionPageTemplate({ profession }: { profession: ProfessionCon
         </div>
       </section>
 
-      <section className="px-6 py-20 bg-white border-y border-border">
+      <section className="px-6 py-20 bg-surface border-y border-border">
         <div className="mx-auto max-w-3xl">
           <h2 className="text-2xl md:text-3xl font-semibold text-ink mb-8 text-center">
             Built around what {profession.label.toLowerCase()} actually need
@@ -58,7 +58,7 @@ export function SolutionPageTemplate({ profession }: { profession: ProfessionCon
           <ul className="space-y-4">
             {profession.painPoints.map((point) => (
               <li key={point} className="flex items-start gap-3 rounded-2xl border border-border bg-[var(--color-bg)] p-5">
-                <Check className="h-5 w-5 flex-shrink-0 mt-0.5 text-primary-500" aria-hidden="true" />
+                <Check className="h-5 w-5 flex-shrink-0 mt-0.5 text-brand" aria-hidden="true" />
                 <span className="text-ink">{point}</span>
               </li>
             ))}

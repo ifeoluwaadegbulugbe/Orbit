@@ -9,8 +9,8 @@ const base =
   "press inline-flex items-center justify-center gap-2 rounded-lg font-semibold transition-colors duration-200 min-h-11 focus-visible:outline-2 focus-visible:outline-offset-2";
 
 const variants: Record<Variant, string> = {
-  primary: "bg-primary-600 text-white hover:bg-primary-700 shadow-[var(--shadow-sm)]",
-  secondary: "bg-white text-ink border border-border hover:border-primary-300 hover:bg-primary-50",
+  primary: "bg-action text-white hover:bg-action-hover shadow-[var(--shadow-sm)]",
+  secondary: "bg-surface text-ink border border-ink/15 hover:border-ink/35 hover:bg-sunken",
   ghost: "text-ink hover:bg-primary-50",
 };
 

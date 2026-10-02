@@ -12,12 +12,12 @@ export function PricingCards() {
       {pricingPlans.map((plan) => (
         <div
           key={plan.name}
-          className={`relative rounded-3xl bg-white p-8 md:p-10 ${
+          className={`relative rounded-3xl bg-surface p-8 md:p-10 ${
             plan.highlighted ? "border-2 border-primary-500 shadow-[var(--shadow-lg)]" : "border border-border"
           }`}
         >
           {plan.highlighted && (
-            <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 rounded-full bg-primary-600 px-4 py-1 text-xs font-semibold text-white">
+            <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 rounded-full bg-action px-4 py-1 text-xs font-semibold text-white">
               Most popular
             </span>
           )}
@@ -38,7 +38,7 @@ export function PricingCards() {
           <ul className="space-y-3">
             {plan.features.map((feature) => (
               <li key={feature} className="flex items-start gap-2.5 text-sm text-ink">
-                <Check className="h-4 w-4 flex-shrink-0 mt-0.5 text-primary-500" aria-hidden="true" />
+                <Check className="h-4 w-4 flex-shrink-0 mt-0.5 text-brand" aria-hidden="true" />
                 {feature}
               </li>
             ))}

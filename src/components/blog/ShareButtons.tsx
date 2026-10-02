@@ -11,7 +11,7 @@ export function ShareButtons({ title, slug }: { title: string; slug: string }) {
   return (
     <div className="flex flex-wrap gap-3 text-sm">
       {links.map((link) => (
-        <a key={link.label} href={link.href} target="_blank" rel="noopener noreferrer" className="text-primary-600 underline">
+        <a key={link.label} href={link.href} target="_blank" rel="noopener noreferrer" className="text-brand underline">
           {link.label}
         </a>
       ))}

@@ -52,7 +52,7 @@ export default function TemplatesPage() {
 
         <div className="space-y-10">
           {templates.map((template) => (
-            <div key={template.id} className="rounded-2xl border border-border bg-white p-6">
+            <div key={template.id} className="rounded-2xl border border-border bg-surface p-6">
               <h2 className="font-semibold text-ink mb-4">{template.title}</h2>
               <ul className="space-y-2 text-sm text-ink-muted">
                 {template.body.map((line, i) => (
@@ -63,7 +63,7 @@ export default function TemplatesPage() {
           ))}
         </div>
 
-        <div className="mt-10 rounded-2xl border border-border bg-white p-6">
+        <div className="mt-10 rounded-2xl border border-border bg-surface p-6">
           <EmailCapture source="templates" title="Get new templates and tips by email" eventName="lead_magnet_submit" />
         </div>
       </div>

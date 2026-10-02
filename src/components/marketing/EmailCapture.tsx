@@ -65,14 +65,14 @@ export function EmailCapture({
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="you@example.com"
-          className="min-h-11 flex-1 rounded-xl border border-border bg-white px-4 text-sm outline-none focus:border-primary-400"
+          className="min-h-11 flex-1 rounded-xl border border-ink/20 bg-surface px-4 text-sm outline-none focus:border-primary-400"
         />
         {/* Honeypot: hidden from real users, bots tend to fill every field. */}
         <input type="text" name="company_website" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden="true" />
         <button
           type="submit"
           disabled={status === "loading"}
-          className="min-h-11 rounded-xl bg-primary-600 px-6 text-sm font-semibold text-white hover:bg-primary-700 disabled:opacity-60"
+          className="min-h-11 rounded-xl bg-action px-6 text-sm font-semibold text-white hover:bg-action-hover disabled:opacity-60"
         >
           {status === "loading" ? <Loader2 className="h-4 w-4 animate-spin mx-auto" /> : buttonLabel}
         </button>

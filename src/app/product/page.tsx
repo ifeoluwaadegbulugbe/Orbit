@@ -31,7 +31,7 @@ export default function ProductOverviewPage() {
           </p>
         </div>
       </section>
-      <section className="px-6 py-20 bg-white border-y border-border">
+      <section className="px-6 py-20 bg-surface border-y border-border">
         <div className="mx-auto max-w-6xl">
           <SectionHeader title="Explore each job" />
           <div className="mt-12 grid gap-5 sm:grid-cols-2">

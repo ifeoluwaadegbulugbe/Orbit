@@ -3,7 +3,7 @@ import { ArrowRight, type LucideIcon } from "lucide-react";
 import { Reveal } from "@/components/ui/Reveal";
 
 const tints = {
-  primary: "bg-primary-50 text-primary-600",
+  primary: "bg-primary-50 text-brand",
   accent: "bg-accent-50 text-accent-700",
 };
 
@@ -26,7 +26,7 @@ export function FeatureCard({
     <Reveal className="h-full">
     <Link
       href={href}
-      className={`group flex h-full flex-col justify-between rounded-2xl border border-border bg-white p-6 shadow-[var(--shadow-sm)] transition-all duration-200 hover:-translate-y-0.5 hover:border-primary-200 hover:shadow-[var(--shadow-md)] md:p-8 ${
+      className={`group flex h-full flex-col justify-between rounded-2xl border border-border bg-surface p-6 shadow-[var(--shadow-sm)] transition-all duration-200 hover:-translate-y-0.5 hover:border-primary-200 hover:shadow-[var(--shadow-md)] md:p-8 ${
         size === "lg" ? "md:col-span-2" : ""
       }`}
     >
@@ -37,7 +37,7 @@ export function FeatureCard({
         <h3 className="mb-2 text-lg font-semibold text-ink">{title}</h3>
         <p className="text-sm leading-relaxed text-ink-muted">{description}</p>
       </div>
-      <div className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-primary-600">
+      <div className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-brand">
         Learn more
         <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
       </div>

@@ -21,7 +21,7 @@ export function BookingLinkPreviewTool() {
             id="profession"
             value={slug}
             onChange={(e) => setSlug(e.target.value)}
-            className="min-h-11 w-full rounded-xl border border-border bg-white px-4 text-sm"
+            className="min-h-11 w-full rounded-xl border border-ink/20 bg-surface px-4 text-sm"
           >
             {professions.map((p) => (
               <option key={p.slug} value={p.slug}>
@@ -39,10 +39,10 @@ export function BookingLinkPreviewTool() {
             value={name}
             onChange={(e) => setName(e.target.value)}
             placeholder={profession.mockupBusinessName}
-            className="min-h-11 w-full rounded-xl border border-border bg-white px-4 text-sm"
+            className="min-h-11 w-full rounded-xl border border-ink/20 bg-surface px-4 text-sm"
           />
         </div>
-        <div className="rounded-xl border border-border bg-white p-4 text-sm text-ink-muted">
+        <div className="rounded-xl border border-ink/20 bg-surface p-4 text-sm text-ink-muted">
           This is a preview of what your Orbit Booking Link could look like. Your real link lets clients pick a service and
           time, and nothing is confirmed until you approve it.
         </div>
