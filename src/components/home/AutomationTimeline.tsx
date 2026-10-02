@@ -38,10 +38,10 @@ export function AutomationTimeline() {
   return (
     <div ref={ref}>
       <ol className="relative space-y-3">
-        <span aria-hidden="true" className="absolute left-[2.1rem] top-6 h-[calc(100%-3rem)] w-px bg-white/10" />
+        <span aria-hidden="true" className="absolute left-[2.1rem] top-6 h-[calc(100%-3rem)] w-px bg-border" />
         <span
           aria-hidden="true"
-          className="absolute left-[2.1rem] top-6 w-px bg-primary-400"
+          className="absolute left-[2.1rem] top-6 w-px bg-primary-500"
           style={{
             height: `${Math.min(active, nodes.length - 1) * 33.3}%`,
             maxHeight: "calc(100% - 3rem)",
@@ -55,21 +55,21 @@ export function AutomationTimeline() {
             <li
               key={n.title}
               className={`relative flex items-start gap-4 rounded-xl border p-4 transition-all duration-500 ${
-                current ? "border-white/25 bg-white/[0.07]" : "border-white/10 bg-white/[0.03]"
+                current ? "border-primary-200 bg-primary-50" : "border-border bg-white"
               } ${!done && !current ? "opacity-60" : "opacity-100"}`}
             >
               <span
                 className={`relative z-10 flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full transition-colors duration-500 ${
-                  done ? "bg-success text-white" : current ? "bg-primary-600 text-white" : "bg-[#2a2420] text-white/60"
+                  done ? "bg-success text-white" : current ? "bg-primary-600 text-white" : "bg-[#f1ece8] text-ink-muted"
                 }`}
               >
                 {done ? <Check className="h-4 w-4" aria-hidden="true" /> : <n.icon className="h-4 w-4" aria-hidden="true" />}
               </span>
               <div className="min-w-0">
-                <p className="text-sm font-semibold text-white">{n.title}</p>
-                <p className="text-sm text-white/60">{n.detail}</p>
+                <p className="text-sm font-semibold text-ink">{n.title}</p>
+                <p className="text-sm text-ink-muted">{n.detail}</p>
               </div>
-              <span className="ml-auto hidden flex-shrink-0 rounded-full border border-white/15 px-2.5 py-1 text-[11px] font-medium text-white/60 sm:inline">
+              <span className="ml-auto hidden flex-shrink-0 rounded-full border border-border px-2.5 py-1 text-[11px] font-medium text-ink-muted sm:inline">
                 {done ? "Done" : current ? "Running" : n.sub}
               </span>
             </li>

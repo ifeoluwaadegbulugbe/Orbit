@@ -22,7 +22,7 @@ export function CtaBand({
   location: string;
 }) {
   return (
-    <section className="relative overflow-hidden border-t border-border px-6 py-24 md:py-32">
+    <section className="relative overflow-hidden border-t border-border bg-white px-6 py-24 md:py-32">
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 hidden lg:block">
         {chips.map((c) => (
           <div

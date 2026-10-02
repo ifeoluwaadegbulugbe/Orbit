@@ -62,20 +62,20 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-[#17120f] px-6 py-20 text-white md:py-28">
+      <section className="border-y border-border bg-white px-6 py-20 md:py-28">
         <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-[1fr_1.1fr] lg:gap-16">
           <Reveal>
-            <p className="text-xs font-semibold uppercase tracking-wider text-primary-300">Automations</p>
+            <p className="text-xs font-semibold uppercase tracking-wider text-primary-600">Automations</p>
             <h2 className="mt-4 font-display text-4xl font-semibold leading-[1.08] tracking-[-0.015em] md:text-5xl">
-              The admin that runs itself. <span className="text-white/55">Set it once.</span>
+              The admin that runs itself. <span className="text-ink-muted">Set it once.</span>
             </h2>
-            <p className="mt-5 max-w-md text-lg leading-relaxed text-white/65">
+            <p className="mt-5 max-w-md text-lg leading-relaxed text-ink-muted">
               Orbit confirms, reminds, collects deposits and nudges clients to rebook. You keep making the decisions. It
               handles the follow-through.
             </p>
             <Link
               href="/product/automations"
-              className="group mt-7 inline-flex items-center gap-1.5 text-sm font-semibold text-white hover:text-primary-300"
+              className="group mt-7 inline-flex items-center gap-1.5 text-sm font-semibold text-primary-700 hover:text-primary-800"
             >
               See automations
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />

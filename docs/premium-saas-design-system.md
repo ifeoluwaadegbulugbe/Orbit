@@ -37,7 +37,7 @@ Derived from studying attio.com in a live browser (homepage, pricing, mobile, co
 
 ## 3. Orbit principles (original adaptation)
 
-**Identity.** Warm paper surfaces, near-black ink, **Fraunces** serif for display (the playful, human signature Attio doesn't have), **Inter** for UI. Pink (#E8557A family) is an *accent*: primary buttons, one highlighted word, status, active states. Never a section background, never a wash. One dark ink section per page.
+**Identity.** Warm paper surfaces, near-black ink, **Fraunces** serif for display (the playful, human signature Attio doesn't have), **Inter** for UI. Pink (#E8557A family) is an *accent*: primary buttons, one highlighted word, status, active states. Never a section background, never a wash. No dark sections: surfaces alternate paper and white, divided by hairlines (a decision after seeing a black block clash with the warm identity).
 
 **Surface rhythm.** paper, white, paper, ink (the single dark moment), paper. Cells divided by hairlines.
 
