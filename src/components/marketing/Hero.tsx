@@ -1,40 +1,39 @@
 "use client";
 
-import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
-import { HeroVisual } from "@/components/mockups/HeroVisual";
+import { OrbitDashboard } from "@/components/home/OrbitDashboard";
 import { appLink } from "@/site.config";
 import { trackEvent } from "@/lib/analytics";
 
 export function Hero() {
   return (
-    <section className="hero-grid relative overflow-hidden px-6 pt-20 pb-24 md:pt-28 md:pb-32">
-      <div className="mx-auto grid max-w-7xl items-center gap-16 lg:grid-cols-[1.1fr_0.9fr]">
-        <div className="space-y-8 text-center lg:text-left">
-          <div className="flex justify-center lg:justify-start">
-            <Badge>Built for African service businesses</Badge>
-          </div>
-          <h1 className="text-5xl font-semibold leading-[1.03] tracking-tight text-ink md:text-7xl">
-            Run your business.
-            <br />
-            <span className="text-primary-500">Not the admin.</span>
-          </h1>
-          <p className="mx-auto max-w-xl text-lg leading-relaxed text-ink-muted md:text-xl lg:mx-0">
-            {"Get booked. Get paid. Keep your clients. Orbit gives you one place to manage clients, bookings, payments, and follow-ups, while automation handles the admin in between."}
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-4 lg:justify-start">
-            <Button href={appLink("/signup")} size="lg" onClick={() => trackEvent({ name: "signup_start", location: "hero" })}>
-              Start free
-            </Button>
-            <Button href="/pricing" variant="secondary" size="lg">
-              See pricing
-            </Button>
-          </div>
-          <p className="text-sm text-ink-muted">Free to start. No credit card required.</p>
+    <section className="relative px-6 pt-14 md:pt-24">
+      <div className="mx-auto max-w-3xl text-center">
+        <p className="hero-enter mb-6 inline-flex items-center rounded-full border border-border bg-white px-3.5 py-1.5 text-xs font-medium uppercase tracking-wider text-ink-muted">
+          The business OS for service businesses
+        </p>
+        <h1 className="hero-enter hero-enter-2 font-display text-[2.75rem] font-semibold leading-[1.02] tracking-[-0.02em] text-ink sm:text-6xl md:text-7xl">
+          Run your business.
+          <br />
+          <span className="text-primary-600">Not the admin.</span>
+        </h1>
+        <p className="hero-enter hero-enter-3 mx-auto mt-6 max-w-xl text-lg leading-relaxed text-ink-muted md:text-xl">
+          Bookings, payments, clients and follow-ups in one place, so you stop chasing WhatsApp threads and start
+          running your business.
+        </p>
+        <div className="hero-enter hero-enter-4 mt-9 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
+          <Button href={appLink("/signup")} size="lg" onClick={() => trackEvent({ name: "signup_start", location: "hero" })}>
+            Try Orbit free
+          </Button>
+          <Button href="#how-it-works" variant="secondary" size="lg">
+            See how it works
+          </Button>
         </div>
-        <div>
-          <HeroVisual />
-        </div>
+        <p className="hero-enter hero-enter-4 mt-4 text-sm text-ink-muted">Free for up to 10 clients. No card needed.</p>
+      </div>
+
+      <div className="hero-enter hero-enter-4 mx-auto mt-14 max-w-5xl pb-4 md:mt-16">
+        <OrbitDashboard />
       </div>
     </section>
   );

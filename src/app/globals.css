@@ -39,16 +39,22 @@
   --font-sans: "Inter", "Helvetica Neue", Arial, sans-serif;
 
   --radius-sm: 0.5rem;
-  --radius-md: 0.875rem;
-  --radius-lg: 1.25rem;
-  --radius-xl: 1.75rem;
+  --radius-md: 0.625rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
 
   --shadow-sm: 0 1px 2px rgba(23, 18, 15, 0.05);
   --shadow-md: 0 1px 2px rgba(23, 18, 15, 0.04), 0 8px 20px -4px rgba(23, 18, 15, 0.08);
   --shadow-lg: 0 1px 2px rgba(23, 18, 15, 0.04), 0 16px 40px -8px rgba(23, 18, 15, 0.1);
   --shadow-float: 0 1px 1px rgba(23, 18, 15, 0.03), 0 4px 12px rgba(23, 18, 15, 0.05), 0 32px 64px -16px rgba(23, 18, 15, 0.16);
 
-  --ease-standard: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --dur-fast: 120ms;
+  --dur-normal: 240ms;
+  --dur-slow: 600ms;
+  --shadow-ring: 0 0 0 1px var(--color-border);
+  --shadow-card: 0 0 0 1px var(--color-border), 0 1px 2px rgba(23, 18, 15, 0.04), 0 12px 32px -12px rgba(23, 18, 15, 0.12);
+  --shadow-panel: 0 0 0 1px var(--color-border), 0 2px 4px rgba(23, 18, 15, 0.04), 0 40px 80px -32px rgba(23, 18, 15, 0.22);
 }
 
 @theme inline {
@@ -202,13 +208,6 @@
 }
 
 
-/* Faint vertical hairlines behind the hero, an editorial grid rather than a color wash. */
-.hero-grid {
-  background-image: linear-gradient(to right, color-mix(in srgb, var(--color-border) 45%, transparent) 1px, transparent 1px);
-  background-size: 25% 100%;
-  background-position: 0 0;
-}
-
 /* Scroll-reveal: content fades and rises slightly into place. */
 .reveal {
   opacity: 0;
@@ -220,3 +219,44 @@
   opacity: 1;
   transform: none;
 }
+
+/* Hero headline enters once on load: fades up out of a soft blur. CSS only. */
+.hero-enter {
+  animation: hero-enter 700ms var(--ease-standard) both;
+}
+.hero-enter-2 { animation-delay: 120ms; }
+.hero-enter-3 { animation-delay: 240ms; }
+.hero-enter-4 { animation-delay: 360ms; }
+
+@keyframes hero-enter {
+  from { opacity: 0; filter: blur(8px); transform: translateY(10px); }
+  to { opacity: 1; filter: blur(0); transform: none; }
+}
+
+/* A feed item sliding into a live list. */
+.feed-in {
+  animation: feed-in 420ms var(--ease-standard) both;
+}
+@keyframes feed-in {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* Quiet pulse for "live" indicators. */
+.pulse-dot::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background: currentColor;
+  animation: pulse-ring 2s var(--ease-standard) infinite;
+}
+@keyframes pulse-ring {
+  from { opacity: 0.5; transform: scale(1); }
+  to { opacity: 0; transform: scale(2.6); }
+}
+
+/* Button press feedback. */
+.press:active { transform: scale(0.98); }
+
+.font-display { font-family: var(--font-display); }

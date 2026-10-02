@@ -7,7 +7,7 @@ import { SectionHeader } from "./SectionHeader";
 import { BookingLinkMockup } from "@/components/mockups/BookingLinkMockup";
 import { professions } from "@/data/professions";
 
-const shown = professions.slice(0, 3);
+const shown = professions;
 
 export function ProfessionTabs() {
   const [active, setActive] = useState(shown[0]!.slug);
@@ -17,7 +17,7 @@ export function ProfessionTabs() {
     <section className="px-6 py-20 md:py-28">
       <div className="mx-auto max-w-6xl">
         <SectionHeader eyebrow="Built for your work" title="Whatever you do, Orbit fits how you run it" />
-        <div className="mt-10 flex flex-wrap justify-center gap-2">
+        <div className="mt-10 flex flex-wrap justify-center gap-2 max-w-3xl mx-auto">
           {shown.map((p) => (
             <button
               key={p.slug}
@@ -32,9 +32,9 @@ export function ProfessionTabs() {
           ))}
         </div>
 
-        <div className="mt-14 grid items-center gap-14 lg:grid-cols-2">
+        <div className="mt-12 grid items-center gap-12 rounded-2xl border border-border bg-white p-6 md:p-10 lg:grid-cols-2">
           <div className="space-y-5">
-            <h3 className="text-2xl font-semibold text-ink">{current.headline}</h3>
+            <h3 className="font-display text-2xl font-semibold tracking-[-0.01em] text-ink md:text-3xl">{current.headline}</h3>
             <p className="text-ink-muted leading-relaxed">{current.description}</p>
             <ul className="space-y-3">
               {current.painPoints.map((point) => (
@@ -49,7 +49,7 @@ export function ProfessionTabs() {
               <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </Link>
           </div>
-          <div>
+          <div className="rounded-xl bg-[#f6f2ee] p-6 md:p-8">
             <BookingLinkMockup
               businessName={current.mockupBusinessName}
               role={current.mockupRole}

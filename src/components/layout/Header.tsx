@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { ChevronDown, Menu, X } from "lucide-react";
@@ -23,7 +23,7 @@ function MegaMenu({ label, links }: { label: string; links: NavLink[] }) {
         <ChevronDown className={`h-3.5 w-3.5 transition-transform ${open ? "rotate-180" : ""}`} aria-hidden="true" />
       </button>
       {open && (
-        <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1 w-72 rounded-2xl border border-border bg-white p-2 shadow-[var(--shadow-lg)]">
+        <div className="feed-in absolute top-full left-1/2 -translate-x-1/2 mt-1 w-72 rounded-xl bg-white p-2" style={{ boxShadow: "var(--shadow-card)" }}>
           {links.map((link) => (
             <Link
               key={link.href}
@@ -43,9 +43,21 @@ function MegaMenu({ label, links }: { label: string; links: NavLink[] }) {
 
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border bg-[var(--color-bg)]/90 backdrop-blur-md">
+    <header
+      className={`sticky top-0 z-50 border-b bg-[var(--color-bg)]/85 backdrop-blur-md transition-colors duration-300 ${
+        scrolled ? "border-border" : "border-transparent"
+      }`}
+    >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3.5">
         <Link href="/" className="flex items-center gap-2 font-semibold text-ink">
           <Image src="/logo.svg" alt="Orbit" width={28} height={28} priority />
