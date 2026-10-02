@@ -72,7 +72,7 @@ export function EmailCapture({
         <button
           type="submit"
           disabled={status === "loading"}
-          className="min-h-11 rounded-xl bg-primary-500 px-6 text-sm font-semibold text-white hover:bg-primary-600 disabled:opacity-60"
+          className="min-h-11 rounded-xl bg-primary-600 px-6 text-sm font-semibold text-white hover:bg-primary-700 disabled:opacity-60"
         >
           {status === "loading" ? <Loader2 className="h-4 w-4 animate-spin mx-auto" /> : buttonLabel}
         </button>

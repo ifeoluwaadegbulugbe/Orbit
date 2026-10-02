@@ -24,7 +24,7 @@ export function ProfessionTabs() {
               onClick={() => setActive(p.slug)}
               aria-pressed={active === p.slug}
               className={`rounded-full px-5 py-2.5 text-sm font-medium transition-colors ${
-                active === p.slug ? "bg-primary-500 text-white" : "bg-white border border-border text-ink-muted hover:border-primary-300"
+                active === p.slug ? "bg-primary-600 text-white" : "bg-white border border-border text-ink-muted hover:border-primary-300"
               }`}
             >
               {p.label}

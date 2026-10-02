@@ -2,7 +2,7 @@ import { MockupPanel } from "./MockupPanel";
 
 export function ClientProfileMockup() {
   return (
-    <MockupPanel eyebrow="Client profile" glow="accent" maxWidth="max-w-md">
+    <MockupPanel eyebrow="Client profile" maxWidth="max-w-md">
       <div className="space-y-5">
         <div className="flex items-center gap-3">
           <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary-100 font-semibold text-primary-700">

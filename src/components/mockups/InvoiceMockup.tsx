@@ -2,7 +2,7 @@ import { MockupPanel } from "./MockupPanel";
 
 export function InvoiceMockup() {
   return (
-    <MockupPanel eyebrow="Invoice" glow="accent" maxWidth="max-w-md">
+    <MockupPanel eyebrow="Invoice" maxWidth="max-w-md">
       <div className="space-y-5">
         <div className="flex items-center justify-between">
           <p className="font-semibold text-ink">INV-0142</p>

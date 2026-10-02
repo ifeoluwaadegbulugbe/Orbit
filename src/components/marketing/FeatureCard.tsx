@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowRight, type LucideIcon } from "lucide-react";
+import { Reveal } from "@/components/ui/Reveal";
 
 const tints = {
   primary: "bg-primary-50 text-primary-600",
@@ -22,9 +23,10 @@ export function FeatureCard({
   tint?: keyof typeof tints;
 }) {
   return (
+    <Reveal className="h-full">
     <Link
       href={href}
-      className={`group flex flex-col justify-between rounded-2xl border border-border bg-white p-6 shadow-[var(--shadow-sm)] transition-all duration-200 hover:-translate-y-0.5 hover:border-primary-200 hover:shadow-[var(--shadow-md)] md:p-8 ${
+      className={`group flex h-full flex-col justify-between rounded-2xl border border-border bg-white p-6 shadow-[var(--shadow-sm)] transition-all duration-200 hover:-translate-y-0.5 hover:border-primary-200 hover:shadow-[var(--shadow-md)] md:p-8 ${
         size === "lg" ? "md:col-span-2" : ""
       }`}
     >
@@ -40,5 +42,6 @@ export function FeatureCard({
         <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
       </div>
     </Link>
+    </Reveal>
   );
 }

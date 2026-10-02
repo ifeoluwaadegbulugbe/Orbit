@@ -16,7 +16,7 @@ export function BookingLinkMockup({
     .slice(0, 2);
 
   return (
-    <MockupPanel eyebrow="Booking Link" glow="primary">
+    <MockupPanel eyebrow="Booking Link">
       <div className="space-y-5 text-center">
         <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-primary-100 font-semibold text-primary-700">
           {initials}

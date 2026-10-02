@@ -18,7 +18,7 @@ const data: ProductPageData = {
   intro:
     "Revenue, repeat-client rate, and your top services, calculated from the bookings and payments you're already recording in Orbit.",
   mockup: (
-    <MockupPanel eyebrow="This month" glow="accent" maxWidth="max-w-md">
+    <MockupPanel eyebrow="This month" maxWidth="max-w-md">
       <div className="space-y-5">
         <div className="flex items-end gap-1.5 h-16">
           {[32, 48, 40, 60, 52, 70, 64, 85, 76, 90].map((height, i) => (

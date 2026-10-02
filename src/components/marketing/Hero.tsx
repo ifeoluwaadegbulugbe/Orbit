@@ -8,7 +8,7 @@ import { trackEvent } from "@/lib/analytics";
 
 export function Hero() {
   return (
-    <section className="hero-wash relative overflow-hidden px-6 pt-20 pb-24 md:pt-28 md:pb-32">
+    <section className="hero-grid relative overflow-hidden px-6 pt-20 pb-24 md:pt-28 md:pb-32">
       <div className="mx-auto grid max-w-7xl items-center gap-16 lg:grid-cols-[1.1fr_0.9fr]">
         <div className="space-y-8 text-center lg:text-left">
           <div className="flex justify-center lg:justify-start">

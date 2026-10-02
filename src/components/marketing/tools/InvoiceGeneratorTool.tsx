@@ -72,7 +72,7 @@ export function InvoiceGeneratorTool() {
         <button
           type="button"
           onClick={() => window.print()}
-          className="inline-flex items-center gap-2 rounded-xl bg-primary-500 px-5 py-3 text-sm font-semibold text-white hover:bg-primary-600"
+          className="inline-flex items-center gap-2 rounded-xl bg-primary-600 px-5 py-3 text-sm font-semibold text-white hover:bg-primary-700"
         >
           <Printer className="h-4 w-4" aria-hidden="true" />
           Download as PDF
