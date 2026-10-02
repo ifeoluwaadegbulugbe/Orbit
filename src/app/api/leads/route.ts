@@ -46,20 +46,35 @@ export async function POST(request: NextRequest) {
 
   const attribution = readAttributionCookie(request.headers.get("cookie") ?? undefined);
 
+  const record = {
+    email: parsed.data.email,
+    name: parsed.data.name ?? null,
+    message: parsed.data.message ?? null,
+    source: parsed.data.source,
+    utm_source: attribution.utm_source ?? null,
+    utm_medium: attribution.utm_medium ?? null,
+    utm_campaign: attribution.utm_campaign ?? null,
+    referrer: attribution.referrer ?? null,
+    landing_page: attribution.landing_page ?? null,
+  };
+
   try {
-    const supabase = getSupabaseServerClient();
-    const { error } = await supabase.from("leads").insert({
-      email: parsed.data.email,
-      name: parsed.data.name ?? null,
-      message: parsed.data.message ?? null,
-      source: parsed.data.source,
-      utm_source: attribution.utm_source ?? null,
-      utm_medium: attribution.utm_medium ?? null,
-      utm_campaign: attribution.utm_campaign ?? null,
-      referrer: attribution.referrer ?? null,
-      landing_page: attribution.landing_page ?? null,
-    });
-    if (error) throw error;
+    if (process.env.SUPABASE_URL && process.env.SUPABASE_SERVICE_ROLE_KEY) {
+      const supabase = getSupabaseServerClient();
+      const { error } = await supabase.from("leads").insert(record);
+      if (error) throw error;
+    } else if (process.env.LEADS_WEBHOOK_URL) {
+      // Simplest setup: a Google Apps Script web app that appends a row to a Sheet.
+      const res = await fetch(process.env.LEADS_WEBHOOK_URL, {
+        method: "POST",
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify({ ...record, created_at: new Date().toISOString() }),
+        redirect: "follow",
+      });
+      if (!res.ok) throw new Error(`Webhook responded ${res.status}`);
+    } else {
+      throw new Error("No lead storage configured. Set LEADS_WEBHOOK_URL or the Supabase env vars.");
+    }
   } catch (err) {
     console.error("Failed to store lead", err);
     return NextResponse.json({ error: "Could not save lead" }, { status: 500 });

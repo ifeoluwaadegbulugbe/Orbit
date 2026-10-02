@@ -6,8 +6,8 @@ import { trackEvent } from "@/lib/analytics";
 
 export function EmailCapture({
   source,
-  title = "Get it in your inbox",
-  buttonLabel = "Send it to me",
+  title = "Get business tips in your inbox",
+  buttonLabel = "Subscribe",
   eventName = "newsletter_subscribe",
 }: {
   source: string;
@@ -46,7 +46,7 @@ export function EmailCapture({
     return (
       <div role="status" className="flex items-center gap-2 rounded-xl border border-primary-200 bg-primary-50 px-5 py-4 text-sm font-medium text-primary-700">
         <CheckCircle2 className="h-5 w-5" aria-hidden="true" />
-        Check your inbox. It's on its way.
+        You're on the list. Thanks!
       </div>
     );
   }

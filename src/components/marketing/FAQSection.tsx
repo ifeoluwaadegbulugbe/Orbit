@@ -1,4 +1,3 @@
-import Script from "next/script";
 import { SectionHeader } from "./SectionHeader";
 import { FAQAccordion, type FaqItem } from "./FAQAccordion";
 import { faqJsonLd, jsonLdGraph } from "@/lib/jsonld";
@@ -12,9 +11,7 @@ export function FAQSection({ items, id = "faq" }: { items: FaqItem[]; id?: strin
           <FAQAccordion items={items} />
         </div>
       </div>
-      <Script
-        id={`${id}-jsonld`}
-        type="application/ld+json"
+      <script type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: jsonLdGraph(faqJsonLd(items)) }}
       />
     </section>

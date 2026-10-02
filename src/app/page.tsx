@@ -16,9 +16,9 @@ import { buildMetadata } from "@/lib/metadata";
 import { homeFaqs } from "@/data/faq-home";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Orbit: Get Booked, Get Paid, Keep Your Clients",
+  title: "Orbit: Booking & Invoicing Software for Service Businesses",
   description:
-    "Orbit is booking, invoicing, and client management software for African service businesses. One flat subscription, and you approve every booking yourself.",
+    "Online booking, invoicing and client management for nail techs, stylists, photographers and other service businesses in Africa. Free to start.",
   path: "/",
 });
 
@@ -52,7 +52,7 @@ export default function HomePage() {
                 Four jobs, one system. <span className="text-ink-muted">Try them.</span>
               </>
             }
-            description="These are working demos, not screenshots. Click around."
+            description="Online booking, invoicing, payments and client management in one app. These are working demos, not screenshots, so click around."
           />
           <div className="mt-12">
             <Reveal>

@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import { buildMetadata } from "@/lib/metadata";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { FAQAccordion } from "@/components/marketing/FAQAccordion";
@@ -45,7 +44,7 @@ export default function HelpPage() {
           ))}
         </div>
       </section>
-      <Script id="help-faq-jsonld" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLdGraph(faqJsonLd(allFaqs)) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLdGraph(faqJsonLd(allFaqs)) }} />
     </>
   );
 }

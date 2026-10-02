@@ -14,7 +14,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-sans", display: "swa
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "Orbit: Get Booked, Get Paid, Keep Your Clients",
+    default: "Orbit: Booking & Invoicing Software for Service Businesses",
     template: "%s | Orbit",
   },
   description: siteConfig.description,

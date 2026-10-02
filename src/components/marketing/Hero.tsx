@@ -18,8 +18,8 @@ export function Hero() {
           <span className="text-primary-600">Not the admin.</span>
         </h1>
         <p className="hero-enter hero-enter-3 mx-auto mt-6 max-w-xl text-lg leading-relaxed text-ink-muted md:text-xl">
-          Bookings, payments, clients and follow-ups in one place, so you stop chasing WhatsApp threads and start
-          running your business.
+          Orbit is booking, invoicing and client management software for service businesses in Africa. Take online
+          bookings, get paid and keep every client in one place, not scattered across WhatsApp.
         </p>
         <div className="hero-enter hero-enter-4 mt-9 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
           <Button href={appLink("/signup")} size="lg" onClick={() => trackEvent({ name: "signup_start", location: "hero" })}>

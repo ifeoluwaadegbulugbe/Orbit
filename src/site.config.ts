@@ -15,7 +15,7 @@ export const siteConfig = {
   tagline: "Run your business. Not the admin.",
   supportingLine: "Get booked. Get paid. Keep your clients.",
   description:
-    "Orbit gives African service businesses one simple place to manage clients, bookings, payments, and follow-ups, while automation handles the admin work in between.",
+    "Orbit is booking, invoicing and client management software for service businesses in Africa. Take online bookings, get paid, send reminders and keep client records in one app.",
   email: "getorbitcrm@gmail.com",
   social: {
     x: "https://x.com/orbitcrm",

@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Script from "next/script";
 import { ChevronRight } from "lucide-react";
 import { breadcrumbJsonLd, jsonLdGraph } from "@/lib/jsonld";
 
@@ -32,9 +31,7 @@ export function Breadcrumbs({ items }: { items: Crumb[] }) {
           })}
         </ol>
       </nav>
-      <Script
-        id={`breadcrumb-jsonld-${items[items.length - 1]?.path}`}
-        type="application/ld+json"
+      <script type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: jsonLdGraph(breadcrumbJsonLd(items)) }}
       />
     </>

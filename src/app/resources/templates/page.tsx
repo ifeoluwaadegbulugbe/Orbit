@@ -48,7 +48,7 @@ export default function TemplatesPage() {
       <div className="mx-auto max-w-3xl">
         <Breadcrumbs items={[{ name: "Resources", path: "/resources" }, { name: "Templates", path: "/resources/templates" }]} />
         <h1 className="text-3xl md:text-4xl font-semibold tracking-tight text-ink mb-3">Free templates</h1>
-        <p className="text-ink-muted mb-10">Copy these directly, or enter your email below to get all three sent to you.</p>
+        <p className="text-ink-muted mb-10">Copy these directly. Add your email below if you want new templates and tips as we publish them.</p>
 
         <div className="space-y-10">
           {templates.map((template) => (
@@ -64,7 +64,7 @@ export default function TemplatesPage() {
         </div>
 
         <div className="mt-10 rounded-2xl border border-border bg-white p-6">
-          <EmailCapture source="templates" title="Get all three templates by email" eventName="lead_magnet_submit" />
+          <EmailCapture source="templates" title="Get new templates and tips by email" eventName="lead_magnet_submit" />
         </div>
       </div>
     </div>

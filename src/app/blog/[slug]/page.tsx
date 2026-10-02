@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import Script from "next/script";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { buildMetadata } from "@/lib/metadata";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
@@ -111,9 +110,7 @@ export default async function BlogPostPage({ params }: { params: Params }) {
       <NewsletterPrompt />
       <ReadTracker slug={post.slug} />
 
-      <Script
-        id={`article-jsonld-${post.slug}`}
-        type="application/ld+json"
+      <script type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: jsonLdGraph(articleJsonLd(post)),
         }}

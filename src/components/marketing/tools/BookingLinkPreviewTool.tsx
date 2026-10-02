@@ -46,7 +46,7 @@ export function BookingLinkPreviewTool() {
           This is a preview of what your Orbit Booking Link could look like. Your real link lets clients pick a service and
           time, and nothing is confirmed until you approve it.
         </div>
-        <EmailCapture source="booking-link-preview" title="Get your own Booking Link" eventName="lead_magnet_submit" />
+        <EmailCapture source="booking-link-preview" title="Get tips for running your business by email" eventName="lead_magnet_submit" />
       </div>
       <BookingLinkMockup
         businessName={name.trim() || profession.mockupBusinessName}

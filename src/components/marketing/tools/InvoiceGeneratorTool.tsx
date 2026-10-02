@@ -78,7 +78,7 @@ export function InvoiceGeneratorTool() {
           Download as PDF
         </button>
         <div className="pt-4 border-t border-border">
-          <EmailCapture source="invoice-generator" title="Email this invoice to yourself" eventName="lead_magnet_submit" />
+          <EmailCapture source="invoice-generator" title="Get free business tips by email" eventName="lead_magnet_submit" />
         </div>
       </div>
 
