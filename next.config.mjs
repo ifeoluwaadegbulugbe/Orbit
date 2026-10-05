@@ -1,6 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  outputFileTracingIncludes: {
+    "/og": ["./src/lib/og-fonts/**/*"],
+    "/opengraph-image": ["./src/lib/og-fonts/**/*"],
+    "/twitter-image": ["./src/lib/og-fonts/**/*"],
+  },
   images: {
     formats: ["image/avif", "image/webp"],
   },

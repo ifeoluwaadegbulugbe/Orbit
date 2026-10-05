@@ -20,6 +20,7 @@ export const metadata: Metadata = buildMetadata({
   description:
     "Online booking, invoicing and client management for nail techs, stylists, photographers and other service businesses in Africa. Free to start.",
   path: "/",
+  ogImage: false,
 });
 
 export default function HomePage() {

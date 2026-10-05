@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
       title: post.title,
       description: post.description,
       path: `/blog/${post.slug}`,
-      ogImage: `/api/og?title=${encodeURIComponent(post.title)}`,
+      ogImage: `/og?title=${encodeURIComponent(post.title)}&eyebrow=${encodeURIComponent(post.category)}`,
     });
   } catch {
     return {};

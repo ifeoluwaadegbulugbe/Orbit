@@ -5,14 +5,14 @@ interface PageMetaInput {
   title: string;
   description: string;
   path: string;
-  ogImage?: string;
+  ogImage?: string | false;
   noIndex?: boolean;
 }
 
 /** Builds consistent Metadata (title, description, canonical, OG, Twitter) for a page. */
 export function buildMetadata({ title, description, path, ogImage, noIndex }: PageMetaInput): Metadata {
   const url = new URL(path, siteConfig.url).toString();
-  const image = ogImage ?? `/api/og?title=${encodeURIComponent(title)}`;
+  const image = ogImage === false ? undefined : (ogImage ?? `/og?title=${encodeURIComponent(title)}`);
 
   return {
     title,
@@ -25,13 +25,13 @@ export function buildMetadata({ title, description, path, ogImage, noIndex }: Pa
       url,
       siteName: siteConfig.name,
       type: "website",
-      images: [{ url: image, width: 1200, height: 630, alt: title }],
+      ...(image && { images: [{ url: image, width: 1200, height: 630, alt: title }] }),
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: [image],
+      ...(image && { images: [image] }),
     },
   };
 }
