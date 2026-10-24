@@ -2,12 +2,12 @@ import { SectionHeader } from "./SectionHeader";
 import { Reveal } from "@/components/ui/Reveal";
 
 const rows = [
-  { label: "Price", value: "Free, then $12/month", note: "Pro doesn't change with how much you book or earn." },
-  { label: "Free plan", value: "Up to 10 clients", note: "Booking Link and manual invoicing included." },
-  { label: "Orbit Wallet", value: "2.5% per transaction", note: "Only on payments that go through Orbit Wallet." },
+  { label: "Price", value: "Free, then a flat Pro plan", note: "Pro doesn't change with how much you book or earn. See the pricing page for your country." },
+  { label: "Free plan", value: "Up to 10 clients", note: "Booking link and invoicing included." },
+  { label: "Orbit Pay", value: "A fee per payment", note: "Only on payments that go through Orbit Pay. Available in Nigeria." },
   { label: "Your calendar", value: "You approve every booking", note: "Nothing reaches it without your yes." },
-  { label: "Contract", value: "None", note: "Billed monthly. Cancel anytime." },
-  { label: "Getting paid", value: "Cards, transfer, mobile money", note: "Depending on your country." },
+  { label: "Contract", value: "None", note: "Pay monthly and cancel anytime." },
+  { label: "Getting paid", value: "Card or bank transfer", note: "Settled straight into your own bank account." },
 ];
 
 /** The proof section: verifiable facts about the product, laid out like a spec sheet. */

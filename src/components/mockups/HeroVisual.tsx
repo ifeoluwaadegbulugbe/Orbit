@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Check, X, Clock, Wallet, RotateCcw } from "lucide-react";
+import { Check, X, Clock, Banknote, RotateCcw } from "lucide-react";
 
 type Decision = "pending" | "approved" | "declined";
 
@@ -105,10 +105,10 @@ export function HeroVisual() {
         style={{ boxShadow: "var(--shadow-float)" }}
       >
         <div className="flex h-8 w-8 items-center justify-center rounded-full bg-accent-50">
-          <Wallet className="h-4 w-4 text-accent-700" aria-hidden="true" />
+          <Banknote className="h-4 w-4 text-accent-700" aria-hidden="true" />
         </div>
         <div>
-          <p className="text-[11px] text-ink-muted">Orbit Wallet</p>
+          <p className="text-[11px] text-ink-muted">Orbit Pay</p>
           <p className="text-sm font-semibold text-ink">₦2,500 received</p>
         </div>
       </div>

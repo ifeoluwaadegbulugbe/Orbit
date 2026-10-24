@@ -11,11 +11,11 @@ const sharedFaqs = [
   {
     question: "What does Orbit cost?",
     answer:
-      "Pro is a flat $12/month regardless of how many clients or bookings you have. Orbit Wallet, the optional built-in way to get paid, carries a standard 2.5% processing fee per transaction, the same as any card processor.",
+      "Orbit is free for up to 10 clients. Pro has a flat price however many clients or bookings you have, and the price depends on your country. See the pricing page for yours.",
   },
   {
     question: "Is there a free plan?",
-    answer: "Yes, up to 10 clients, with your Booking Link and manual invoicing included.",
+    answer: "Yes, up to 10 clients, with your booking link and invoicing included.",
   },
 ];
 

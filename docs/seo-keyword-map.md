@@ -48,7 +48,7 @@ Each pillar is supported by 3+ blog posts (see cluster map below) that link up t
 |---|---|---|---|
 | `/compare/whatsapp-and-spreadsheets` | booking software vs WhatsApp and spreadsheets | why WhatsApp booking doesn't scale, spreadsheet to CRM | Commercial, problem-aware |
 
-`/compare/fresha` and `/compare/booksy` were removed: both were built around a "flat subscription, never a commission" differentiation that turned out to be inaccurate (Orbit Wallet charges a 2.5% processing fee per transaction), and direct instruction was to drop the Fresha/Booksy comparisons entirely rather than rework them. If a competitor comparison is wanted again later, it needs to be built around claims that are actually true.
+`/compare/fresha` and `/compare/booksy` were removed: both were built around a "flat subscription, never a commission" differentiation that turned out to be inaccurate (Orbit Pay charges a processing fee per payment), and direct instruction was to drop the Fresha/Booksy comparisons entirely rather than rework them. If a competitor comparison is wanted again later, it needs to be built around claims that are actually true.
 
 ## Resources (lead-magnet pages)
 

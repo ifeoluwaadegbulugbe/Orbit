@@ -1,5 +1,6 @@
 import { siteConfig } from "@/site.config";
 import { absoluteUrl } from "@/lib/metadata";
+import type { PricingContext } from "@/data/regions";
 
 export function organizationJsonLd() {
   return {
@@ -30,9 +31,42 @@ export function softwareApplicationJsonLd() {
     operatingSystem: "Web",
     description: siteConfig.description,
     url: siteConfig.url,
+  };
+}
+
+/** Pricing-page software node with the Free and Pro offers in the visitor's currency. */
+export function pricingJsonLd(ctx: PricingContext) {
+  const currency = ctx.price.currency;
+  const url = absoluteUrl("/pricing");
+  return {
+    "@type": "SoftwareApplication",
+    name: siteConfig.name,
+    applicationCategory: "BusinessApplication",
+    operatingSystem: "Web",
+    description: siteConfig.description,
+    url: siteConfig.url,
     offers: [
-      { "@type": "Offer", name: "Free", price: "0", priceCurrency: "USD" },
-      { "@type": "Offer", name: "Pro", price: "12", priceCurrency: "USD" },
+      {
+        "@type": "Offer",
+        name: "Free",
+        url,
+        price: "0",
+        priceCurrency: currency,
+        priceSpecification: { "@type": "UnitPriceSpecification", price: "0", priceCurrency: currency, billingDuration: "P1M" },
+      },
+      {
+        "@type": "Offer",
+        name: "Pro",
+        url,
+        price: String(ctx.price.proMonthly),
+        priceCurrency: currency,
+        priceSpecification: {
+          "@type": "UnitPriceSpecification",
+          price: String(ctx.price.proMonthly),
+          priceCurrency: currency,
+          billingDuration: "P1M",
+        },
+      },
     ],
   };
 }

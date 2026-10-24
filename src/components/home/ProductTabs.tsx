@@ -18,7 +18,7 @@ const tabs = [
     id: "paid",
     label: "Get paid",
     lead: "Invoices and deposits that settle themselves.",
-    rest: "When a client pays, the invoice, your balance and your revenue update together.",
+    rest: "When a client pays, the invoice and your revenue update together.",
     href: "/product/payments",
     Demo: PaymentDemo,
   },

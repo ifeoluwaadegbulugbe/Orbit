@@ -1,13 +1,13 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Bell, CalendarCheck, Check, Repeat, Wallet } from "lucide-react";
+import { Bell, CalendarCheck, Check, Repeat, Banknote } from "lucide-react";
 import { useInView, usePrefersReducedMotion } from "@/lib/useInView";
 
 const nodes = [
   { icon: CalendarCheck, title: "You approve a booking", sub: "Trigger", detail: "Thu 2:00 PM · Ada T." },
   { icon: Bell, title: "Confirmation goes out", sub: "Instantly", detail: "Plus a reminder 24 hours before" },
-  { icon: Wallet, title: "Deposit requested", sub: "If a deposit is set", detail: "Paid through your Booking Link" },
+  { icon: Banknote, title: "Deposit requested", sub: "If a deposit is set", detail: "Paid through your Booking Link" },
   { icon: Repeat, title: "Follow-up scheduled", sub: "4 weeks after the visit", detail: "A ready-to-send rebooking message" },
 ];
 

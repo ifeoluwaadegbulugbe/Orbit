@@ -161,11 +161,11 @@ export function PaymentDemo() {
         </div>
 
         <div className={card}>
-          <p className={label}>Orbit Wallet</p>
+          <p className={label}>Revenue this month</p>
           <p className="mt-2 font-display text-3xl font-semibold text-ink">
             <CountUp value={paid ? 155000 : 120000} prefix="₦" duration={800} />
           </p>
-          <p className="text-xs text-ink-muted">Available to withdraw</p>
+          <p className="text-xs text-ink-muted">From paid invoices</p>
           <ul className="mt-4 space-y-1.5 text-xs">
             <li className={`flex items-center gap-2 transition-opacity duration-300 ${paid ? "opacity-100" : "opacity-40"}`}>
               <Check className="h-3.5 w-3.5 text-success" aria-hidden="true" /> Invoice marked paid
@@ -180,7 +180,7 @@ export function PaymentDemo() {
         </div>
       </div>
       <p className="text-sm text-ink-muted" aria-live="polite">
-        {paid ? "Paid. The invoice, your balance and your revenue all update at once." : "A client pays by card, transfer or mobile money."}
+        {paid ? "Paid. The invoice and your revenue update at once." : "A client pays by card or bank transfer."}
       </p>
     </div>
   );

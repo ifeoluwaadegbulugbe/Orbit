@@ -13,7 +13,7 @@ export function InvoiceMockup() {
             ["Client", "Chidinma O."],
             ["Service", "Full set + styling"],
             ["Amount", "₦35,000"],
-            ["Payment method", "Orbit Wallet"],
+            ["Payment method", "Orbit Pay"],
           ].map(([label, value]) => (
             <div key={label} className="flex justify-between">
               <span className="text-ink-muted">{label}</span>

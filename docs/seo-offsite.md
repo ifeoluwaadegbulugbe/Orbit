@@ -13,7 +13,7 @@ These are high-intent (people searching them are already evaluating tools) and t
 - **AlternativeTo** — List Orbit as an alternative to WhatsApp/spreadsheet-based booking workflows. (Fresha/Booksy-specific positioning was dropped, see `content/TODO-verify.md`: the "flat, never a commission" claim it rested on turned out to be inaccurate.)
 
 **Pitch template (adapt per directory's submission form):**
-> Orbit is a booking, invoicing, and client management platform built for African service businesses, nail technicians, hairstylists, photographers, makeup artists, and barbers. Pro is a flat $12/month subscription regardless of volume, and every booking requires the owner's approval before it's confirmed.
+> Orbit is a booking, invoicing, and client management platform built for African service businesses, nail technicians, hairstylists, photographers, makeup artists, and barbers. Pro is a flat subscription regardless of volume, and every booking requires the owner's approval before it's confirmed.
 
 ## Priority 2: Launch platforms
 

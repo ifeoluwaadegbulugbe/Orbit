@@ -1,6 +1,6 @@
 "use client";
 
-import { Bell, Check, Wallet } from "lucide-react";
+import { Bell, Check, Banknote } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
 import { appLink } from "@/site.config";
@@ -8,7 +8,7 @@ import { trackEvent } from "@/lib/analytics";
 
 const chips = [
   { icon: Check, text: "Booking confirmed", pos: "left-[4%] top-[18%] -rotate-3", tone: "bg-primary-50 text-primary-700" },
-  { icon: Wallet, text: "₦2,500 received", pos: "right-[5%] top-[30%] rotate-2", tone: "bg-success-soft text-success" },
+  { icon: Banknote, text: "Deposit received", pos: "right-[5%] top-[30%] rotate-2", tone: "bg-success-soft text-success" },
   { icon: Bell, text: "Reminder sent", pos: "left-[9%] bottom-[14%] rotate-2", tone: "bg-accent-50 text-accent-700" },
 ];
 

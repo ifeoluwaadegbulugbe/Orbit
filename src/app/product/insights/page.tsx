@@ -33,7 +33,7 @@ const data: ProductPageData = {
           {[
             ["Repeat-client rate", "68%"],
             ["Top service this month", "Gel manicure"],
-            ["Outstanding balance", "₦14,000"],
+            ["Unpaid invoices", "₦14,000"],
           ].map(([label, value]) => (
             <div key={label} className="flex justify-between">
               <span className="text-ink-muted">{label}</span>
@@ -53,7 +53,7 @@ const data: ProductPageData = {
     { title: "Revenue tracking", description: "See revenue by day, week, or month without exporting anything." },
     { title: "Repeat-client rate", description: "Know how much of your business comes from clients who come back." },
     { title: "Top services", description: "See which services actually drive your revenue." },
-    { title: "Outstanding balances", description: "A clear view of what's unpaid, so nothing slips through." },
+    { title: "Unpaid invoices", description: "A clear view of what's unpaid, so nothing slips through." },
   ],
   faqs: [
     {

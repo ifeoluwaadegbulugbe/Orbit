@@ -19,7 +19,7 @@ const data: ComparePageData = {
   rows: [
     { label: "Booking requests", values: ["One link, owner-approved", "Scattered across chat threads"] },
     { label: "Client history", values: ["Automatic, per client", "Manual, easy to lose"] },
-    { label: "Payment tracking", values: ["Automatic via Orbit Wallet", "Manual, via screenshots"] },
+    { label: "Payment tracking", values: ["Automatic via Orbit Pay or recorded in one place", "Manual, via screenshots"] },
     { label: "Follow-up reminders", values: ["Automated", "Easy to forget"] },
     { label: "Revenue reporting", values: ["Built-in", "Manual spreadsheet work"] },
   ],

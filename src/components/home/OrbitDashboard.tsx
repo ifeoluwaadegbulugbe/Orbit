@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { BarChart3, Bell, Pause, Play, CalendarDays, Check, Home, UserPlus, Users, Wallet, Inbox } from "lucide-react";
+import { BarChart3, Bell, Pause, Play, CalendarDays, Check, Home, UserPlus, Users, Banknote, Inbox } from "lucide-react";
 import { CountUp } from "./CountUp";
 import { useInView, usePrefersReducedMotion } from "@/lib/useInView";
 
@@ -11,10 +11,10 @@ const LAST_STEP = 6;
 type EventItem = { icon: typeof Check; text: string; sub: string; tone: "pink" | "green" | "gold" | "muted" };
 
 const events: EventItem[] = [
-  { icon: Wallet, text: "Funmi A. paid ₦15,000", sub: "Orbit Wallet · 8:52 AM", tone: "green" },
+  { icon: Banknote, text: "Funmi A. paid ₦15,000", sub: "Orbit Pay · 8:52 AM", tone: "green" },
   { icon: Inbox, text: "New request from Ada T.", sub: "Gel manicure · Thu 2:00 PM", tone: "pink" },
   { icon: Check, text: "You approved Ada T.", sub: "Added to your calendar", tone: "muted" },
-  { icon: Wallet, text: "Ada T. paid ₦2,500 deposit", sub: "Orbit Wallet · just now", tone: "green" },
+  { icon: Banknote, text: "Ada T. paid ₦2,500 deposit", sub: "Orbit Pay · just now", tone: "green" },
   { icon: Bell, text: "Reminder queued for Ada T.", sub: "Sends tomorrow, 9:00 AM", tone: "gold" },
   { icon: UserPlus, text: "Chidinma O. added as a client", sub: "From your Booking Link", tone: "muted" },
   { icon: Bell, text: "Follow-up scheduled for Funmi A.", sub: "In 4 weeks, WhatsApp-ready text", tone: "gold" },
@@ -31,7 +31,7 @@ const sidebar = [
   { icon: Home, label: "Home", active: true },
   { icon: CalendarDays, label: "Calendar" },
   { icon: Users, label: "Clients" },
-  { icon: Wallet, label: "Money" },
+  { icon: Banknote, label: "Money" },
   { icon: BarChart3, label: "Insights" },
 ];
 

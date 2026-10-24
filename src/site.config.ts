@@ -23,10 +23,6 @@ export const siteConfig = {
     tiktok: "https://www.tiktok.com/@getorbitcrm",
   },
   gtmId: "GTM-MQRPTJ78",
-  pricing: {
-    free: { name: "Free", price: 0 },
-    pro: { name: "Pro", price: 12, period: "month" },
-  },
 } as const;
 
 export type SiteConfig = typeof siteConfig;

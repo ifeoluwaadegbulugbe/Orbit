@@ -8,7 +8,7 @@ export const helpGroups: HelpGroup[] = [
     topic: "Getting started",
     items: [
       { question: "How do I create my Booking Link?", answer: "Sign up for a free account at app.getorbitcrm.com, add your services, and Orbit generates your Booking Link automatically." },
-      { question: "Is there a free plan?", answer: "Yes. The free plan covers up to 10 clients, your Booking Link, client management, and manual invoicing." },
+      { question: "Is there a free plan?", answer: "Yes. The free plan covers up to 10 clients, your booking link, client management and invoicing." },
       { question: "Do I need a website to use Orbit?", answer: "No. Your Booking Link works on its own, shared directly in your Instagram bio or WhatsApp status." },
     ],
   },
@@ -22,9 +22,9 @@ export const helpGroups: HelpGroup[] = [
   {
     topic: "Payments",
     items: [
-      { question: "What is Orbit Wallet?", answer: "Orbit Wallet is where client payments land, whether by card, bank transfer, or mobile money. It's part of the Pro plan." },
-      { question: "Do I need to set up my own payment provider account?", answer: "No. Orbit Wallet handles payment processing behind the scenes." },
-      { question: "How do I withdraw my balance?", answer: "Withdraw your Orbit Wallet balance to your linked bank account whenever you choose." },
+      { question: "What is Orbit Pay?", answer: "Orbit Pay lets clients pay deposits and invoices by card or bank transfer. Payments are processed by Paystack and settle straight into your own bank account. It is available in Nigeria." },
+      { question: "Do I have to use Orbit Pay?", answer: "No. You can record bank transfers and cash manually at no fee." },
+      { question: "Does Orbit hold my money?", answer: "No. Orbit never holds your money. Paystack pays each payment straight into your bank account." },
     ],
   },
   {

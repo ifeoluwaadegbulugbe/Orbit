@@ -1,46 +1,61 @@
+import { formatMoney, orbitPayFeeText, type PricingContext } from "./regions";
+
+export const COMING_SOON_LINE = "Orbit Pay: coming soon in your country";
+
+export const TRIAL_DAYS = 7;
+
 export interface PricingPlan {
-  name: string;
-  price: string;
-  period?: string;
+  name: "Free" | "Pro";
   description: string;
   features: string[];
   cta: string;
   highlighted: boolean;
 }
 
-// TODO-verify: confirm Orbit Wallet's live status against the actual
-// product before launch. See content/TODO-verify.md. Feature split and
-// the 2.5% per-transaction processing fee confirmed by the business owner.
-export const pricingPlans: PricingPlan[] = [
-  {
-    name: "Free",
-    price: "$0",
-    description: "Perfect for getting started",
-    features: [
-      "Up to 10 clients",
-      "Booking Link",
-      "Client management",
-      "Reminders & notifications",
-      "Manual invoicing (no Orbit Wallet)",
-      "Email support",
-    ],
-    cta: "Start free",
-    highlighted: false,
-  },
-  {
-    name: "Pro",
-    price: "$12",
-    period: "/month",
-    description: "For growing businesses",
-    features: [
-      "Unlimited clients",
-      "Orbit Wallet (2.5% per transaction), get paid automatically",
-      "Automations & follow-ups",
-      "Advanced insights",
-      "Custom templates",
-      "Priority support",
-    ],
-    cta: "Start free trial",
-    highlighted: true,
-  },
-];
+/** Plan copy for the pricing cards. Orbit Pay lines depend on the visitor's country. */
+export function getPlans(ctx: PricingContext): PricingPlan[] {
+  return [
+    {
+      name: "Free",
+      description: "For getting started",
+      features: [
+        "Up to 10 clients",
+        "Booking link and owner approval on bookings",
+        "Client management, reminders and notifications",
+        "Invoicing",
+        ctx.orbitPay ? `Orbit Pay: ${orbitPayFeeText("free")} (Nigeria only)` : COMING_SOON_LINE,
+        "Email support",
+      ],
+      cta: "Start free",
+      highlighted: false,
+    },
+    {
+      name: "Pro",
+      description: "For when you outgrow 10 clients",
+      features: [
+        "Unlimited clients",
+        "Everything in Free",
+        ctx.orbitPay ? `Lower Orbit Pay fee: ${orbitPayFeeText("pro")} (Nigeria only)` : COMING_SOON_LINE,
+        "Automations and follow-ups",
+        "Advanced insights",
+        "Custom templates",
+        "Priority support",
+      ],
+      cta: `Try Pro free for ${TRIAL_DAYS} days`,
+      highlighted: true,
+    },
+  ];
+}
+
+/** What a yearly plan saves compared with twelve monthly payments. Zero if it does not. */
+export function yearlySaving(ctx: PricingContext): number {
+  return Math.max(0, ctx.price.proMonthly * 12 - ctx.price.proYearly);
+}
+
+export function proMonthlyText(ctx: PricingContext): string {
+  return formatMoney(ctx.price.proMonthly, ctx.price);
+}
+
+export function proYearlyText(ctx: PricingContext): string {
+  return formatMoney(ctx.price.proYearly, ctx.price);
+}

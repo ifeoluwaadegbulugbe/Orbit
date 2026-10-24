@@ -22,12 +22,12 @@ export const homeFaqs = [
   {
     question: "What does Orbit cost?",
     answer:
-      "Orbit is free for up to 10 clients. Pro is a flat $12/month with unlimited clients, regardless of how many bookings you take. Orbit Wallet, the optional way to get paid directly through Orbit, carries a standard 2.5% processing fee per transaction, the same kind of fee any card processor charges.",
+      "Orbit is free for up to 10 clients. Pro has a flat price with unlimited clients, however many bookings you take. The price depends on your country, so check the pricing page. If you take payments through Orbit Pay, a processing fee applies to each payment.",
   },
   {
     question: "How do clients pay me?",
     answer:
-      "On Pro, clients pay deposits and invoices by card, bank transfer or mobile money (depending on your country) and the money lands in your Orbit Wallet. On the free plan you send invoices and mark them paid yourself.",
+      "In Nigeria, clients can pay deposits and invoices through Orbit Pay by card or bank transfer. Payments are processed by Paystack and settle straight into your own bank account. You can also record bank transfers and cash yourself at no fee.",
   },
   {
     question: "Can I send invoices and take deposits to stop no-shows?",
@@ -37,6 +37,6 @@ export const homeFaqs = [
   {
     question: "Does Orbit work in Nigeria and the rest of Africa?",
     answer:
-      "Orbit is built for African service businesses and is used in Nigeria, with cards, bank transfers and mobile money supported depending on your country.",
+      "Orbit is built for African service businesses and is used in Nigeria. Orbit Pay, for card and bank transfer payments, is available in Nigeria now and is coming to other countries.",
   },
 ];

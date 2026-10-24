@@ -1,4 +1,4 @@
-import { Calendar, Wallet, Users, LineChart } from "lucide-react";
+import { Calendar, Banknote, Users, LineChart } from "lucide-react";
 
 export const fourJobs = [
   {
@@ -9,9 +9,9 @@ export const fourJobs = [
     tint: "primary" as const,
   },
   {
-    icon: Wallet,
+    icon: Banknote,
     title: "Get paid",
-    description: "Invoices, deposits, and Orbit Wallet, so payment stops living in screenshots and bank alerts.",
+    description: "Invoices, deposits and Orbit Pay, so payment stops living in screenshots and bank alerts.",
     href: "/product/payments",
     tint: "accent" as const,
   },

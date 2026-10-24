@@ -9,7 +9,7 @@ export interface NavLink {
 export const productLinks: NavLink[] = [
   { label: "Overview", href: "/product", description: "All four jobs, one workspace" },
   { label: "Booking", href: "/product/booking", description: "Approve every booking yourself" },
-  { label: "Payments", href: "/product/payments", description: "Orbit Wallet, invoices, deposits" },
+  { label: "Payments", href: "/product/payments", description: "Orbit Pay, invoices, deposits" },
   { label: "Clients", href: "/product/clients", description: "Every client, one history" },
   { label: "Automations", href: "/product/automations", description: "Reminders and follow-ups that run themselves" },
   { label: "Insights", href: "/product/insights", description: "Know how your business is really doing" },

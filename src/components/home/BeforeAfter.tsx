@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Bell, CalendarCheck, Check, MessageCircle, Wallet } from "lucide-react";
+import { Bell, CalendarCheck, Check, MessageCircle, Banknote } from "lucide-react";
 import { useInView, usePrefersReducedMotion } from "@/lib/useInView";
 
 const fragments = [
@@ -17,7 +17,7 @@ const flow = [
   { icon: MessageCircle, label: "Client taps your link" },
   { icon: CalendarCheck, label: "Request arrives" },
   { icon: Check, label: "You approve" },
-  { icon: Wallet, label: "Deposit lands" },
+  { icon: Banknote, label: "Deposit lands" },
   { icon: Bell, label: "Reminder sent" },
 ];
 
