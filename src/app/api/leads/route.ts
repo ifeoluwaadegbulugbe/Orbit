@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
 import { getSupabaseServerClient } from "@/lib/supabase";
 import { readAttributionCookie } from "@/lib/utm";
+import { subscribeToNewsletter } from "@/lib/resend";
 
 const leadSchema = z.object({
   email: z.string().email(),
@@ -78,6 +79,11 @@ export async function POST(request: NextRequest) {
   } catch (err) {
     console.error("Failed to store lead", err);
     return NextResponse.json({ error: "Could not save lead" }, { status: 500 });
+  }
+
+  // Everything except the contact form is a newsletter sign-up. A failure here must not fail the sign-up.
+  if (parsed.data.source !== "contact-form") {
+    await subscribeToNewsletter(parsed.data.email).catch((err) => console.error("Newsletter subscribe failed", err));
   }
 
   return NextResponse.json({ ok: true });

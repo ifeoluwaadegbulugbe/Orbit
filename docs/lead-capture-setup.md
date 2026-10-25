@@ -36,6 +36,22 @@ Every sign-up now lands in the Sheet. You can export it to any email tool later.
 
 Keep the service_role key secret. It is only used on the server.
 
-## Sending a confirmation email
+## Welcome email and weekly tips (Resend)
 
-Neither option emails the person back. If you want that (for example "here are your templates"), add a Resend account and send from `src/app/api/leads/route.ts` after the save succeeds.
+Sign-ups are saved first (Sheet or Supabase). If Resend is set up, the site also adds the person to your Resend list, sends a short welcome email, and sends one tip every Monday at 08:00 Lagos time.
+
+Set these in Vercel (Settings, Environment Variables), then redeploy:
+
+| Variable | What it is |
+|---|---|
+| `RESEND_API_KEY` | An API key from resend.com (Sending access is enough, plus contacts and broadcasts) |
+| `RESEND_FROM` | Sender, on a domain you verified in Resend, e.g. `Orbit <hello@getorbitcrm.com>` |
+| `RESEND_SEGMENT_ID` | The ID of the Segment (list) in Resend that holds subscribers. Create one called "Weekly tips" and copy its ID |
+| `CRON_SECRET` | Any long random string. Vercel sends it with the cron call so only Vercel can trigger a send |
+
+How it works:
+- The tips live in `src/data/newsletter.ts`. Each has a `sendOn` date (a Monday). The Monday cron sends the tip dated that day, and does nothing if there is none. Add a new entry each week, or several in advance.
+- Every weekly email carries Resend's unsubscribe link. Resend stops sending to anyone who unsubscribes.
+- Anyone already in your Sheet before this was set up is not in Resend. Import them once: Resend, Contacts, import CSV, into the Weekly tips segment.
+- Without these variables the site still saves sign-ups. It just sends no email.
+- To test before the first scheduled date, send a broadcast from the Resend dashboard to yourself.
