@@ -2,7 +2,7 @@ export const homeFaqs = [
   {
     question: "What is Orbit?",
     answer:
-      "Orbit is software for booking, invoicing and client management, built for service businesses in Africa. You get a Booking Link clients can use to book you online, invoices and payments, a record of every client, and automatic reminders, all in one app instead of WhatsApp, notes and spreadsheets.",
+      "Orbit is a software platform for booking, invoicing and client management, built for service businesses in Africa. You get a Booking Link clients can use to book you online, invoices and payments, a record of every client, and automatic reminders, all in one app instead of WhatsApp, notes and spreadsheets.",
   },
   {
     question: "Who is Orbit for?",

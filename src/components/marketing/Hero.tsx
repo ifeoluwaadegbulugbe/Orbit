@@ -18,7 +18,7 @@ export function Hero() {
           <span className="text-brand">Not the admin.</span>
         </h1>
         <p className="hero-enter hero-enter-3 mx-auto mt-6 max-w-xl text-lg leading-relaxed text-ink-muted md:text-xl">
-          Orbit is software for booking, invoicing and client management, built for service businesses in Africa. Take online
+          Orbit is a software platform for booking, invoicing and client management, built for service businesses in Africa. Take online
           bookings, get paid and keep every client in one place, not scattered across WhatsApp.
         </p>
         <div className="hero-enter hero-enter-4 mt-9 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
