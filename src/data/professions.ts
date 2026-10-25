@@ -25,7 +25,7 @@ export const professions: ProfessionContent[] = [
     ],
     metaTitle: "Booking Software for Nail Technicians",
     metaDescription:
-      "Orbit is booking and invoicing software built for nail technicians: a booking link, deposits, reminders, and client history in one place.",
+      "Orbit is software for booking and invoicing, built for nail technicians: a booking link, deposits, reminders, and client history in one place.",
     mockupBusinessName: "Glow by Ada",
     mockupRole: "Nail technician · Lagos",
     mockupServices: ["Gel manicure — 45 min", "Full set — 90 min", "Nail art add-on — 20 min"],
